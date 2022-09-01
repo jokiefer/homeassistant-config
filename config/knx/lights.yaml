@@ -1,0 +1,4 @@
+light: 
+  - name: "Küche Arbeitsplatte"
+    address: "1/0/0"
+    state_address: "1/1/0"

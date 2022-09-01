@@ -1,0 +1,8 @@
+climate:
+  - name: "Essbereich"
+    temperature_address: "5/0/20"
+    temperature_step: 0.5
+    target_temperature_address: "5/3/20"
+    target_temperature_state_address: "5/4/20"
+    min_temp: 18.0
+    max_temp: 24.0

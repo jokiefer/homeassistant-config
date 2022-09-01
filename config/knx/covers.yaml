@@ -1,0 +1,8 @@
+cover:
+  - name: "Küchenfenster"
+    move_long_address: "4/0/0"
+    stop_address: "4/0/1"
+    position_address: "4/1/0"
+    position_state_address: "4/2/0"
+    angle_address: "4/1/1"
+    angle_state_address: "4/2/1"
