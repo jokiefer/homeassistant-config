@@ -1,0 +1,4 @@
+binary_sensor:
+    - name: "Hebe/Schiebe entriegelt"
+      state_address: "3/1/0"
+      device_class: "door"
