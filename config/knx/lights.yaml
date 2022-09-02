@@ -2,3 +2,123 @@ light:
   - name: "Küche Arbeitsplatte"
     address: "1/0/0"
     state_address: "1/1/0"
+  - name: "Küche Kochinsel"
+    address: "1/0/1"
+    state_address: "1/1/1"
+
+  - name: "Essbereich"
+    address: "1/0/10"
+    state_address: "1/1/10"
+
+  - name: "Wohnbereich Couch"
+    address: "1/0/20"
+    state_address: "1/1/20"
+  - name: "Wohnbereich TV-Wand"
+    address: "1/0/21"
+    state_address: "1/1/21"
+
+  - name: "Bad EG"
+    state_address: "1/1/30"
+
+  - name: "HWR"
+    state_address: "1/1/40"
+
+  - name: "Diele"
+    state_address: "1/1/50"
+
+  - name: "Büro"
+    address: "1/0/60"
+    state_address: "1/1/60"
+
+  - name: "Gardarobe"
+    state_address: "1/1/70"
+
+  - name: "Speisekammer"
+    state_address: "1/1/80"
+
+  - name: "Kind 1 Decke"
+    address: "1/0/90"
+    state_address: "1/1/90"
+  - name: "Kind 1 Wand"
+    address: "1/0/91"
+    state_address: "1/1/91"
+
+  - name: "Kind 2 Decke"
+    address: "1/0/100"
+    state_address: "1/1/100"
+  - name: "Kind 2 Wand"
+    address: "1/0/101"
+    state_address: "1/1/101"
+
+  - name: "Bad OG Decke"
+    state_address: "1/1/110"
+  - name: "Bad OG Wand"
+    state_address: "1/1/111"
+
+  - name: "Schlafzimmer Decke"
+    address: "1/0/120"
+    state_address: "1/1/120"
+  - name: "Schlafzimmer TV-Wand"
+    address: "1/0/121"
+    state_address: "1/1/121"
+  - name: "Schlafzimmer Nachtlicht links"
+    address: "1/0/122"
+    state_address: "1/1/122"
+  - name: "Schlafzimmer Nachtlicht rechts"
+    address: "1/0/123"
+    state_address: "1/1/123"
+
+  - name: "Ankleide"
+    address: "1/0/130"
+    state_address: "1/1/130"
+
+  - name: "Flur OG"
+    state_address: "1/1/140"
+
+  - name: "Terasse"
+    address: "1/0/150"
+    state_address: "1/1/150"
+
+  - name: "Eingang"
+    state_address: "1/1/160"
+
+  - name: "Garage Stellplätze"
+    address: "1/0/170"
+    state_address: "1/1/170"
+
+  - name: "Garage Abstellraum"
+    address: "1/0/171"
+    state_address: "1/1/171"
+
+  - name: "Spitzboden"
+    address: "1/0/180"
+    state_address: "1/1/180"
+
+switch:
+  - name: "Licht Bad EG Handbetrieb"
+    address: "2/0/30"
+    state_address: "2/1/30"
+
+  - name: "Licht HWR Handbetrieb"
+    address: "2/0/40"
+    state_address: "2/1/40"
+
+  - name: "Licht Diele Handbetrieb"
+    address: "2/0/50"
+    state_address: "2/1/50"
+
+  - name: "Licht Gardarobe Handbetrieb"
+    address: "2/0/70"
+    state_address: "2/1/70"
+
+  - name: "Licht Speisekammer Handbetrieb"
+    address: "2/0/80"
+    state_address: "2/1/80"
+
+  - name: "Licht Bad OG Handbetrieb"
+    address: "2/0/110"
+    state_address: "2/1/110"
+
+  - name: "Licht Flur OG Handbetrieb"
+    address: "2/0/140"
+    state_address: "2/1/140"
