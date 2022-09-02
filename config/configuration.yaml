@@ -2,6 +2,20 @@
 # Loads default set of integrations. Do not remove.
 default_config:
 
+homeassistant:
+  name: EFH Kiefer
+  latitude: 50.218905
+  longitude: 7.0262996
+  elevation: 470
+  currency: EUR
+  unit_system: metric
+  time_zone: Europe/Berlin
+  temperature_unit: C
+  auth_providers:
+   - type: homeassistant
+   - type: legacy_api_password
+     api_password: !secret http_password
+
 # Text to speech
 tts:
   - platform: google_translate
@@ -9,4 +23,5 @@ tts:
 automation: !include automations.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
+
 knx: !include_dir_merge_named knx/

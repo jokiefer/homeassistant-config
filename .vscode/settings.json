@@ -1,5 +1,7 @@
 {
     "files.associations": {
         "*.yaml": "home-assistant"
-    }
+    },
+    "vscode-home-assistant.hostUrl": "http://localhost:8123",
+    "vscode-home-assistant.ignoreCertificates": true
 }
