@@ -1,98 +1,118 @@
 light: 
-  - name: "Küche Arbeitsplatte"
+  - name: "Licht Küche Arbeitsplatte"
     address: "1/0/0"
     state_address: "1/1/0"
-  - name: "Küche Kochinsel"
+  - name: "Licht Küche Kochinsel"
     address: "1/0/1"
     state_address: "1/1/1"
 
-  - name: "Essbereich"
+  - name: "Licht Essbereich"
     address: "1/0/10"
     state_address: "1/1/10"
 
-  - name: "Wohnbereich Couch"
+  - name: "Licht Wohnbereich Couch"
     address: "1/0/20"
     state_address: "1/1/20"
-  - name: "Wohnbereich TV-Wand"
+  - name: "Licht Wohnbereich TV-Wand"
     address: "1/0/21"
     state_address: "1/1/21"
 
-  - name: "Bad EG"
-    state_address: "1/1/30"
-
-  - name: "HWR"
-    state_address: "1/1/40"
-
-  - name: "Diele"
-    state_address: "1/1/50"
-
-  - name: "Büro"
+  - name: "Licht Büro"
     address: "1/0/60"
     state_address: "1/1/60"
 
-  - name: "Gardarobe"
-    state_address: "1/1/70"
-
-  - name: "Speisekammer"
-    state_address: "1/1/80"
-
-  - name: "Kind 1 Decke"
+  - name: "Licht Kind 1 Decke"
     address: "1/0/90"
     state_address: "1/1/90"
-  - name: "Kind 1 Wand"
+  - name: "Licht Kind 1 Wand"
     address: "1/0/91"
     state_address: "1/1/91"
 
-  - name: "Kind 2 Decke"
+  - name: "Licht Kind 2 Decke"
     address: "1/0/100"
     state_address: "1/1/100"
-  - name: "Kind 2 Wand"
+  - name: "Licht Kind 2 Wand"
     address: "1/0/101"
     state_address: "1/1/101"
 
-  - name: "Bad OG Decke"
-    state_address: "1/1/110"
-  - name: "Bad OG Wand"
-    state_address: "1/1/111"
-
-  - name: "Schlafzimmer Decke"
+  - name: "Licht Schlafzimmer Decke"
     address: "1/0/120"
     state_address: "1/1/120"
-  - name: "Schlafzimmer TV-Wand"
+  - name: "Licht Schlafzimmer TV-Wand"
     address: "1/0/121"
     state_address: "1/1/121"
-  - name: "Schlafzimmer Nachtlicht links"
+  - name: "Licht Schlafzimmer Nachtlicht links"
     address: "1/0/122"
     state_address: "1/1/122"
-  - name: "Schlafzimmer Nachtlicht rechts"
+  - name: "Licht Schlafzimmer Nachtlicht rechts"
     address: "1/0/123"
     state_address: "1/1/123"
 
-  - name: "Ankleide"
+  - name: "Licht Ankleide"
     address: "1/0/130"
     state_address: "1/1/130"
 
-  - name: "Flur OG"
-    state_address: "1/1/140"
-
-  - name: "Terasse"
+  - name: "Licht Terasse"
     address: "1/0/150"
     state_address: "1/1/150"
 
-  - name: "Eingang"
-    state_address: "1/1/160"
-
-  - name: "Garage Stellplätze"
+  - name: "Licht Garage Stellplätze"
     address: "1/0/170"
     state_address: "1/1/170"
 
-  - name: "Garage Abstellraum"
+  - name: "Licht Garage Abstellraum"
     address: "1/0/171"
     state_address: "1/1/171"
 
-  - name: "Spitzboden"
+  - name: "Licht Spitzboden"
     address: "1/0/180"
     state_address: "1/1/180"
+
+binary_sensor:
+
+  - name: "Licht Bad EG"
+    state_address: "1/1/30"
+    device_class: "light"
+    entity_category: "diagnostic"
+
+  - name: "Licht HWR"
+    state_address: "1/1/40"
+    device_class: "light"
+    entity_category: "diagnostic"
+
+  - name: "Licht Diele"
+    state_address: "1/1/50"
+    device_class: "light"
+    entity_category: "diagnostic"
+
+  - name: "Licht Bad OG Decke"
+    state_address: "1/1/110"
+    device_class: "light"
+    entity_category: "diagnostic"
+  - name: "Licht Bad OG Wand"
+    state_address: "1/1/111"
+    device_class: "light"
+    entity_category: "diagnostic"
+
+  - name: "Licht Flur OG"
+    state_address: "1/1/140"
+    device_class: "light"
+    entity_category: "diagnostic"
+
+  - name: "Licht Eingang"
+    state_address: "1/1/160"
+    device_class: "light"
+    entity_category: "diagnostic"
+
+  - name: "Licht Gardarobe"
+    state_address: "1/1/70"
+    device_class: "light"
+    entity_category: "diagnostic"
+
+  - name: "Licht Speisekammer"
+    state_address: "1/1/80"
+    device_class: "light"
+    entity_category: "diagnostic"
 
 switch:
   - name: "Licht Bad EG Handbetrieb"
