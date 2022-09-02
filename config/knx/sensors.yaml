@@ -70,3 +70,37 @@ sensor:
   - name: "VOC Flur OG"
     state_address: "6/2/163"
     type: "ppm"
+
+# illuminance sensor values
+
+  - name: "Bad EG"
+    state_address: "2/2/30"
+    type: "illuminance"
+
+  - name: "HWR"
+    state_address: "2/2/40"
+    type: "illuminance"
+
+  - name: "Diele PM1"
+    state_address: "2/2/50"
+    type: "illuminance"
+
+  - name: "Diele PM2"
+    state_address: "2/2/51"
+    type: "illuminance"
+
+  - name: "Gardarobe"
+    state_address: "2/2/70"
+    type: "illuminance"
+
+  - name: "Speisekammer"
+    state_address: "2/2/80"
+    type: "illuminance"
+
+  - name: "Bad OG"
+    state_address: "2/2/110"
+    type: "illuminance"
+
+  - name: "Flur OG"
+    state_address: "2/2/140"
+    type: "illuminance"
