@@ -26,3 +26,15 @@ scene: !include scenes.yaml
 group: !include groups.yaml
 
 knx: !include_dir_merge_named knx/
+
+
+#sensor: !include_dir_merge_named sensors/
+switch: 
+- platform: snmp
+  name: ms01_port_2_poe
+  host: 10.0.10.1
+  community: public
+  baseoid: 1.3.6.1.2.1.105.1.1.1.3.1.2
+  payload_on: 1
+  payload_off: 2
+  vartype: INTEGER
