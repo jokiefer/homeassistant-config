@@ -1,4 +1,96 @@
 binary_sensor:
-    - name: "Hebe/Schiebe entriegelt"
+    - name: "kitchen_door"
       state_address: "3/1/0"
+      sync_state: "init"
       device_class: "door"
+
+    # heating diagnostic
+
+    - name: "Heizmodus Sommer/Winter"
+      state_address: "5/1/0"
+      sync_state: "init"
+      device_class: "heat"
+
+    - name: "Störung Heizungsaktor EG"
+      state_address: "5/2/0"
+      sync_state: "init"
+      device_class: "problem"
+      entity_category: "diagnostic"
+
+    - name: "Störung Heizungsaktor OG"
+      state_address: "5/2/1"
+      sync_state: "init"
+      device_class: "problem"
+      entity_category: "diagnostic"
+
+    - name: "diagnostic_state_kitchen_dining_living"
+      state_address: "5/2/2"
+      sync_state: "init"
+      device_class: "problem"
+      entity_category: "diagnostic"
+    
+    - name: "Störung Heizkreis Bad EG" 
+      state_address: "5/2/3"
+      sync_state: "init"
+      device_class: "problem"
+      entity_category: "diagnostic"
+
+    - name: "Störung Heizkreis HWR" 
+      state_address: "5/2/4"
+      sync_state: "init"
+      device_class: "problem"
+      entity_category: "diagnostic"
+
+    - name: "Störung Heizkreis Diele" 
+      state_address: "5/2/5"
+      sync_state: "init"
+      device_class: "problem"
+      entity_category: "diagnostic"
+    
+    - name: "Störung Heizkreis Büro" 
+      state_address: "5/2/6"
+      sync_state: "init"
+      device_class: "problem"
+      entity_category: "diagnostic"
+
+    - name: "Störung Heizkreis Speisekammer" 
+      state_address: "5/2/8"
+      sync_state: "init"
+      device_class: "problem"
+      entity_category: "diagnostic"
+
+    - name: "Störung Heizkreis Kinderzimmer Süd" 
+      state_address: "5/2/9"
+      sync_state: "init"
+      device_class: "problem"
+      entity_category: "diagnostic"
+
+    - name: "Störung Heizkreis Kinderzimmer Nord" 
+      state_address: "5/2/10"
+      sync_state: "init"
+      device_class: "problem"
+      entity_category: "diagnostic"
+
+    - name: "Störung Heizkreis Bad OG" 
+      state_address: "5/2/11"
+      sync_state: "init"
+      device_class: "problem"
+      entity_category: "diagnostic"
+
+    - name: "Störung Heizkreis Schlafzimmer" 
+      state_address: "5/2/12"
+      sync_state: "init"
+      device_class: "problem"
+      entity_category: "diagnostic"
+
+    - name: "Störung Heizkreis Ankleide" 
+      state_address: "5/2/13"
+      sync_state: "init"
+      device_class: "problem"
+      entity_category: "diagnostic"
+
+    - name: "Störung Heizkreis Flur OG" 
+      state_address: "5/2/14"
+      sync_state: "init"
+      device_class: "problem"
+      entity_category: "diagnostic"

@@ -1,0 +1,10 @@
+kitchen:
+  name: "kitchen"
+  entities:
+    - light.kitchen_countertop
+    - light.kitchen_cookingstation
+    - binary_sensors.kitchen_door
+    - binary_sensors.diagnostic_state_kitchen_dining_living
+    - sensors.diagnostic_text_kitchen_dining_living
+    - climate.kitchen_dining_living
+    - covers.kitchen_window

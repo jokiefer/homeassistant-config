@@ -1,18 +1,20 @@
 light: 
-  - name: "Licht Küche Arbeitsplatte"
+  - name: "kitchen_countertop"
     address: "1/0/0"
     state_address: "1/1/0"
-  - name: "Licht Küche Kochinsel"
+
+  - name: "kitchen_cookingstation"
     address: "1/0/1"
     state_address: "1/1/1"
 
-  - name: "Licht Essbereich"
+  - name: "dining_room"
     address: "1/0/10"
     state_address: "1/1/10"
 
-  - name: "Licht Wohnbereich Couch"
+  - name: "living_room"
     address: "1/0/20"
     state_address: "1/1/20"
+
   - name: "Licht Wohnbereich TV-Wand"
     address: "1/0/21"
     state_address: "1/1/21"

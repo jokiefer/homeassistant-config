@@ -168,66 +168,82 @@ sensor:
     state_address: "4/4/0"
     type: "string"
     entity_category: "diagnostic"
+
   - name: "Diagnosetext Hebe/Schiebe links"
     state_address: "4/4/10"
     type: "string"
     entity_category: "diagnostic"
+
   - name: "Diagnosetext Hebe/Schiebe rechts"
     state_address: "4/4/20"
     type: "string"
     entity_category: "diagnostic"
+
   - name: "Diagnosetext Bad EG"
     state_address: "4/4/30"
     type: "string"
     entity_category: "diagnostic"
+
   - name: "Diagnosetext Büro Ostwand"
     state_address: "4/4/40"
     type: "string"
     entity_category: "diagnostic"
+
   - name: "Diagnosetext Büro Südwand"
     state_address: "4/4/50"
     type: "string"
     entity_category: "diagnostic"
+
   - name: "Diagnosetext Speisekammer"
     state_address: "4/4/60"
     type: "string"
     entity_category: "diagnostic"
+
   - name: "Diagnosetext Kind 1 Südwand"
     state_address: "4/4/70"
     type: "string"
     entity_category: "diagnostic"
+
   - name: "Diagnosetext Kind 1 Westwand"
     state_address: "4/4/80"
     type: "string"
     entity_category: "diagnostic"
+
   - name: "Diagnosetext Kind 2 Westwand"
     state_address: "4/4/90"
     type: "string"
     entity_category: "diagnostic"
+
   - name: "Diagnosetext Kind 2 Nordwand"
     state_address: "4/4/100"
     type: "string"
     entity_category: "diagnostic"
+
   - name: "Diagnosetext Bad OG Dusche"
     state_address: "4/4/110"
     type: "string"
     entity_category: "diagnostic"
+
   - name: "Diagnosetext Bad OG Badewanne Nordwand"
     state_address: "4/4/120"
     type: "string"
     entity_category: "diagnostic"
+
   - name: "Diagnosetext Bad OG Badewanne Ostwand"
     state_address: "4/4/130"
     type: "string"
     entity_category: "diagnostic"
+
   - name: "Diagnosetext Schlafzimmer"
     state_address: "4/4/140"
     type: "string"
     entity_category: "diagnostic"
+
   - name: "Diagnosetext Ankleide"
     state_address: "4/4/150"
     type: "string"
     entity_category: "diagnostic"
+
   - name: "Diagnosetext Flur OG"
     state_address: "4/4/160"
     type: "string"
