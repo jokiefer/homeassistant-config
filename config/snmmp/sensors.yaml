@@ -1,0 +1,52 @@
+sensor:
+  - platform: snmp
+    name: MS01 uptime
+    host: 10.0.10.1
+    community: public
+    baseoid: 1.3.6.1.2.1.1.3.0
+    accept_errors: true
+    unit_of_measurement: "minutes"
+    value_template: "{{((value | int) / 6000) | int}}"
+
+  - platform: snmp
+    name: MS01 CPU usage
+    host: 10.0.10.1
+    community: public
+    baseoid: 1.3.6.1.4.1.11.2.14.11.5.1.9.6.1.0
+    accept_errors: true
+    unit_of_measurement: "%"
+
+  - platform: snmp
+    name: MS01 fan status
+    host: 10.0.10.1
+    community: public
+    baseoid: 1.3.6.1.4.1.11.2.14.11.1.2.6.1.4.1
+    # 1	Invalid Value
+    # 3	Bad
+    # 3	Warning
+    # 4	Good
+    # 5	Not Present
+
+    accept_errors: true
+    value_template: >
+      {% if is_state(value, 3) %}
+        Bad
+      {% elif is_state(value, 4) %}
+        Good
+      {% else %}
+        unknown
+      {% endif %}
+    
+  - platform: snmp
+    name: ms01_port_1_poe_delivering_state
+    host: 10.0.10.1
+    community: public
+    baseoid: 1.3.6.1.2.1.105.1.1.1.6.1.1
+    # 1 disabled
+    # 2 searching
+    # 3 deliveringPower
+    # 4 fault
+    # 5 test
+    # 6 otherFault
+    
+    
