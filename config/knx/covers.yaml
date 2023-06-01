@@ -125,6 +125,11 @@ cover:
     angle_address: "4/1/161"
     angle_state_address: "4/2/161"
 
+  - name: "Garagentor"
+    move_long_address: "3/3/3"
+    position_state_address: "3/2/3"
+    
+    
 # Command controls
 button:
   - name: "Fahrzeitmessung starten Küchenfenster"
