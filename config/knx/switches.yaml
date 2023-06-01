@@ -1,0 +1,52 @@
+switch:
+    - name: "Beschattung Automatik Küchenfenster"
+      address: "4/3/1"
+      state_address: "4/3/0"
+
+    - name: "Beschattung Automatik Hebe/Schiebe links"
+      address: "4/3/10"
+      state_address: "4/3/11"
+
+    - name: "Beschattung Automatik Hebe/Schiebe rechts"
+      address: "4/3/20"
+      state_address: "4/3/21"
+
+    - name: "Beschattung Automatik Büro Ostfenster"
+      address: "4/3/40"
+      state_address: "4/3/41"
+
+    - name: "Beschattung Automatik Büro Südfenster"
+      address: "4/3/50"
+      state_address: "4/3/51"
+
+    - name: "Beschattung Automatik Speisekammer"
+      address: "4/3/60"
+      state_address: "4/3/61"
+
+    - name: "Beschattung Automatik Kind Süd Südfenster"
+      address: "4/3/70"
+      state_address: "4/3/71"
+
+    - name: "Beschattung Automatik Kind Süd Westfenster"
+      address: "4/3/80"
+      state_address: "4/3/81"
+
+    - name: "Beschattung Automatik Kind Nord Westfenster"
+      address: "4/3/90"
+      state_address: "4/3/91"
+
+    - name: "Beschattung Automatik Bad OG Ostfenster"
+      address: "4/3/130"
+      state_address: "4/3/131"
+
+    - name: "Beschattung Automatik Schlafzimmer"
+      address: "4/3/140"
+      state_address: "4/3/141"
+
+    - name: "Beschattung Automatik Ankleide"
+      address: "4/3/150"
+      state_address: "4/3/151"
+
+    - name: "Beschattung Automatik Flur OG"
+      address: "4/3/160"
+      state_address: "4/3/161"
