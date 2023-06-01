@@ -1,15 +1,15 @@
 weather:
   - name: "Dach"
     address_temperature: "31/0/0"
-    address_brightness_south: "31/1/2"
-    address_brightness_west: "31/1/1"
-    address_brightness_east: "31/1/0"
-    address_wind_speed: "31/4/0"
+    address_brightness_south: "0/4/251"
+    address_brightness_west: "0/4/252"
+    address_brightness_east: "0/4/250"
+    address_wind_speed: "0/3/0"
     address_day_night: "31/7/1"
 
     # address_rain_alarm: "7/0/5"
     # address_frost_alarm: "7/0/6"
-    # address_wind_alarm: "7/0/7"
+    address_wind_alarm: "4/6/250"
 
 
     # address_air_pressure: "7/0/9"

@@ -1,6 +1,6 @@
 climate:
   - name: "Küchen-/Ess-/Wohnbereich"
-    temperature_address: "5/0/20"
+    temperature_address: "0/1/20"
     temperature_step: 0.5
     target_temperature_address: "5/3/20"
     target_temperature_state_address: "5/4/20"
@@ -8,7 +8,7 @@ climate:
     max_temp: 24.0
 
   - name: "Bad EG"
-    temperature_address: "5/0/40"
+    temperature_address: "0/1/40"
     temperature_step: 0.5
     target_temperature_address: "5/3/40"
     target_temperature_state_address: "5/4/40"
@@ -16,7 +16,7 @@ climate:
     max_temp: 24.0
   
   - name: "HWR"
-    temperature_address: "5/0/50"
+    temperature_address: "0/1/50"
     temperature_step: 0.5
     target_temperature_address: "5/3/50"
     target_temperature_state_address: "5/4/50"
@@ -24,7 +24,7 @@ climate:
     max_temp: 24.0
 
   - name: "Diele"
-    temperature_address: "5/0/60"
+    temperature_address: "0/1/60"
     temperature_step: 0.5
     target_temperature_address: "5/3/60"
     target_temperature_state_address: "5/4/60"
@@ -32,7 +32,7 @@ climate:
     max_temp: 24.0
 
   - name: "Büro"
-    temperature_address: "5/0/70"
+    temperature_address: "0/1/70"
     temperature_step: 0.5
     target_temperature_address: "5/3/70"
     target_temperature_state_address: "5/4/70"
@@ -40,7 +40,7 @@ climate:
     max_temp: 24.0
 
   - name: "Speisekammer"
-    temperature_address: "5/0/90"
+    temperature_address: "0/1/90"
     temperature_step: 0.5
     target_temperature_address: "5/3/90"
     target_temperature_state_address: "5/4/90"
@@ -48,7 +48,7 @@ climate:
     max_temp: 24.0
 
   - name: "Kind 1"
-    temperature_address: "5/0/100"
+    temperature_address: "0/1/100"
     temperature_step: 0.5
     target_temperature_address: "5/3/100"
     target_temperature_state_address: "5/4/100"
@@ -56,7 +56,7 @@ climate:
     max_temp: 24.0
 
   - name: "Kind 2"
-    temperature_address: "5/0/110"
+    temperature_address: "0/1/110"
     temperature_step: 0.5
     target_temperature_address: "5/3/110"
     target_temperature_state_address: "5/4/110"
@@ -64,7 +64,7 @@ climate:
     max_temp: 24.0
 
   - name: "Bad OG"
-    temperature_address: "5/0/120"
+    temperature_address: "0/1/120"
     temperature_step: 0.5
     target_temperature_address: "5/3/120"
     target_temperature_state_address: "5/4/120"
@@ -72,7 +72,7 @@ climate:
     max_temp: 24.0
   
   - name: "Schlafzimmer"
-    temperature_address: "5/0/130"
+    temperature_address: "0/1/130"
     temperature_step: 0.5
     target_temperature_address: "5/3/130"
     target_temperature_state_address: "5/4/130"
@@ -80,7 +80,7 @@ climate:
     max_temp: 24.0
 
   - name: "Ankleide"
-    temperature_address: "5/0/140"
+    temperature_address: "0/1/140"
     temperature_step: 0.5
     target_temperature_address: "5/3/140"
     target_temperature_state_address: "5/4/140"
@@ -88,7 +88,7 @@ climate:
     max_temp: 24.0
   
   - name: "Flur OG"
-    temperature_address: "5/0/150"
+    temperature_address: "0/1/150"
     temperature_step: 0.5
     target_temperature_address: "5/3/150"
     target_temperature_state_address: "5/4/150"
