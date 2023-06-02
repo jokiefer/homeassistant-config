@@ -1,6 +1,6 @@
 weather:
   - name: "Dach"
-    address_temperature: "31/0/0"
+    address_temperature: "0/1/250"
     address_brightness_south: "0/4/251"
     address_brightness_west: "0/4/252"
     address_brightness_east: "0/4/250"
