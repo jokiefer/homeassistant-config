@@ -75,53 +75,6 @@ light:
     state_address: "1/1/180"
 
 
-
-# binary_sensor:
-
-#   - name: "Licht Bad EG"
-#     state_address: "1/1/30"
-#     device_class: "light"
-#     entity_category: "diagnostic"
-
-#   - name: "Licht HWR"
-#     state_address: "1/1/40"
-#     device_class: "light"
-#     entity_category: "diagnostic"
-
-#   - name: "Licht Diele"
-#     state_address: "1/1/50"
-#     device_class: "light"
-#     entity_category: "diagnostic"
-
-#   - name: "Licht Bad OG Decke"
-#     state_address: "1/1/110"
-#     device_class: "light"
-#     entity_category: "diagnostic"
-#   - name: "Licht Bad OG Wand"
-#     state_address: "1/1/111"
-#     device_class: "light"
-#     entity_category: "diagnostic"
-
-#   - name: "Licht Flur OG"
-#     state_address: "1/1/140"
-#     device_class: "light"
-#     entity_category: "diagnostic"
-
-#   - name: "Licht Eingang"
-#     state_address: "1/1/160"
-#     device_class: "light"
-#     entity_category: "diagnostic"
-
-#   - name: "Licht Gardarobe"
-#     state_address: "1/1/70"
-#     device_class: "light"
-#     entity_category: "diagnostic"
-
-#   - name: "Licht Speisekammer"
-#     state_address: "1/1/80"
-#     device_class: "light"
-#     entity_category: "diagnostic"
-
 switch:
   - name: "Licht Bad EG Handbetrieb"
     address: "2/0/30"

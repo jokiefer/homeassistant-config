@@ -150,12 +150,12 @@ sensor:
   # VOC    0/5/xxx
   ###############################
   - name: "VOC Essbereich"
-    state_address: "6/2/23"
+    state_address: "0/5/23"
     sync_state: "init"
     type: "ppm"
 
   - name: "VOC Flur OG"
-    state_address: "6/2/163"
+    state_address: "0/5/163"
     sync_state: "init"
     type: "ppm"
 
@@ -164,12 +164,12 @@ sensor:
   # CO2    0/6/xxx
   ###############################
   - name: "CO2 Essbereich"
-    state_address: "6/2/22"
+    state_address: "0/6/22"
     sync_state: "init"
     type: "ppm"
 
   - name: "CO2 Flur OG"
-    state_address: "6/2/162"
+    state_address: "0/6/162"
     sync_state: "init"
     type: "ppm"
 
