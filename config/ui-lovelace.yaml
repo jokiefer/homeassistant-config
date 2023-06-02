@@ -1,0 +1,14 @@
+title: EFH Kiefer
+views:
+  - title: Übersicht
+    strategy:
+      type: original-states
+
+  - title: Luftqualität
+    theme: dark-mode
+    cards: 
+      - type: entities
+        entities:
+          - sensor.co2_essbereich_2
+          - sensor.co2_flur_og_2
+       
