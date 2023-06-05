@@ -55,29 +55,33 @@ cover:
     angle_address: "4/1/61"
     angle_state_address: "4/2/61"
 
-  - name: "Kind 1 Südwand"
+  - name: "Kind Süd Südwand"
     move_long_address: "4/0/70"
     stop_address: "4/0/71"
     position_address: "4/1/70"
     position_state_address: "4/2/70"
+    device_class: "shutter"
     
-  - name: "Kind 1 Westwand"
+  - name: "Kind Süd Westwand"
     move_long_address: "4/0/80"
     stop_address: "4/0/81"
     position_address: "4/1/80"
     position_state_address: "4/2/80"
+    device_class: "shutter"
     
-  - name: "Kind 2 Westwand"
+  - name: "Kind Nord Westwand"
     move_long_address: "4/0/90"
     stop_address: "4/0/91"
     position_address: "4/1/90"
     position_state_address: "4/2/90"
+    device_class: "shutter"
 
-  - name: "Kind 2 Nordwand"
+  - name: "Kind Nord Nordwand"
     move_long_address: "4/0/100"
     stop_address: "4/0/101"
     position_address: "4/1/100"
     position_state_address: "4/2/100"
+    device_class: "shutter"
 
   - name: "Bad OG Dusche"
     move_long_address: "4/0/110"
@@ -108,6 +112,7 @@ cover:
     stop_address: "4/0/141"
     position_address: "4/1/140"
     position_state_address: "4/2/140"
+    device_class: "shutter"
 
   - name: "Ankleide"
     move_long_address: "4/0/150"
@@ -127,9 +132,16 @@ cover:
 
   - name: "Garagentor"
     move_long_address: "3/3/3"
+    stop_address: "3/3/4"
     position_state_address: "3/2/3"
-    
-    
+    device_class: "garage"
+
+binary_sensor:
+    - name: "Hebe/Schiebe links"
+      state_address: "3/1/0"
+      sync_state: "init"
+      device_class: "door"
+
 # Command controls
 button:
   - name: "Fahrzeitmessung starten Küchenfenster"
@@ -172,84 +184,101 @@ sensor:
   - name: "Diagnosetext Küchenfenster"
     state_address: "4/4/0"
     type: "string"
+    sync_state: "init"
     entity_category: "diagnostic"
 
   - name: "Diagnosetext Hebe/Schiebe links"
     state_address: "4/4/10"
     type: "string"
+    sync_state: "init"
     entity_category: "diagnostic"
 
   - name: "Diagnosetext Hebe/Schiebe rechts"
     state_address: "4/4/20"
     type: "string"
+    sync_state: "init"
     entity_category: "diagnostic"
 
   - name: "Diagnosetext Bad EG"
     state_address: "4/4/30"
     type: "string"
+    sync_state: "init"
     entity_category: "diagnostic"
 
   - name: "Diagnosetext Büro Ostwand"
     state_address: "4/4/40"
     type: "string"
+    sync_state: "init"
     entity_category: "diagnostic"
 
   - name: "Diagnosetext Büro Südwand"
     state_address: "4/4/50"
     type: "string"
+    sync_state: "init"
     entity_category: "diagnostic"
 
   - name: "Diagnosetext Speisekammer"
     state_address: "4/4/60"
     type: "string"
+    sync_state: "init"
     entity_category: "diagnostic"
 
   - name: "Diagnosetext Kind 1 Südwand"
     state_address: "4/4/70"
     type: "string"
+    sync_state: "init"
     entity_category: "diagnostic"
 
   - name: "Diagnosetext Kind 1 Westwand"
     state_address: "4/4/80"
     type: "string"
+    sync_state: "init"
     entity_category: "diagnostic"
 
   - name: "Diagnosetext Kind 2 Westwand"
     state_address: "4/4/90"
     type: "string"
+    sync_state: "init"
     entity_category: "diagnostic"
 
   - name: "Diagnosetext Kind 2 Nordwand"
     state_address: "4/4/100"
     type: "string"
+    sync_state: "init"
     entity_category: "diagnostic"
 
   - name: "Diagnosetext Bad OG Dusche"
     state_address: "4/4/110"
     type: "string"
+    sync_state: "init"
     entity_category: "diagnostic"
 
   - name: "Diagnosetext Bad OG Badewanne Nordwand"
     state_address: "4/4/120"
     type: "string"
+    sync_state: "init"
     entity_category: "diagnostic"
 
   - name: "Diagnosetext Bad OG Badewanne Ostwand"
     state_address: "4/4/130"
     type: "string"
+    sync_state: "init"
     entity_category: "diagnostic"
 
   - name: "Diagnosetext Schlafzimmer"
     state_address: "4/4/140"
     type: "string"
+    sync_state: "init"
     entity_category: "diagnostic"
 
   - name: "Diagnosetext Ankleide"
     state_address: "4/4/150"
     type: "string"
+    sync_state: "init"
     entity_category: "diagnostic"
 
   - name: "Diagnosetext Flur OG"
     state_address: "4/4/160"
     type: "string"
+    sync_state: "init"
     entity_category: "diagnostic"

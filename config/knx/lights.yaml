@@ -1,17 +1,17 @@
 light: 
-  - name: "kitchen_countertop"
+  - name: "Küche Arbeitsplatte"
     address: "1/0/0"
     state_address: "1/1/0"
 
-  - name: "kitchen_cookingstation"
+  - name: "Küche Kochinsel"
     address: "1/0/1"
     state_address: "1/1/1"
 
-  - name: "dining_room"
+  - name: "Essbereich"
     address: "1/0/10"
     state_address: "1/1/10"
 
-  - name: "living_room"
+  - name: "Wohnbereich Couch"
     address: "1/0/20"
     state_address: "1/1/20"
 
@@ -103,3 +103,190 @@ switch:
   - name: "Licht Flur OG Handbetrieb"
     address: "2/0/140"
     state_address: "2/1/140"
+
+number:
+  - name: "Einschaltschwelle Bad EG"
+    address: "2/3/40"
+    type: "illuminance"
+    respond_to_read: true
+    mode: "slider"
+    min: 100
+    max: 500
+    step: 10 
+
+  - name: "Einschaltschwelle HWR"
+    address: "2/3/50"
+    type: "illuminance"
+    respond_to_read: true
+    mode: "slider"
+    min: 100
+    max: 500
+    step: 10 
+
+  - name: "Einschaltschwelle Diele Haustür"
+    address: "2/3/60"
+    type: "illuminance"
+    respond_to_read: true
+    mode: "slider"
+    min: 100
+    max: 500
+    step: 10
+
+  - name: "Einschaltschwelle Diele Treppe"
+    address: "2/3/61"
+    type: "illuminance"
+    respond_to_read: true
+    mode: "slider"
+    min: 100
+    max: 500
+    step: 10  
+
+  - name: "Einschaltschwelle Gardarobe"
+    address: "2/3/80"
+    type: "illuminance"
+    respond_to_read: true
+    mode: "slider"
+    min: 100
+    max: 500
+    step: 10  
+
+  - name: "Einschaltschwelle Speisekammer"
+    address: "2/3/90"
+    type: "illuminance"
+    respond_to_read: true
+    mode: "slider"
+    min: 100
+    max: 500
+    step: 10
+
+  - name: "Einschaltschwelle Bad OG"
+    address: "2/3/130"
+    type: "illuminance"
+    respond_to_read: true
+    mode: "slider"
+    min: 100
+    max: 500
+    step: 10  
+
+  - name: "Einschaltschwelle Flur OG"
+    address: "2/3/160"
+    type: "illuminance"
+    respond_to_read: true
+    mode: "slider"
+    min: 100
+    max: 500
+    step: 10  
+
+  # Nachlaufzeit
+  - name: "Nachlaufzeit Bad EG"
+    address: "2/2/40"
+    type: "time_period_sec"
+    respond_to_read: true
+    mode: "slider"
+    min: 10
+    max: 60
+    step: 1
+
+  - name: "Nachlaufzeit HWR"
+    address: "2/2/50"
+    type: "time_period_sec"
+    respond_to_read: true
+    mode: "slider"
+    min: 10
+    max: 60
+    step: 1
+
+  - name: "Nachlaufzeit Diele Haustür"
+    address: "2/2/60"
+    type: "time_period_sec"
+    respond_to_read: true
+    mode: "slider"
+    min: 10
+    max: 60
+    step: 1
+
+  - name: "Nachlaufzeit Diele Treppe"
+    address: "2/2/61"
+    type: "time_period_sec"
+    respond_to_read: true
+    mode: "slider"
+    min: 10
+    max: 60
+    step: 1 
+
+  - name: "Nachlaufzeit Gardarobe"
+    address: "2/2/80"
+    type: "time_period_sec"
+    respond_to_read: true
+    mode: "slider"
+    min: 10
+    max: 60
+    step: 1
+
+  - name: "Nachlaufzeit Speisekammer"
+    address: "2/2/90"
+    type: "time_period_sec"
+    respond_to_read: true
+    mode: "slider"
+    min: 10
+    max: 60
+    step: 1
+
+  - name: "Nachlaufzeit Bad OG"
+    address: "2/2/130"
+    type: "time_period_sec"
+    respond_to_read: true
+    mode: "slider"
+    min: 10
+    max: 60
+    step: 1
+
+  - name: "Nachlaufzeit Flur OG"
+    address: "2/2/160"
+    type: "time_period_sec"
+    respond_to_read: true
+    mode: "slider"
+    min: 10
+    max: 60
+    step: 1
+
+binary_sensor:
+    - name: "Bewegung Bad EG"
+      state_address: "2/4/40"
+      sync_state: "init"
+      device_class: "motion"
+
+    - name: "Bewegung HWR"
+      state_address: "2/4/50"
+      sync_state: "init"
+      device_class: "motion"
+
+    - name: "Bewegung Diele Haustür"
+      state_address: "2/4/60"
+      sync_state: "init"
+      device_class: "motion"
+
+    - name: "Bewegung Diele Treppe"
+      state_address: "2/4/61"
+      sync_state: "init"
+      device_class: "motion"
+
+    - name: "Bewegung Gardarobe"
+      state_address: "2/4/80"
+      sync_state: "init"
+      device_class: "motion"
+
+    - name: "Bewegung Speisekammer"
+      state_address: "2/4/90"
+      sync_state: "init"
+      device_class: "motion"
+
+    - name: "Bewegung Bad OG"
+      state_address: "2/4/130"
+      sync_state: "init"
+      device_class: "motion"
+
+    - name: "Bewegung Flur OG"
+      state_address: "2/4/160"
+      sync_state: "init"
+      device_class: "motion"

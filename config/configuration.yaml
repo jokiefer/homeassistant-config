@@ -17,6 +17,15 @@ homeassistant:
      api_password: !secret http_password
 
 lovelace:
+  mode: yaml
+  dashboards:
+    lovelace-generated: # Needs to contain a hyphen (-)
+      mode: yaml
+      filename: notexist.yaml
+      title: Generated
+      icon: mdi:tools
+      show_in_sidebar: true
+      require_admin: true
 
 # Text to speech
 tts:

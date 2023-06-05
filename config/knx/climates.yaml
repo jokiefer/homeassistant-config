@@ -4,14 +4,28 @@ climate:
     temperature_step: 0.5
     target_temperature_address: "5/3/20"
     target_temperature_state_address: "5/4/20"
+    setpoint_shift_mode: "DPT9002"
+    setpoint_shift_address: "5/3/21"
+    setpoint_shift_state_address: "5/2/25"
+    controller_mode_state_address: "5/2/21"
+    controller_status_state_address: "5/2/22"
+    command_value_state_address: "5/2/23"
+    active_state_address: "5/2/24"
     min_temp: 18.0
-    max_temp: 24.0
+    max_temp: 23.0
 
   - name: "Bad EG"
     temperature_address: "0/1/40"
     temperature_step: 0.5
     target_temperature_address: "5/3/40"
     target_temperature_state_address: "5/4/40"
+    setpoint_shift_mode: "DPT9002"
+    setpoint_shift_address: "5/3/41"
+    setpoint_shift_state_address: "5/2/45"
+    controller_mode_state_address: "5/2/41"
+    controller_status_state_address: "5/2/42"
+    command_value_state_address: "5/2/43"
+    active_state_address: "5/2/44"
     min_temp: 18.0
     max_temp: 24.0
   
@@ -20,84 +34,154 @@ climate:
     temperature_step: 0.5
     target_temperature_address: "5/3/50"
     target_temperature_state_address: "5/4/50"
+    setpoint_shift_mode: "DPT9002"
+    setpoint_shift_address: "5/3/51"
+    setpoint_shift_state_address: "5/2/55"
+    controller_mode_state_address: "5/2/51"
+    controller_status_state_address: "5/2/52"
+    command_value_state_address: "5/2/53"
+    active_state_address: "5/2/54"
     min_temp: 18.0
-    max_temp: 24.0
+    max_temp: 22.0
 
   - name: "Diele"
     temperature_address: "0/1/60"
     temperature_step: 0.5
     target_temperature_address: "5/3/60"
     target_temperature_state_address: "5/4/60"
+    setpoint_shift_mode: "DPT9002"
+    setpoint_shift_address: "5/3/61"
+    setpoint_shift_state_address: "5/2/65"
+    controller_mode_state_address: "5/2/61"
+    controller_status_state_address: "5/2/62"
+    command_value_state_address: "5/2/63"
+    active_state_address: "5/2/64"
     min_temp: 18.0
-    max_temp: 24.0
+    max_temp: 22.0
 
   - name: "Büro"
     temperature_address: "0/1/70"
     temperature_step: 0.5
     target_temperature_address: "5/3/70"
     target_temperature_state_address: "5/4/70"
+    setpoint_shift_mode: "DPT9002"
+    setpoint_shift_address: "5/3/71"
+    setpoint_shift_state_address: "5/2/75"
+    controller_mode_state_address: "5/2/71"
+    controller_status_state_address: "5/2/72"
+    command_value_state_address: "5/2/73"
+    active_state_address: "5/2/74"
     min_temp: 18.0
-    max_temp: 24.0
+    max_temp: 22.0
 
   - name: "Speisekammer"
     temperature_address: "0/1/90"
     temperature_step: 0.5
     target_temperature_address: "5/3/90"
     target_temperature_state_address: "5/4/90"
+    setpoint_shift_mode: "DPT9002"
+    setpoint_shift_address: "5/3/91"
+    setpoint_shift_state_address: "5/2/95"
+    controller_mode_state_address: "5/2/91"
+    controller_status_state_address: "5/2/92"
+    command_value_state_address: "5/2/93"
+    active_state_address: "5/2/94"
     min_temp: 18.0
-    max_temp: 24.0
+    max_temp: 21.0
 
   - name: "Kind 1"
     temperature_address: "0/1/100"
     temperature_step: 0.5
-    target_temperature_address: "5/3/100"
-    target_temperature_state_address: "5/4/100"
+    target_temperature_address: "5/3/110"
+    target_temperature_state_address: "5/4/110"
+    setpoint_shift_mode: "DPT9002"
+    setpoint_shift_address: "5/3/111"
+    setpoint_shift_state_address: "5/2/115"
+    controller_mode_state_address: "5/2/111"
+    controller_status_state_address: "5/2/112"
+    command_value_state_address: "5/2/113"
+    active_state_address: "5/2/114"
     min_temp: 18.0
-    max_temp: 24.0
+    max_temp: 23.0
 
   - name: "Kind 2"
     temperature_address: "0/1/110"
     temperature_step: 0.5
-    target_temperature_address: "5/3/110"
-    target_temperature_state_address: "5/4/110"
+    target_temperature_address: "5/3/120"
+    target_temperature_state_address: "5/4/120"
+    setpoint_shift_mode: "DPT9002"
+    setpoint_shift_address: "5/3/121"
+    setpoint_shift_state_address: "5/2/125"
+    controller_mode_state_address: "5/2/121"
+    controller_status_state_address: "5/2/122"
+    command_value_state_address: "5/2/123"
+    active_state_address: "5/2/124"
     min_temp: 18.0
-    max_temp: 24.0
+    max_temp: 23.0
 
   - name: "Bad OG"
     temperature_address: "0/1/120"
     temperature_step: 0.5
-    target_temperature_address: "5/3/120"
-    target_temperature_state_address: "5/4/120"
+    target_temperature_address: "5/3/130"
+    target_temperature_state_address: "5/4/130"
+    setpoint_shift_mode: "DPT9002"
+    setpoint_shift_address: "5/3/131"
+    setpoint_shift_state_address: "5/2/135"
+    controller_mode_state_address: "5/2/131"
+    controller_status_state_address: "5/2/132"
+    command_value_state_address: "5/2/133"
+    active_state_address: "5/2/134"
     min_temp: 18.0
     max_temp: 24.0
   
   - name: "Schlafzimmer"
     temperature_address: "0/1/130"
     temperature_step: 0.5
-    target_temperature_address: "5/3/130"
-    target_temperature_state_address: "5/4/130"
+    target_temperature_address: "5/3/140"
+    target_temperature_state_address: "5/4/140"
+    setpoint_shift_mode: "DPT9002"
+    setpoint_shift_address: "5/3/141"
+    setpoint_shift_state_address: "5/2/145"
+    controller_mode_state_address: "5/2/141"
+    controller_status_state_address: "5/2/142"
+    command_value_state_address: "5/2/143"
+    active_state_address: "5/2/144"
     min_temp: 18.0
-    max_temp: 24.0
+    max_temp: 23.0
 
   - name: "Ankleide"
     temperature_address: "0/1/140"
     temperature_step: 0.5
-    target_temperature_address: "5/3/140"
-    target_temperature_state_address: "5/4/140"
+    target_temperature_address: "5/3/150"
+    target_temperature_state_address: "5/4/150"
+    setpoint_shift_mode: "DPT9002"
+    setpoint_shift_address: "5/3/151"
+    setpoint_shift_state_address: "5/2/155"
+    controller_mode_state_address: "5/2/151"
+    controller_status_state_address: "5/2/152"
+    command_value_state_address: "5/2/153"
+    active_state_address: "5/2/154"
     min_temp: 18.0
-    max_temp: 24.0
+    max_temp: 23.0
   
   - name: "Flur OG"
     temperature_address: "0/1/150"
     temperature_step: 0.5
-    target_temperature_address: "5/3/150"
-    target_temperature_state_address: "5/4/150"
+    target_temperature_address: "5/3/160"
+    target_temperature_state_address: "5/4/160"
+    setpoint_shift_mode: "DPT9002"
+    setpoint_shift_address: "5/3/161"
+    setpoint_shift_state_address: "5/2/165"
+    controller_mode_state_address: "5/2/161"
+    controller_status_state_address: "5/2/162"
+    command_value_state_address: "5/2/163"
+    active_state_address: "5/2/164"
     min_temp: 18.0
-    max_temp: 24.0
+    max_temp: 22.0
 
 # Diagnostic messages
 sensor:
-  - name: "diagnostic_text_kitchen_dining_living"
+  - name: "Diagnosetext Küche/Ess/Wohnbereich"
     state_address: "5/5/2"
     sync_state: "init"
     type: "string"
@@ -168,3 +252,94 @@ sensor:
     sync_state: "init"
     type: "string"
     entity_category: "diagnostic"
+
+# diagnostic states
+binary_sensor:
+    - name: "Heizmodus Sommer/Winter"
+      state_address: "5/1/0"
+      sync_state: "init"
+      device_class: "heat"
+
+    - name: "Störung Heizungsaktor EG"
+      state_address: "5/2/200"
+      sync_state: "init"
+      device_class: "problem"
+      entity_category: "diagnostic"
+
+    - name: "Störung Heizungsaktor OG"
+      state_address: "5/2/201"
+      sync_state: "init"
+      device_class: "problem"
+      entity_category: "diagnostic"
+
+    - name: "Störung Küche/Wohn/Essbereich"
+      state_address: "5/2/20"
+      sync_state: "init"
+      device_class: "problem"
+      entity_category: "diagnostic"
+    
+    - name: "Störung Heizkreis Bad EG" 
+      state_address: "5/2/40"
+      sync_state: "init"
+      device_class: "problem"
+      entity_category: "diagnostic"
+
+    - name: "Störung Heizkreis HWR" 
+      state_address: "5/2/50"
+      sync_state: "init"
+      device_class: "problem"
+      entity_category: "diagnostic"
+
+    - name: "Störung Heizkreis Diele" 
+      state_address: "5/2/60"
+      sync_state: "init"
+      device_class: "problem"
+      entity_category: "diagnostic"
+    
+    - name: "Störung Heizkreis Büro" 
+      state_address: "5/2/70"
+      sync_state: "init"
+      device_class: "problem"
+      entity_category: "diagnostic"
+
+    - name: "Störung Heizkreis Speisekammer" 
+      state_address: "5/2/90"
+      sync_state: "init"
+      device_class: "problem"
+      entity_category: "diagnostic"
+
+    - name: "Störung Heizkreis Kinderzimmer Süd" 
+      state_address: "5/2/110"
+      sync_state: "init"
+      device_class: "problem"
+      entity_category: "diagnostic"
+
+    - name: "Störung Heizkreis Kinderzimmer Nord" 
+      state_address: "5/2/120"
+      sync_state: "init"
+      device_class: "problem"
+      entity_category: "diagnostic"
+
+    - name: "Störung Heizkreis Bad OG" 
+      state_address: "5/2/130"
+      sync_state: "init"
+      device_class: "problem"
+      entity_category: "diagnostic"
+
+    - name: "Störung Heizkreis Schlafzimmer" 
+      state_address: "5/2/140"
+      sync_state: "init"
+      device_class: "problem"
+      entity_category: "diagnostic"
+
+    - name: "Störung Heizkreis Ankleide" 
+      state_address: "5/2/150"
+      sync_state: "init"
+      device_class: "problem"
+      entity_category: "diagnostic"
+
+    - name: "Störung Heizkreis Flur OG" 
+      state_address: "5/2/160"
+      sync_state: "init"
+      device_class: "problem"
+      entity_category: "diagnostic"

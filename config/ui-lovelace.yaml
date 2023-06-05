@@ -1,9 +1,5 @@
 title: EFH Kiefer
 views:
-  - title: Übersicht
-    strategy:
-      type: original-states
-
   - title: Luftqualität
     theme: dark-mode
     cards: 
