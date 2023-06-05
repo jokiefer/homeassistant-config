@@ -1,0 +1,19 @@
+views:
+  - title: Kinderzimmer Süd
+    path: child-south
+   
+  - title: Kinderzimmer Nord
+    path: child-north
+
+  - title: Bad
+    path: bath
+    icon: mdi:bathtub
+
+  - title: Schlafzimmer
+    path: master-bedroom
+
+  - title: Ankleide
+    path: robe
+
+  - title: Flur
+    path: corridor

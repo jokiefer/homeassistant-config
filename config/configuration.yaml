@@ -19,13 +19,23 @@ homeassistant:
 lovelace:
   mode: yaml
   dashboards:
-    lovelace-generated: # Needs to contain a hyphen (-)
+    knx-diagnostics:
       mode: yaml
-      filename: notexist.yaml
-      title: Generated
+      filename: dashboards/diagnostics.yaml
+      title: Diagnose
       icon: mdi:tools
       show_in_sidebar: true
       require_admin: true
+    ground-floor:
+      mode: yaml
+      filename: dashboards/ground_floor.yaml
+      title: Erdgeschoss
+      icon: mdi:home-floor-0
+    first-floor:
+      mode: yaml
+      filename: dashboards/first_floor.yaml
+      title: Obergeschoss
+      icon: mdi:home-floor-1
 
 # Text to speech
 tts:

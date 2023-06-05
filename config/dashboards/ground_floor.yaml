@@ -1,0 +1,53 @@
+views:
+  - title: Küche
+    path: kitchen
+    icon: mdi:countertop
+    cards:
+    - title: Lichter
+      type: entities
+      icon: mdi:lightbulb
+      entities:
+        - light.kueche_arbeitsplatte
+        - light.kueche_kochinsel
+    - title: Beschattung
+      type: entities
+      icon: mdi:window-shutter
+      entities:
+        - cover.kuechenfenster
+        - cover.hebe_schiebe_links
+        - binary_sensor.hebe_schiebe_links
+
+
+  - title: Essbereich
+    path: dining-room
+    icon: mdi:silverware
+
+
+  - title: Wohnzimmer
+    path: living-room
+    icon: mdi:sofa
+
+
+  - title: Bad
+    path: bath
+    icon: mdi:bathtub
+
+
+  - title: Hauswirtschaftsraum
+    path: utility-room
+    icon: mdi:heat-pump
+
+
+  - title: Diele
+    path: hallway
+    icon: mdi:coat-rack
+
+
+  - title: Garderobe
+    path: wardrobe
+    icon: mdi:hanger
+
+    
+  - title: Speisekammer
+    path: larder
+    icon: mdi:bookshelf

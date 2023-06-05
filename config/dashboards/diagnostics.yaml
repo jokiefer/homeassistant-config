@@ -1,0 +1,97 @@
+views:
+  - title: Jalousien
+    path: jal
+    icon: mdi:window-shutter
+    cards:
+    - title: Küchenfenster
+      type: entities
+      entities:
+        - cover.kuechenfenster
+        - type: divider
+        - sensor.diagnosetext_kuechenfenster
+      footer:
+        type: buttons
+        entites:
+          - entity: button.fahrzeitmessung_starten_kuechenfenster
+            icon: mdi:history
+          - entity: switch.beschattung_automatik_kuechenfenster
+            icon: mdi:window-shutter-auto
+    
+
+  - title: Heizung
+    path: heating
+    icon: mdi:heat-pump
+
+
+  - title: Sensoren
+    path: sensors
+    icon: mdi:speedometer
+    cards:
+      - title: Temperaturen
+        type: history-graph
+        entities:
+          - type: entity
+            entity: climate.kuechen__ess__wohnbereich
+            attribute: temperature
+          - type: entity
+            entity: climate.bad_eg
+            attribute: temperature
+          - type: entity
+            entity: climate.hwr
+            attribute: temperature
+          - type: entity
+            entity: climate.diele
+            attribute: temperature
+          - type: entity
+            entity: climate.buero
+            attribute: temperature
+          - type: entity
+            entity: climate.speisekammer
+            attribute: temperature
+          - type: entity
+            entity: climate.kind_1
+            attribute: temperature
+          - type: entity
+            entity: climate.kind_2
+            attribute: temperature
+          - type: entity
+            entity: climate.bad_og
+            attribute: temperature
+          - type: entity
+            entity: climate.schlafzimmer
+            attribute: temperature
+          - type: entity
+            entity: climate.ankleide
+            attribute: temperature
+          - type: entity
+            entity: climate.flur_og
+            attribute: temperature
+
+      - title: Luftfeuchte
+        type: history-graph
+        icon: mdi:water-percent
+        entities:
+          - sensor.realative_luftfeuchte_essbereich
+          - sensor.realative_luftfeuchte_bad_eg
+          - sensor.realative_luftfeuchte_hwr
+          - sensor.realative_luftfeuchte_buero
+          - sensor.realative_luftfeuchte_gardarobe
+          - sensor.realative_luftfeuchte_kind_1
+          - sensor.realative_luftfeuchte_kind_2
+          - sensor.realative_luftfeuchte_bad_og
+          - sensor.realative_luftfeuchte_flur_og
+          - sensor.realative_luftfeuchte_garage
+
+      - title: VOC
+        type: history-graph
+        entities:
+          - sensor.voc_essbereich
+          - sensor.voc_flur_og
+
+      - title: CO2
+        type: history-graph
+        entities:
+          - sensor.co2_essbereich
+          - sensor.co2_flur_og
+
+      
