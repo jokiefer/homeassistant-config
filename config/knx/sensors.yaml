@@ -173,3 +173,184 @@ sensor:
     sync_state: "init"
     type: "ppm"
 
+  ###############################
+  # Diagnostic heating
+  ###############################
+
+  - name: "Diagnosetext Heizkreis Küchen-/Ess-/Wohnbereich"
+    state_address: "5/5/2"
+    sync_state: "init"
+    type: "string"
+    entity_category: "diagnostic"
+
+  - name: "Diagnosetext Heizkreis Bad EG"
+    state_address: "5/5/3"
+    sync_state: "init"
+    type: "string"
+    entity_category: "diagnostic"
+
+  - name: "Diagnosetext Heizkreis HWR"
+    state_address: "5/5/4"
+    sync_state: "init"
+    type: "string"
+    entity_category: "diagnostic"
+  
+  - name: "Diagnosetext Heizkreis Diele"
+    state_address: "5/5/5"
+    sync_state: "init"
+    type: "string"
+    entity_category: "diagnostic"
+  
+  - name: "Diagnosetext Heizkreis Büro"
+    state_address: "5/5/6"
+    sync_state: "init"
+    type: "string"
+    entity_category: "diagnostic"
+  
+  - name: "Diagnosetext Heizkreis Speisekammer"
+    state_address: "5/5/8"
+    sync_state: "init"
+    type: "string"
+    entity_category: "diagnostic"
+  
+  - name: "Diagnosetext Heizkreis Kind 1"
+    state_address: "5/5/9"
+    sync_state: "init"
+    type: "string"
+    entity_category: "diagnostic"
+  
+  - name: "Diagnosetext Heizkreis Kind 2"
+    state_address: "5/5/10"
+    sync_state: "init"
+    type: "string"
+    entity_category: "diagnostic"
+  
+  - name: "Diagnosetext Heizkreis Bad OG"
+    state_address: "5/5/11"
+    sync_state: "init"
+    type: "string"
+    entity_category: "diagnostic"
+  
+  - name: "Diagnosetext Heizkreis Schlafzimmer"
+    state_address: "5/5/12"
+    sync_state: "init"
+    type: "string"
+    entity_category: "diagnostic"
+  
+  - name: "Diagnosetext Heizkreis Ankleide"
+    state_address: "5/5/13"
+    sync_state: "init"
+    type: "string"
+    entity_category: "diagnostic"
+  
+  - name: "Diagnosetext Heizkreis Flur OG"
+    state_address: "5/5/14"
+    sync_state: "init"
+    type: "string"
+    entity_category: "diagnostic"
+
+  ###############################
+  # Diagnostic covers
+  ###############################
+
+  - name: "Diagnosetext Küchenfenster"
+    state_address: "4/4/0"
+    type: "string"
+    sync_state: "init"
+    entity_category: "diagnostic"
+
+  - name: "Diagnosetext Hebe/Schiebe links"
+    state_address: "4/4/10"
+    type: "string"
+    sync_state: "init"
+    entity_category: "diagnostic"
+
+  - name: "Diagnosetext Hebe/Schiebe rechts"
+    state_address: "4/4/20"
+    type: "string"
+    sync_state: "init"
+    entity_category: "diagnostic"
+
+  - name: "Diagnosetext Bad EG"
+    state_address: "4/4/30"
+    type: "string"
+    sync_state: "init"
+    entity_category: "diagnostic"
+
+  - name: "Diagnosetext Büro Ostwand"
+    state_address: "4/4/40"
+    type: "string"
+    sync_state: "init"
+    entity_category: "diagnostic"
+
+  - name: "Diagnosetext Büro Südwand"
+    state_address: "4/4/50"
+    type: "string"
+    sync_state: "init"
+    entity_category: "diagnostic"
+
+  - name: "Diagnosetext Speisekammer"
+    state_address: "4/4/60"
+    type: "string"
+    sync_state: "init"
+    entity_category: "diagnostic"
+
+  - name: "Diagnosetext Kind 1 Südwand"
+    state_address: "4/4/70"
+    type: "string"
+    sync_state: "init"
+    entity_category: "diagnostic"
+
+  - name: "Diagnosetext Kind 1 Westwand"
+    state_address: "4/4/80"
+    type: "string"
+    sync_state: "init"
+    entity_category: "diagnostic"
+
+  - name: "Diagnosetext Kind 2 Westwand"
+    state_address: "4/4/90"
+    type: "string"
+    sync_state: "init"
+    entity_category: "diagnostic"
+
+  - name: "Diagnosetext Kind 2 Nordwand"
+    state_address: "4/4/100"
+    type: "string"
+    sync_state: "init"
+    entity_category: "diagnostic"
+
+  - name: "Diagnosetext Bad OG Dusche"
+    state_address: "4/4/110"
+    type: "string"
+    sync_state: "init"
+    entity_category: "diagnostic"
+
+  - name: "Diagnosetext Bad OG Badewanne Nordwand"
+    state_address: "4/4/120"
+    type: "string"
+    sync_state: "init"
+    entity_category: "diagnostic"
+
+  - name: "Diagnosetext Bad OG Badewanne Ostwand"
+    state_address: "4/4/130"
+    type: "string"
+    sync_state: "init"
+    entity_category: "diagnostic"
+
+  - name: "Diagnosetext Schlafzimmer"
+    state_address: "4/4/140"
+    type: "string"
+    sync_state: "init"
+    entity_category: "diagnostic"
+
+  - name: "Diagnosetext Ankleide"
+    state_address: "4/4/150"
+    type: "string"
+    sync_state: "init"
+    entity_category: "diagnostic"
+
+  - name: "Diagnosetext Flur OG"
+    state_address: "4/4/160"
+    type: "string"
+    sync_state: "init"
+    entity_category: "diagnostic"

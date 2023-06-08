@@ -89,7 +89,7 @@ climate:
     min_temp: 18.0
     max_temp: 21.0
 
-  - name: "Kind 1"
+  - name: "Kinderzimmer Süd"
     temperature_address: "0/1/100"
     temperature_step: 0.5
     target_temperature_address: "5/3/110"
@@ -104,7 +104,7 @@ climate:
     min_temp: 18.0
     max_temp: 23.0
 
-  - name: "Kind 2"
+  - name: "Kinderzimmer Nord"
     temperature_address: "0/1/110"
     temperature_step: 0.5
     target_temperature_address: "5/3/120"
@@ -178,168 +178,4 @@ climate:
     active_state_address: "5/2/164"
     min_temp: 18.0
     max_temp: 22.0
-
-# Diagnostic messages
-sensor:
-  - name: "Diagnosetext Küche/Ess/Wohnbereich"
-    state_address: "5/5/2"
-    sync_state: "init"
-    type: "string"
-    entity_category: "diagnostic"
-
-  - name: "Diagnosetext Heizkreis Bad EG"
-    state_address: "5/5/3"
-    sync_state: "init"
-    type: "string"
-    entity_category: "diagnostic"
-
-  - name: "Diagnosetext Heizkreis HWR"
-    state_address: "5/5/4"
-    sync_state: "init"
-    type: "string"
-    entity_category: "diagnostic"
-  
-  - name: "Diagnosetext Heizkreis Diele"
-    state_address: "5/5/5"
-    sync_state: "init"
-    type: "string"
-    entity_category: "diagnostic"
-  
-  - name: "Diagnosetext Heizkreis Büro"
-    state_address: "5/5/6"
-    sync_state: "init"
-    type: "string"
-    entity_category: "diagnostic"
-  
-  - name: "Diagnosetext Heizkreis Speisekammer"
-    state_address: "5/5/8"
-    sync_state: "init"
-    type: "string"
-    entity_category: "diagnostic"
-  
-  - name: "Diagnosetext Heizkreis Kind 1"
-    state_address: "5/5/9"
-    sync_state: "init"
-    type: "string"
-    entity_category: "diagnostic"
-  
-  - name: "Diagnosetext Heizkreis Kind 2"
-    state_address: "5/5/10"
-    sync_state: "init"
-    type: "string"
-    entity_category: "diagnostic"
-  
-  - name: "Diagnosetext Heizkreis Bad OG"
-    state_address: "5/5/11"
-    sync_state: "init"
-    type: "string"
-    entity_category: "diagnostic"
-  
-  - name: "Diagnosetext Heizkreis Schlafzimmer"
-    state_address: "5/5/12"
-    sync_state: "init"
-    type: "string"
-    entity_category: "diagnostic"
-  
-  - name: "Diagnosetext Heizkreis Ankleide"
-    state_address: "5/5/13"
-    sync_state: "init"
-    type: "string"
-    entity_category: "diagnostic"
-  
-  - name: "Diagnosetext Heizkreis Flur OG"
-    state_address: "5/5/14"
-    sync_state: "init"
-    type: "string"
-    entity_category: "diagnostic"
-
-# diagnostic states
-binary_sensor:
-    - name: "Heizmodus Sommer/Winter"
-      state_address: "5/1/0"
-      sync_state: "init"
-      device_class: "heat"
-
-    - name: "Störung Heizungsaktor EG"
-      state_address: "5/2/200"
-      sync_state: "init"
-      device_class: "problem"
-      entity_category: "diagnostic"
-
-    - name: "Störung Heizungsaktor OG"
-      state_address: "5/2/201"
-      sync_state: "init"
-      device_class: "problem"
-      entity_category: "diagnostic"
-
-    - name: "Störung Küche/Wohn/Essbereich"
-      state_address: "5/2/20"
-      sync_state: "init"
-      device_class: "problem"
-      entity_category: "diagnostic"
     
-    - name: "Störung Heizkreis Bad EG" 
-      state_address: "5/2/40"
-      sync_state: "init"
-      device_class: "problem"
-      entity_category: "diagnostic"
-
-    - name: "Störung Heizkreis HWR" 
-      state_address: "5/2/50"
-      sync_state: "init"
-      device_class: "problem"
-      entity_category: "diagnostic"
-
-    - name: "Störung Heizkreis Diele" 
-      state_address: "5/2/60"
-      sync_state: "init"
-      device_class: "problem"
-      entity_category: "diagnostic"
-    
-    - name: "Störung Heizkreis Büro" 
-      state_address: "5/2/70"
-      sync_state: "init"
-      device_class: "problem"
-      entity_category: "diagnostic"
-
-    - name: "Störung Heizkreis Speisekammer" 
-      state_address: "5/2/90"
-      sync_state: "init"
-      device_class: "problem"
-      entity_category: "diagnostic"
-
-    - name: "Störung Heizkreis Kinderzimmer Süd" 
-      state_address: "5/2/110"
-      sync_state: "init"
-      device_class: "problem"
-      entity_category: "diagnostic"
-
-    - name: "Störung Heizkreis Kinderzimmer Nord" 
-      state_address: "5/2/120"
-      sync_state: "init"
-      device_class: "problem"
-      entity_category: "diagnostic"
-
-    - name: "Störung Heizkreis Bad OG" 
-      state_address: "5/2/130"
-      sync_state: "init"
-      device_class: "problem"
-      entity_category: "diagnostic"
-
-    - name: "Störung Heizkreis Schlafzimmer" 
-      state_address: "5/2/140"
-      sync_state: "init"
-      device_class: "problem"
-      entity_category: "diagnostic"
-
-    - name: "Störung Heizkreis Ankleide" 
-      state_address: "5/2/150"
-      sync_state: "init"
-      device_class: "problem"
-      entity_category: "diagnostic"
-
-    - name: "Störung Heizkreis Flur OG" 
-      state_address: "5/2/160"
-      sync_state: "init"
-      device_class: "problem"
-      entity_category: "diagnostic"
