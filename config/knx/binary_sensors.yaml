@@ -93,3 +93,43 @@ binary_sensor:
     sync_state: "init"
     device_class: "problem"
     entity_category: "diagnostic"
+
+  - name: "Bewegung Bad EG"
+    state_address: "2/4/40"
+    sync_state: "init"
+    device_class: "motion"
+
+  - name: "Bewegung HWR"
+    state_address: "2/4/50"
+    sync_state: "init"
+    device_class: "motion"
+
+  - name: "Bewegung Diele Haustür"
+    state_address: "2/4/60"
+    sync_state: "init"
+    device_class: "motion"
+
+  - name: "Bewegung Diele Treppe"
+    state_address: "2/4/61"
+    sync_state: "init"
+    device_class: "motion"
+
+  - name: "Bewegung Gardarobe"
+    state_address: "2/4/80"
+    sync_state: "init"
+    device_class: "motion"
+
+  - name: "Bewegung Speisekammer"
+    state_address: "2/4/90"
+    sync_state: "init"
+    device_class: "motion"
+
+  - name: "Bewegung Bad OG"
+    state_address: "2/4/130"
+    sync_state: "init"
+    device_class: "motion"
+
+  - name: "Bewegung Flur OG"
+    state_address: "2/4/160"
+    sync_state: "init"
+    device_class: "motion"
