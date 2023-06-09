@@ -16,6 +16,20 @@ views:
             icon: mdi:history
           - entity: switch.beschattung_automatik_kuchenfenster
             icon: mdi:window-shutter-auto
+            
+    - title: Hebe-/Schiebe links
+      type: entities
+      entities:
+        - cover.hebe_schiebe_links
+        - type: divider
+        - sensor.diagnosetext_hebe_schiebe_links
+      footer:
+        type: buttons
+        entities:
+          - entity: button.fahrzeitmessung_starten_hebe_schiebe_links
+            icon: mdi:history
+          - entity: switch.beschattung_automatik_hebe_schiebe_links
+            icon: mdi:window-shutter-auto
     
 
   - title: Heizung
@@ -27,7 +41,7 @@ views:
     path: sensors
     icon: mdi:speedometer
     cards:
-      - title: Temperaturen
+      - title: Temperaturen EG
         type: history-graph
         entities:
           - type: entity
@@ -48,6 +62,10 @@ views:
           - type: entity
             entity: climate.speisekammer
             attribute: temperature
+
+      - title: Temperaturen OG
+        type: history-graph
+        entities:
           - type: entity
             entity: climate.kinderzimmer_sud
             attribute: temperature

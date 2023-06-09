@@ -16,6 +16,11 @@ views:
         - cover.kuechenfenster
         - cover.hebe_schiebe_links
         - binary_sensor.hebe_schiebe_links
+    - title: Heizung
+      type: entities
+      icon: mdi:heating-coil
+      entities:
+        - climate.kuchen_ess_wohnbereich
 
 
   - title: Essbereich
