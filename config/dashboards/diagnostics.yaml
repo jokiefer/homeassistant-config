@@ -6,15 +6,15 @@ views:
     - title: Küchenfenster
       type: entities
       entities:
-        - cover.kuechenfenster
+        - cover.kuchenfenster
         - type: divider
-        - sensor.diagnosetext_kuechenfenster
+        - sensor.diagnosetext_kuchenfenster
       footer:
         type: buttons
-        entites:
-          - entity: button.fahrzeitmessung_starten_kuechenfenster
+        entities:
+          - entity: button.fahrzeitmessung_starten_kuchenfenster
             icon: mdi:history
-          - entity: switch.beschattung_automatik_kuechenfenster
+          - entity: switch.beschattung_automatik_kuchenfenster
             icon: mdi:window-shutter-auto
     
 
