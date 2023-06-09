@@ -1,6 +1,5 @@
 binary_sensor:
-  - entity_id: "bs_ls_open_state"
-    name: "Hebe/Schiebe links"
+  - name: "Hebe/Schiebe links"
     state_address: "3/1/0"
     sync_state: "init"
     device_class: "door"
