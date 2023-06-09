@@ -31,7 +31,7 @@ views:
         type: history-graph
         entities:
           - type: entity
-            entity: climate.kuechen__ess__wohnbereich
+            entity: climate.kuchen_ess_wohnbereich
             attribute: temperature
           - type: entity
             entity: climate.bad_eg
@@ -43,16 +43,16 @@ views:
             entity: climate.diele
             attribute: temperature
           - type: entity
-            entity: climate.buero
+            entity: climate.buro
             attribute: temperature
           - type: entity
             entity: climate.speisekammer
             attribute: temperature
           - type: entity
-            entity: climate.kind_1
+            entity: climate.kinderzimmer_sud
             attribute: temperature
           - type: entity
-            entity: climate.kind_2
+            entity: climate.kinderzimmer_nord
             attribute: temperature
           - type: entity
             entity: climate.bad_og
@@ -74,13 +74,13 @@ views:
           - sensor.realative_luftfeuchte_essbereich
           - sensor.realative_luftfeuchte_bad_eg
           - sensor.realative_luftfeuchte_hwr
-          - sensor.realative_luftfeuchte_buero
+          - sensor.realative_luftfeuchte_buro
           - sensor.realative_luftfeuchte_gardarobe
           - sensor.realative_luftfeuchte_kind_1
           - sensor.realative_luftfeuchte_kind_2
           - sensor.realative_luftfeuchte_bad_og
           - sensor.realative_luftfeuchte_flur_og
-          - sensor.realative_luftfeuchte_garage
+          #- sensor.realative_luftfeuchte_garage
 
       - title: VOC
         type: history-graph
