@@ -1,19 +1,174 @@
 views:
   - title: Kinderzimmer Süd
     path: child-south
-   
+    icon: mdi:human-child
+    cards:
+      - title: Lichter
+        type: entities
+        icon: mdi:lightbulb
+        entities:
+          - light.licht_kind_1_decke
+          - light.licht_kind_1_wand
+      - title: Beschattung
+        type: entities
+        icon: mdi:window-shutter
+        entities:
+          - cover.kind_sud_sudwand
+          - cover.kind_sud_westwand
+          - switch.beschattung_automatik_kind_sud_sudfenster
+          - switch.beschattung_automatik_kind_sud_westfenster
+      - title: Heizung
+        type: entities
+        icon: mdi:heating-coil
+        entities:
+          - climate.kinderzimmer_sud
+          - binary_sensor.storung_heizkreis_kinderzimmer_sud
+          # TODO: bedingte anzeige bei Störung
+          - sensor.diagnosetext_heizkreis_kind_1
+      - title: Luftqualität
+        type: entities
+        icon: mdi:air-filter
+        entities:
+          - sensor.relative_luftfeuchte_kind_1
+          - sensor.taupunkttemperatur_kind_1
+
   - title: Kinderzimmer Nord
     path: child-north
+    icon: mdi:human-child
+    cards:
+      - title: Lichter
+        type: entities
+        icon: mdi:lightbulb
+        entities:
+          - light.licht_kind_2_decke
+          - light.licht_kind_2_wand
+      - title: Beschattung
+        type: entities
+        icon: mdi:window-shutter
+        entities:
+          - cover.kind_sud_sudwand
+          - cover.kind_sud_westwand
+          - switch.beschattung_automatik_kind_nord_westfenster
+          - switch.beschattung_automatik_kind_nord_nordfenster
+      - title: Heizung
+        type: entities
+        icon: mdi:heating-coil
+        entities:
+          - climate.kinderzimmer_nord
+          - binary_sensor.storung_heizkreis_kinderzimmer_nord
+          # TODO: bedingte anzeige bei Störung
+          - sensor.diagnosetext_heizkreis_kind_2
+      - title: Luftqualität
+        type: entities
+        icon: mdi:air-filter
+        entities:
+          - sensor.relative_luftfeuchte_kind_2
+          - sensor.taupunkttemperatur_kind_2
 
   - title: Bad
     path: bath
     icon: mdi:bathtub
+    cards:
+      - title: Lichter
+        type: entities
+        icon: mdi:lightbulb
+        entities:
+          - switch.licht_bad_og_handbetrieb
+          # Bewegung/Präsenz
+          - sensor.bad_og
+      - title: Beschattung
+        type: entities
+        icon: mdi:window-shutter
+        entities:
+          - cover.bad_og_dusche
+          - cover.bad_og_badewanne_nordwand
+          - cover.bad_og_badewanne_ostwand
+          - switch.beschattung_automatik_bad_og_ostfenster
+      - title: Heizung
+        type: entities
+        icon: mdi:heating-coil
+        entities:
+          - climate.bad_og
+          - binary_sensor.storung_heizkreis_bad_og
+          # TODO: bedingte anzeige bei Störung
+          - sensor.diagnosetext_heizkreis_bad_og
+      - title: Luftqualität
+        type: entities
+        icon: mdi:air-filter
+        entities:
+          - sensor.relative_luftfeuchte_bad_og
 
   - title: Schlafzimmer
     path: master-bedroom
+    icon: mdi:bed
+    cards:
+      - title: Lichter
+        type: entities
+        icon: mdi:lightbulb
+        entities:
+          - light.licht_schlafzimmer_decke
+          - light.licht_schlafzimmer_tv_wand
+          - light.licht_schlafzimmer_nachtlicht_links
+          - light.licht_schlafzimmer_nachtlicht_rechts
+      - title: Beschattung
+        type: entities
+        icon: mdi:window-shutter
+        entities:
+          - cover.schlafzimmer
+          - switch.beschattung_automatik_schlafzimmer
+      - title: Heizung
+        type: entities
+        icon: mdi:heating-coil
+        entities:
+          - climate.schlafzimmer
+          - binary_sensor.storung_heizkreis_schlafzimmer
+          # TODO: bedingte anzeige bei Störung
+          - sensor.diagnosetext_schlafzimmer
 
   - title: Ankleide
     path: robe
+    icon: mdi:wardrobe
+    cards:
+      - title: Lichter
+        type: entities
+        icon: mdi:lightbulb
+        entities:
+          - light.licht_ankleide
+      - title: Beschattung
+        type: entities
+        icon: mdi:window-shutter
+        entities:
+          - cover.ankleide
+          - switch.beschattung_automatik_ankleide
+      - title: Heizung
+        type: entities
+        icon: mdi:heating-coil
+        entities:
+          - climate.ankleide
+          - binary_sensor.storung_heizkreis_ankleide
+          # TODO: bedingte anzeige bei Störung
+          - sensor.diagnosetext_ankleide
 
   - title: Flur
     path: corridor
+    icon: mdi:floor-plan
+    cards:
+      - title: Lichter
+        type: entities
+        icon: mdi:lightbulb
+        entities:
+          - light.licht_flur_og
+      - title: Beschattung
+        type: entities
+        icon: mdi:window-shutter
+        entities:
+          - cover.flur_og
+          - switch.beschattung_automatik_flur_og
+      - title: Heizung
+        type: entities
+        icon: mdi:heating-coil
+        entities:
+          - climate.flur_og
+          - binary_sensor.storung_heizkreis_flur_og
+          # TODO: bedingte anzeige bei Störung
+          - sensor.diagnosetext_flur_og

@@ -1,0 +1,10 @@
+views:
+  - title: Spitzboden
+    path: attic
+    icon: mdi:home-roof
+    cards:
+      - title: Lichter
+        type: entities
+        icon: mdi:lightbulb
+        entities:
+          - switch.licht_spitzboden

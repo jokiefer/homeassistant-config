@@ -1,58 +1,157 @@
 views:
-  - title: Küche
+  - title: Küche / Essbereich
     path: kitchen
     icon: mdi:countertop
     cards:
-    - title: Lichter
-      type: entities
-      icon: mdi:lightbulb
-      entities:
-        - light.kueche_arbeitsplatte
-        - light.kueche_kochinsel
-    - title: Beschattung
-      type: entities
-      icon: mdi:window-shutter
-      entities:
-        - cover.kuechenfenster
-        - cover.hebe_schiebe_links
-        - binary_sensor.hebe_schiebe_links
-    - title: Heizung
-      type: entities
-      icon: mdi:heating-coil
-      entities:
-        - climate.kuchen_ess_wohnbereich
-
-
-  - title: Essbereich
-    path: dining-room
-    icon: mdi:silverware
+      - title: Lichter
+        type: entities
+        icon: mdi:lightbulb
+        entities:
+          - light.kueche_arbeitsplatte
+          - light.kueche_kochinsel
+          - light.essbereich
+      - title: Beschattung
+        type: entities
+        icon: mdi:window-shutter
+        entities:
+          - cover.kuechenfenster
+          - cover.hebe_schiebe_links
+          - cover.hebe_schiebe_rechts
+          - binary_sensor.hebe_schiebe_links
+          - switch.beschattung_automatik_kuchenfenster
+          - switch.beschattung_automatik_hebe_schiebe_links
+          - switch.beschattung_automatik_hebe_schiebe_rechts
+      - title: Heizung
+        type: entities
+        icon: mdi:heating-coil
+        entities:
+          - climate.kuchen_ess_wohnbereich
+          - binary_sensor.storung_kuche_wohn_essbereich
+          # TODO: bedingte anzeige bei Störung
+          - sensor.diagnosetext_heizkreis_kuchen_ess_wohnbereich
+      - title: Luftqualität
+        type: entities
+        icon: mdi:air-filter
+        entities:
+          - sensor.relative_luftfeuchte_essbereich
+          - sensor.voc_essbereich
+          - sensor.co2_essbereich
 
 
   - title: Wohnzimmer
     path: living-room
     icon: mdi:sofa
+    cards:
+      - title: Lichter
+        type: entities
+        icon: mdi:lightbulb
+        entities:
+          - light.wohnbereich_couch
+          - light.licht_wohnbereich_tv_wand
 
 
   - title: Bad
     path: bath
     icon: mdi:bathtub
+    cards:
+      - title: Lichter
+        type: entities
+        icon: mdi:lightbulb
+        entities:
+          - switch.licht_bad_eg_handbetrieb
+          # Bewegung/Präsenz
+          - sensor.bad_eg
+      - title: Beschattung
+        type: entities
+        icon: mdi:window-shutter
+        entities:
+          - cover.bad_eg
+      - title: Heizung
+        type: entities
+        icon: mdi:heating-coil
+        entities:
+          - climate.bad_eg
+          - binary_sensor.storung_heizkreis_bad_eg
+          # TODO: bedingte anzeige bei Störung
+          - sensor.diagnosetext_heizkreis_bad_eg
+      - title: Luftqualität
+        type: entities
+        icon: mdi:air-filter
+        entities:
+          - sensor.relative_luftfeuchte_bad_eg
 
 
   - title: Hauswirtschaftsraum
     path: utility-room
     icon: mdi:heat-pump
-
+    cards:
+      - title: Lichter
+        type: entities
+        icon: mdi:lightbulb
+        entities:
+          - switch.licht_hwr_handbetrieb
+          # Bewegung/Präsenz
+          - sensor.hwr
+      - title: Heizung
+        type: entities
+        icon: mdi:heating-coil
+        entities:
+          - climate.hwr
+          - binary_sensor.storung_heizkreis_hwr
+        # TODO: bedingte anzeige bei Störung
+          - sensor.diagnosetext_heizkreis_hwr
+      - title: Luftqualität
+        type: entities
+        icon: mdi:air-filter
+        entities:
+          - sensor.relative_luftfeuchte_hwr
+          - sensor.absolute_luftfeuchte_hwr
+          - sensor.taupunkttemperatur_hwr
 
   - title: Diele
     path: hallway
-    icon: mdi:coat-rack
-
+    icon: mdi:floor-plan
+    cards:
+      - title: Lichter
+        type: entities
+        icon: mdi:lightbulb
+        entities:
+          - switch.licht_diele_handbetrieb
+          - sensor.diele_pm1
+          - sensor.diele_pm2
+      - title: Heizung
+        type: entities
+        icon: mdi:heating-coil
+        entities:
+          - climate.diele
+          - binary_sensor.storung_heizkreis_diele
+        # TODO: bedingte anzeige bei Störung
+          - sensor.diagnosetext_heizkreis_diele
 
   - title: Garderobe
     path: wardrobe
     icon: mdi:hanger
-
+    cards:
+      - title: Lichter
+        type: entities
+        icon: mdi:lightbulb
+        entities:
+          - switch.licht_gardarobe_handbetrieb
+          - sensor.gardarobe
+      - title: Luftqualität
+        type: entities
+        icon: mdi:air-filter
+        entities:
+          - sensor.relative_luftfeuchte_gardarobe
+          - sensor.absolute_luftfeuchte_gardarobe
     
   - title: Speisekammer
     path: larder
     icon: mdi:bookshelf
+    cards:
+      - title: Lichter
+        type: entities
+        icon: mdi:lightbulb
+        entities:
+          - switch.licht_speisekammer_handbetrieb
+          - sensor.speisekammer

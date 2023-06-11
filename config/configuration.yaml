@@ -36,6 +36,11 @@ lovelace:
       filename: dashboards/first_floor.yaml
       title: Obergeschoss
       icon: mdi:home-floor-1
+    second-floor:
+      mode: yaml
+      filename: dashboards/second_floor.yaml
+      title: Spitzboden
+      icon: mdi:mdi:home-floor-a
 
 # Text to speech
 tts:
