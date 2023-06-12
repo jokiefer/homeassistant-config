@@ -1,7 +1,7 @@
 views:
   - title: Spitzboden
     path: attic
-    icon: mdi:home-roof
+    icon: mdi:home-floor-a
     cards:
       - title: Lichter
         type: entities

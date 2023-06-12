@@ -252,6 +252,24 @@ sensor:
   ###############################
   # Diagnostic covers
   ###############################
+  
+  - name: "Diagnosetext JA1"
+    state_address: "4/4/201"
+    type: "string"
+    sync_state: "init"
+    entity_category: "diagnostic"
+
+  - name: "Diagnosetext JA2"
+    state_address: "4/4/202"
+    type: "string"
+    sync_state: "init"
+    entity_category: "diagnostic"
+
+  - name: "Diagnosetext JA3"
+    state_address: "4/4/203"
+    type: "string"
+    sync_state: "init"
+    entity_category: "diagnostic"
 
   - name: "Diagnosetext Küchenfenster"
     state_address: "4/4/0"

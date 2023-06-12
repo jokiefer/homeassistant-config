@@ -3,6 +3,16 @@ views:
     path: jal
     icon: mdi:window-shutter
     cards:
+    - title: Beschattung Status Aktor 1
+      type: "custom:mdt-jal-aktor-diag"
+      entity: sensor.diagnosetext_ja1
+    - title: Beschattung Status Aktor 2
+      type: "custom:mdt-jal-aktor-diag"
+      entity: sensor.diagnosetext_ja2
+    - title: Beschattung Status Aktor 3
+      type: "custom:mdt-jal-aktor-diag"
+      entity: sensor.diagnosetext_ja3
+
     - title: Küchenfenster
       type: entities
       entities:

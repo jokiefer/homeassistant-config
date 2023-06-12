@@ -15,6 +15,19 @@
                 "--remove-orphans",
                 "home-assistant"
             ]
+        },
+        {
+            "label": "Docker-Compose: start postgres",
+            "type": "shell",
+            "command": "docker-compose",
+            "args": [
+                "-f",
+                "${workspaceFolder}/docker-compose.yml",
+                "up",
+                "--build",
+                "--remove-orphans",
+                "postgres"
+            ]
         }
     ]
 }

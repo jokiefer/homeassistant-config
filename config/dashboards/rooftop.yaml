@@ -1,0 +1,32 @@
+views:
+  - title: Dach
+    path: rooftop
+    icon: mdi:home-roof
+    cards:
+      - title: Temperatur
+        type: history-graph
+        icon: mdi:temperature-celsius
+        entities:
+          - type: entity
+            entity: weather.dach
+            attribute: temperature
+      - title: Windgeschwindigkeit
+        type: history-graph
+        icon: mdi:weather-windy
+        entities:
+          - type: entity
+            entity: weather.dach
+            attribute: wind_speed
+      - title: Helligkeit
+        type: history-graph
+        icon: mdi:theme-light-dark
+        entities:
+          - type: entity
+            entity: weather.dach
+            attribute: brightness_south
+          - type: entity
+            entity: weather.dach
+            attribute: brightness_west
+          - type: entity
+            entity: weather.dach
+            attribute: brightness_east
