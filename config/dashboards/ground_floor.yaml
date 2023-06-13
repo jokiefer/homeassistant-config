@@ -2,10 +2,18 @@ views:
   - title: Übersicht
     path: overview
     type: panel
+    # style: |
+    #   img {
+    #     width:auto;
+    #     height:auto;
+    #     max-height:90vh;
+    #   }
     cards:
       - title: Übersicht
         type: picture-elements
         image: /local/eg.png
+        dark_mode_image: /local/eg_inverted.png
+           
         elements:
           - entity: light.kuche_arbeitsplatte
             type: state-icon
@@ -17,6 +25,56 @@ views:
             style: 
               left: 15%
               top: 80%
+          - entity: light.wohnbereich_couch
+            type: state-icon
+            style: 
+              left: 10%
+              top: 45%
+          - entity: light.licht_wohnbereich_tv_wand
+            type: state-icon
+            style: 
+              left: 27%
+              top: 45%
+          - entity: switch.licht_bad_eg_handbetrieb
+            type: state-icon
+            icon: mdi:lightbulb
+            style: 
+              left: 40%
+              top: 45%
+          - entity: switch.licht_hwr_handbetrieb
+            type: state-icon
+            icon: mdi:lightbulb
+            style: 
+              left: 50%
+              top: 45%
+          - entity: switch.licht_diele_handbetrieb
+            type: state-icon
+            icon: mdi:lightbulb
+            style: 
+              left: 40%
+              top: 62%
+          - entity: switch.licht_gardarobe_handbetrieb
+            type: state-icon
+            icon: mdi:lightbulb
+            style: 
+              left: 43%
+              top: 72%
+          - entity: light.licht_buro
+            type: state-icon
+            style: 
+              left: 50%
+              top: 85%
+          - entity: switch.licht_speisekammer_handbetrieb
+            type: state-icon
+            icon: mdi:lightbulb
+            style: 
+              left: 31%
+              top: 85%
+          - entity: light.licht_garage_antrieb
+            type: state-icon
+            style: 
+              left: 79%
+              top: 35%
           - entity: cover.hebe_schiebe_links
             type: state-icon
             style: 
@@ -27,6 +85,37 @@ views:
             style: 
               left: 2%
               top: 71%
+          - entity: cover.bad_eg
+            type: state-icon
+            style: 
+              left: 40%
+              top: 32%
+          - entity: cover.buro_ostwand
+            type: state-icon
+            style: 
+              left: 56%
+              top: 85%
+          - entity: cover.buro_sudwand
+            type: state-icon
+            style: 
+              left: 48%
+              top: 94%
+          - entity: cover.speisekammer
+            type: state-icon
+            style: 
+              left: 31%
+              top: 94%
+          - entity: cover.kuchenfenster
+            type: state-icon
+            style: 
+              left: 17%
+              top: 94%
+          - entity: cover.garagentor
+            type: state-icon
+            style: 
+              left: 79%
+              top: 55%
+              
           - entity: binary_sensor.hebe_schiebe_links
             type: state-icon
             style: 
@@ -38,6 +127,36 @@ views:
             style: 
               left: 3%
               top: 60%
+          - entity: climate.bad_eg
+            type: state-label
+            attribute: temperature
+            style: 
+              left: 37%
+              top: 54.5%
+          - entity: climate.hwr
+            type: state-label
+            attribute: temperature
+            style: 
+              left: 56.5%
+              top: 46.5%
+          - entity: climate.buro
+            type: state-label
+            attribute: temperature
+            style: 
+              left: 50.5%
+              top: 72.5%
+          - entity: climate.speisekammer
+            type: state-label
+            attribute: temperature
+            style: 
+              left: 30%
+              top: 80%
+          - entity: sensor.relative_luftfeuchte_gardarobe
+            type: state-label
+            style: 
+              left: 45%
+              top: 75%
+          
           
   - title: Küche / Essbereich
     path: kitchen

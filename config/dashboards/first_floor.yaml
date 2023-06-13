@@ -1,4 +1,33 @@
 views:
+  - title: Übersicht
+    path: overview
+    type: panel
+    cards:
+      - title: Übersicht
+        type: picture-elements
+        image: /local/og.png
+        elements:
+          - entity: light.licht_kind_1_decke
+            type: state-icon
+            style: 
+              left: 20%
+              top: 80%
+          - entity: light.licht_kind_1_wand
+            type: state-icon
+            style: 
+              left: 41%
+              top: 60%
+          - entity: light.licht_kind_2_decke
+            type: state-icon
+            style: 
+              left: 20%
+              top: 20%
+          - entity: light.licht_kind_2_wand
+            type: state-icon
+            style: 
+              left: 41%
+              top: 40%
+
   - title: Kinderzimmer Süd
     path: child-south
     icon: mdi:human-child
@@ -9,14 +38,19 @@ views:
         entities:
           - light.licht_kind_1_decke
           - light.licht_kind_1_wand
+
       - title: Beschattung
         type: entities
         icon: mdi:window-shutter
         entities:
-          - cover.kind_sud_sudwand
-          - cover.kind_sud_westwand
-          - switch.beschattung_automatik_kind_sud_sudfenster
-          - switch.beschattung_automatik_kind_sud_westfenster
+          - entity: cover.kind_sud_sudwand
+            secondary_info: title-position
+          - entity: switch.beschattung_automatik_kind_sud_sudfenster
+          - type: divider
+          - entity: cover.kind_sud_westwand
+            secondary_info: title-position
+          - entity: switch.beschattung_automatik_kind_sud_westfenster
+
       - title: Heizung
         type: entities
         icon: mdi:heating-coil
