@@ -1,4 +1,44 @@
 views:
+  - title: Übersicht
+    path: overview
+    type: panel
+    cards:
+      - title: Übersicht
+        type: picture-elements
+        image: /local/eg.png
+        elements:
+          - entity: light.kuche_arbeitsplatte
+            type: state-icon
+            style: 
+              left: 15%
+              top: 90%
+          - entity: light.kuche_kochinsel
+            type: state-icon
+            style: 
+              left: 15%
+              top: 80%
+          - entity: cover.hebe_schiebe_links
+            type: state-icon
+            style: 
+              left: 2%
+              top: 82%
+          - entity: cover.hebe_schiebe_rechts
+            type: state-icon
+            style: 
+              left: 2%
+              top: 71%
+          - entity: binary_sensor.hebe_schiebe_links
+            type: state-icon
+            style: 
+              left: 2%
+              top: 87%
+          - entity: climate.kuchen_ess_wohnbereich
+            type: state-label
+            attribute: temperature
+            style: 
+              left: 3%
+              top: 60%
+          
   - title: Küche / Essbereich
     path: kitchen
     icon: mdi:countertop
@@ -7,14 +47,14 @@ views:
         type: entities
         icon: mdi:lightbulb
         entities:
-          - light.kueche_arbeitsplatte
-          - light.kueche_kochinsel
+          - light.kuche_arbeitsplatte
+          - light.kuche_kochinsel
           - light.essbereich
       - title: Beschattung
         type: entities
         icon: mdi:window-shutter
         entities:
-          - cover.kuechenfenster
+          - cover.kuchenfenster
           - cover.hebe_schiebe_links
           - cover.hebe_schiebe_rechts
           - binary_sensor.hebe_schiebe_links

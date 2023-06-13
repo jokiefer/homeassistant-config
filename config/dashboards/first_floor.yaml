@@ -157,7 +157,7 @@ views:
         type: entities
         icon: mdi:lightbulb
         entities:
-          - light.licht_flur_og
+          - light.licht_flur_og_handbetrieb
       - title: Beschattung
         type: entities
         icon: mdi:window-shutter

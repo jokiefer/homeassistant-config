@@ -3,32 +3,9 @@ services:
   home-assistant:
     image: homeassistant/home-assistant:2023.6
     volumes:
-      - storage:/config/.storage
+      #- storage:/config/.storage
       - ./config:/config
 #      - /etc/localtime:/etc/localtime:ro
     restart: unless-stopped
     ports:
       - 8123:8123
-    networks:
-      - internal
-
-  postgres:
-    image: postgres:15.3-alpine3.18
-    hostname: homeassistant-db
-    volumes:
-      - type: volume
-        source: db-data
-        target: /var/lib/postgresql/data
-    networks:
-      - internal
-    env_file:
-      - ./docker/postgres/db.env
-
-
-volumes:
-  storage:
-  db-data:
-  log:
-
-networks:
-  internal: null

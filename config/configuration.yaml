@@ -16,17 +16,12 @@ homeassistant:
    - type: legacy_api_password
      api_password: !secret http_password
 
-recorder:
-  db_url: postgresql://homeassistant:somesecret@homeassistant-db/homeassistant
-
 lovelace:
   mode: yaml
 
   resources:
     - type: module
       url: local/mdt-jal-aktor-diag.js
-    - type: module
-      url: local/mdt-jal-channel-diag.js
 
   dashboards:
     knx-diagnostics:

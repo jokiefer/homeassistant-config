@@ -35,6 +35,10 @@ switch:
     address: "4/3/90"
     state_address: "4/3/91"
 
+  - name: "Beschattung Automatik Kind Nord Nordfenster"
+    address: "4/3/100"
+    state_address: "4/3/101"
+
   - name: "Beschattung Automatik Bad OG Ostfenster"
     address: "4/3/130"
     state_address: "4/3/131"
