@@ -31,8 +31,8 @@ light:
     state_address: "1/1/91"
 
   - name: "Licht Kind 2 Decke"
-    address: "1/0/50"
-    state_address: "1/1/50"
+    address: "1/0/100"
+    state_address: "1/1/100"
   - name: "Licht Kind 2 Wand"
     address: "1/0/101"
     state_address: "1/1/101"
