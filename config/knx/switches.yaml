@@ -2,58 +2,72 @@ switch:
   - name: "Beschattung Automatik Küchenfenster"
     address: "4/3/1"
     state_address: "4/3/0"
+    invert: true
 
   - name: "Beschattung Automatik Hebe/Schiebe links"
-    address: "4/3/10"
-    state_address: "4/3/11"
+    address: "4/3/11"
+    state_address: "4/3/10"
+    invert: true
 
   - name: "Beschattung Automatik Hebe/Schiebe rechts"
-    address: "4/3/20"
-    state_address: "4/3/21"
+    address: "4/3/21"
+    state_address: "4/3/20"
+    invert: true
 
   - name: "Beschattung Automatik Büro Ostfenster"
-    address: "4/3/40"
-    state_address: "4/3/41"
+    address: "4/3/41"
+    state_address: "4/3/40"
+    invert: true
 
   - name: "Beschattung Automatik Büro Südfenster"
-    address: "4/3/50"
-    state_address: "4/3/51"
+    address: "4/3/51"
+    state_address: "4/3/50"
+    invert: true
 
   - name: "Beschattung Automatik Speisekammer"
-    address: "4/3/60"
-    state_address: "4/3/61"
+    address: "4/3/61"
+    state_address: "4/3/60"
+    invert: true
 
   - name: "Beschattung Automatik Kind Süd Südfenster"
-    address: "4/3/70"
-    state_address: "4/3/71"
+    address: "4/3/71"
+    state_address: "4/3/70"
+    invert: true
 
   - name: "Beschattung Automatik Kind Süd Westfenster"
-    address: "4/3/80"
-    state_address: "4/3/81"
+    address: "4/3/81"
+    state_address: "4/3/80"
+    invert: true
 
   - name: "Beschattung Automatik Kind Nord Westfenster"
-    address: "4/3/90"
-    state_address: "4/3/91"
+    address: "4/3/91"
+    state_address: "4/3/90"
+    invert: true
 
   - name: "Beschattung Automatik Kind Nord Nordfenster"
-    address: "4/3/100"
-    state_address: "4/3/101"
+    address: "4/3/101"
+    state_address: "4/3/100"
+    invert: true
 
   - name: "Beschattung Automatik Bad OG Ostfenster"
-    address: "4/3/130"
-    state_address: "4/3/131"
+    address: "4/3/131"
+    state_address: "4/3/130"
+    invert: true
 
   - name: "Beschattung Automatik Schlafzimmer"
-    address: "4/3/140"
-    state_address: "4/3/141"
+    address: "4/3/141"
+    state_address: "4/3/140"
+    invert: true
 
   - name: "Beschattung Automatik Ankleide"
-    address: "4/3/150"
-    state_address: "4/3/151"
+    address: "4/3/151"
+    state_address: "4/3/150"
+    invert: true
 
   - name: "Beschattung Automatik Flur OG"
-    address: "4/3/160"
-    state_address: "4/3/161"
+    address: "4/3/161"
+    state_address: "4/3/160"
+    invert: true
 
   - name: "Licht Bad EG Handbetrieb"
     address: "2/0/30"
