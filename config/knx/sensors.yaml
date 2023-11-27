@@ -164,12 +164,12 @@ sensor:
   # CO2    0/6/xxx
   ###############################
   - name: "CO2 Essbereich"
-    state_address: "0/6/22"
+    state_address: "0/5/22"
     sync_state: "init"
     type: "ppm"
 
   - name: "CO2 Flur OG"
-    state_address: "0/6/162"
+    state_address: "0/5/162"
     sync_state: "init"
     type: "ppm"
 
@@ -372,3 +372,103 @@ sensor:
     type: "string"
     sync_state: "init"
     entity_category: "diagnostic"
+
+
+
+  - name: Heizung Zählerstand relativ
+    state_address: "0/7/2"
+    type: active_energy_kwh
+    sync_state: "init"
+
+    
+  - name: Heizung Zählerstand Total
+    state_address: "0/7/3"
+    type: active_energy_kwh
+    sync_state: "init"
+
+  - name: Heizung Wirkleistung Gesamt
+    state_address: "0/7/4"
+    type: power
+    sync_state: "init"
+    
+  - name: Heizung Wirkleistung L1
+    state_address: "0/7/5"
+    type: power
+    sync_state: "init"
+    
+  - name: Heizung Wirkleistung L2
+    state_address: "0/7/6"
+    type: power
+    sync_state: "init"
+  
+  - name: Heizung Wirkleistung L3
+    state_address: "0/7/7"
+    type: power
+    sync_state: "init"
+    
+
+  - name: Heizung Spannung L1
+    state_address: "0/7/8"
+    type: electric_potential
+    sync_state: "init"
+    
+  - name: Heizung Spannung L2
+    state_address: "0/7/9"
+    type: electric_potential
+    sync_state: "init"
+  
+  - name: Heizung Spannung L3
+    state_address: "0/7/10"
+    type: electric_potential
+    sync_state: "init"
+
+
+  - name: Heizung Stromstärke L1
+    state_address: "0/7/11"
+    type: electric_current
+    sync_state: "init"
+    
+  - name: Heizung Stromstärke L2
+    state_address: "0/7/12"
+    type: electric_current
+    sync_state: "init"
+  
+  - name: Heizung Stromstärke L3
+    state_address: "0/7/13"
+    type: electric_current
+    sync_state: "init"
+
+
+
+  - name: Heizung Leistungsfaktor L1
+    state_address: "0/7/14"
+    type: powerfactor
+    sync_state: "init"
+    
+  - name: Heizung Leistungsfaktor L2
+    state_address: "0/7/15"
+    type: powerfactor
+    sync_state: "init"
+  
+  - name: Heizung Leistungsfaktor L3
+    state_address: "0/7/16"
+    type: powerfactor
+    sync_state: "init"
+
+
+
+  - name: Heizung Wirkenergie L1
+    state_address: "0/7/17"
+    type: active_energy_kwh
+    sync_state: "init"
+    
+  - name: Heizung Wirkenergie L2
+    state_address: "0/7/18"
+    type: active_energy_kwh
+    sync_state: "init"
+  
+  - name: Heizung Wirkenergie L3
+    state_address: "0/7/19"
+    type: active_energy_kwh
+    sync_state: "init"
+
