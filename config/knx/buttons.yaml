@@ -33,3 +33,10 @@ button:
     address: "4/5/150"
   - name: "Fahrzeitmessung starten Flur OG"
     address: "4/5/160"
+
+
+  - name: "Heizung relativer Zähler zurücksetzen"
+    address: "0/7/0"
+
+  - name: "Heizung Zählerstände abfragen"
+    address: "0/7/1"

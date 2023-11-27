@@ -1,0 +1,79 @@
+number:
+  - name: Heizung Zählerstand relativ
+    address: "0/7/2"
+    type: active_energy_kwh
+    
+  - name: Heizung Zählerstand Total
+    address: "0/7/3"
+    type: active_energy_kwh
+
+  - name: Heizung Wirkleistung Gesamt
+    address: "0/7/4"
+    type: power
+    
+  - name: Heizung Wirkleistung L1
+    address: "0/7/5"
+    type: power
+    
+  - name: Heizung Wirkleistung L2
+    address: "0/7/6"
+    type: power
+  
+  - name: Heizung Wirkleistung L3
+    address: "0/7/7"
+    type: power
+    
+
+  - name: Heizung Spannung L1
+    address: "0/7/8"
+    type: electric_potential
+    
+  - name: Heizung Spannung L2
+    address: "0/7/9"
+    type: electric_potential
+  
+  - name: Heizung Spannung L3
+    address: "0/7/10"
+    type: electric_potential
+
+
+  - name: Heizung Stromstärke L1
+    address: "0/7/11"
+    type: electric_current
+    
+  - name: Heizung Stromstärke L2
+    address: "0/7/12"
+    type: electric_current
+  
+  - name: Heizung Stromstärke L3
+    address: "0/7/13"
+    type: electric_current
+
+
+
+  - name: Heizung Leistungsfaktor L1
+    address: "0/7/14"
+    type: powerfactor
+    
+  - name: Heizung Leistungsfaktor L2
+    address: "0/7/15"
+    type: powerfactor
+  
+  - name: Heizung Leistungsfaktor L3
+    address: "0/7/16"
+    type: powerfactor
+
+
+
+  - name: Heizung Wirkenergie L1
+    address: "0/7/17"
+    type: active_energy_kwh
+    
+  - name: Heizung Wirkenergie L2
+    address: "0/7/18"
+    type: active_energy_kwh
+  
+  - name: Heizung Wirkenergie L3
+    address: "0/7/19"
+    type: active_energy_kwh
+
