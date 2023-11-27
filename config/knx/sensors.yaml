@@ -6,61 +6,84 @@ sensor:
     state_address: "0/0/1"
     sync_state: "init"
     type: "humidity"
+    state_class: measurement
+
 
   - name: "relative Luftfeuchte Bad EG"
     state_address: "0/0/40"
     sync_state: "init"
     type: "humidity"
+    state_class: measurement
+
 
   - name: "relative Luftfeuchte HWR"
     state_address: "0/0/50"
     sync_state: "init"
     type: "humidity"
+    state_class: measurement
+
 
   - name: "absolute Luftfeuchte HWR"
     state_address: "0/0/51"
     sync_state: "init"
     type: "enthalpy"
+    state_class: measurement
+
 
   - name: "relative Luftfeuchte Büro"
     state_address: "0/0/70"
     sync_state: "init"
     type: "humidity"
+    state_class: measurement
+
 
   - name: "relative Luftfeuchte Gardarobe"
     state_address: "0/0/80"
     sync_state: "init"
     type: "humidity"
+    state_class: measurement
+
 
   - name: "absolute Luftfeuchte Gardarobe"
     state_address: "0/0/81"
     sync_state: "init"
     type: "enthalpy"
+    state_class: measurement
+
 
   - name: "relative Luftfeuchte Kind 1"
     state_address: "0/0/100"
     sync_state: "init"
     type: "humidity"
+    state_class: measurement
+
 
   - name: "relative Luftfeuchte Kind 2"
     state_address: "0/0/110"
     sync_state: "init"
     type: "humidity"
+    state_class: measurement
+
 
   - name: "relative Luftfeuchte Bad OG"
     state_address: "0/0/130"
     sync_state: "init"
     type: "humidity"
+    state_class: measurement
+
 
   - name: "relative Luftfeuchte Flur OG"
     state_address: "0/0/160"
     sync_state: "init"
     type: "humidity"
+    state_class: measurement
+
 
   - name: "relative Luftfeuchte Garage"
     state_address: "0/0/200"
     sync_state: "init"
     type: "humidity"
+    state_class: measurement
 
 
   ###############################
@@ -100,6 +123,7 @@ sensor:
     state_address: "0/2/200"
     sync_state: "init"
     type: "temperature"
+    
 
 
   ##############################
@@ -153,11 +177,14 @@ sensor:
     state_address: "0/5/23"
     sync_state: "init"
     type: "ppm"
+    state_class: measurement
+
 
   - name: "VOC Flur OG"
     state_address: "0/5/163"
     sync_state: "init"
     type: "ppm"
+    state_class: measurement
 
 
   ###############################
@@ -379,64 +406,75 @@ sensor:
     state_address: "0/7/2"
     type: active_energy_kwh
     sync_state: "init"
-
+    state_class: total
     
   - name: Heizung Zählerstand Total
     state_address: "0/7/3"
     type: active_energy_kwh
     sync_state: "init"
+    state_class: total_increasing
 
   - name: Heizung Wirkleistung Gesamt
     state_address: "0/7/4"
     type: power
     sync_state: "init"
+    state_class: measurement
     
   - name: Heizung Wirkleistung L1
     state_address: "0/7/5"
     type: power
     sync_state: "init"
-    
+    state_class: measurement
+
   - name: Heizung Wirkleistung L2
     state_address: "0/7/6"
     type: power
     sync_state: "init"
+    state_class: measurement
   
   - name: Heizung Wirkleistung L3
     state_address: "0/7/7"
     type: power
     sync_state: "init"
+    state_class: measurement
     
 
   - name: Heizung Spannung L1
     state_address: "0/7/8"
     type: electric_potential
     sync_state: "init"
+    state_class: measurement
     
   - name: Heizung Spannung L2
     state_address: "0/7/9"
     type: electric_potential
     sync_state: "init"
+    state_class: measurement
   
   - name: Heizung Spannung L3
     state_address: "0/7/10"
     type: electric_potential
     sync_state: "init"
+    state_class: measurement
 
 
   - name: Heizung Stromstärke L1
     state_address: "0/7/11"
     type: electric_current
     sync_state: "init"
+    state_class: measurement
     
   - name: Heizung Stromstärke L2
     state_address: "0/7/12"
     type: electric_current
     sync_state: "init"
+    state_class: measurement
   
   - name: Heizung Stromstärke L3
     state_address: "0/7/13"
     type: electric_current
     sync_state: "init"
+    state_class: measurement
 
 
 
@@ -444,16 +482,19 @@ sensor:
     state_address: "0/7/14"
     type: powerfactor
     sync_state: "init"
+    state_class: measurement
     
   - name: Heizung Leistungsfaktor L2
     state_address: "0/7/15"
     type: powerfactor
     sync_state: "init"
+    state_class: measurement
   
   - name: Heizung Leistungsfaktor L3
     state_address: "0/7/16"
     type: powerfactor
     sync_state: "init"
+    state_class: measurement
 
 
 
@@ -461,14 +502,17 @@ sensor:
     state_address: "0/7/17"
     type: active_energy_kwh
     sync_state: "init"
+    state_class: measurement
     
   - name: Heizung Wirkenergie L2
     state_address: "0/7/18"
     type: active_energy_kwh
     sync_state: "init"
+    state_class: measurement
   
   - name: Heizung Wirkenergie L3
     state_address: "0/7/19"
     type: active_energy_kwh
     sync_state: "init"
+    state_class: measurement
 
