@@ -1,9 +1,9 @@
 light: 
-  - name: "Küche Arbeitsplatte"
+  - name: "Kueche Arbeitsplatte"
     address: "1/0/0"
     state_address: "1/1/0"
 
-  - name: "Küche Kochinsel"
+  - name: "Kueche Kochinsel"
     address: "1/0/1"
     state_address: "1/1/1"
 
@@ -19,7 +19,7 @@ light:
     address: "1/0/21"
     state_address: "1/1/21"
 
-  - name: "Licht Büro"
+  - name: "Licht Buero"
     address: "1/0/60"
     state_address: "1/1/60"
 
@@ -58,7 +58,7 @@ light:
     address: "1/0/150"
     state_address: "1/1/150"
 
-  - name: "Licht Garage Stellplätze"
+  - name: "Licht Garage Stellplaetze"
     address: "1/0/170"
     state_address: "1/1/170"
 

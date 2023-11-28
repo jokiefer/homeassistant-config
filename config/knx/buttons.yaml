@@ -1,5 +1,5 @@
 button:
-  - name: "Fahrzeitmessung starten Küchenfenster"
+  - name: "Fahrzeitmessung starten Kuechenfenster"
     address: "4/5/0"
   - name: "Fahrzeitmessung starten Hebe/Schiebe links"
     address: "4/5/10"
@@ -7,13 +7,13 @@ button:
     address: "4/5/20"
   - name: "Fahrzeitmessung starten Bad EG"
     address: "4/5/30"
-  - name: "Fahrzeitmessung starten Büro Ostwand"
+  - name: "Fahrzeitmessung starten Buero Ostwand"
     address: "4/5/40"
-  - name: "Fahrzeitmessung starten Büro Südwand"
+  - name: "Fahrzeitmessung starten Buero Suedwand"
     address: "4/5/50"
   - name: "Fahrzeitmessung starten Speisekammer"
     address: "4/5/60"
-  - name: "Fahrzeitmessung starten Kind 1 Südwand"
+  - name: "Fahrzeitmessung starten Kind 1 Suedwand"
     address: "4/5/70"
   - name: "Fahrzeitmessung starten Kind 1 Westwand"
     address: "4/5/80"
@@ -35,8 +35,8 @@ button:
     address: "4/5/160"
 
 
-  - name: "Heizung relativer Zähler zurücksetzen"
+  - name: "Heizung relativer Zaehler zuruecksetzen"
     address: "0/7/0"
 
-  - name: "Heizung Zählerstände abfragen"
+  - name: "Heizung Zaehlerstaende abfragen"
     address: "0/7/1"

@@ -1,5 +1,5 @@
 fan:
-  - name: "Lüftung"
+  - name: "Lueftung"
     address: 
       - "6/0/1"
       - "6/0/2"

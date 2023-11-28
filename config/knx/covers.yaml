@@ -1,5 +1,5 @@
 cover:
-  - name: "Küchenfenster"
+  - name: "Kuechenfenster"
     move_long_address: "4/0/0"
     stop_address: "4/0/1"
     position_address: "4/1/0"
@@ -31,7 +31,7 @@ cover:
     angle_address: "4/1/31"
     angle_state_address: "4/2/31"
 
-  - name: "Büro Ostwand"
+  - name: "Buero Ostwand"
     move_long_address: "4/0/40"
     stop_address: "4/0/41"
     position_address: "4/1/40"
@@ -39,7 +39,7 @@ cover:
     angle_address: "4/1/41"
     angle_state_address: "4/2/41"
 
-  - name: "Büro Südwand"
+  - name: "Buero Suedwand"
     move_long_address: "4/0/50"
     stop_address: "4/0/51"
     position_address: "4/1/50"
@@ -55,14 +55,14 @@ cover:
     angle_address: "4/1/61"
     angle_state_address: "4/2/61"
 
-  - name: "Kind Süd Südwand"
+  - name: "Kind Sued Suedwand"
     move_long_address: "4/0/70"
     stop_address: "4/0/71"
     position_address: "4/1/70"
     position_state_address: "4/2/70"
     device_class: "shutter"
     
-  - name: "Kind Süd Westwand"
+  - name: "Kind Sued Westwand"
     move_long_address: "4/0/80"
     stop_address: "4/0/81"
     position_address: "4/1/80"

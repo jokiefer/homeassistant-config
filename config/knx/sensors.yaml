@@ -30,7 +30,7 @@ sensor:
     state_class: measurement
 
 
-  - name: "relative Luftfeuchte Büro"
+  - name: "relative Luftfeuchte Buero"
     state_address: "0/0/70"
     sync_state: "init"
     type: "humidity"
@@ -94,7 +94,7 @@ sensor:
     sync_state: "init"
     type: "temperature"
   
-  - name: "Taupunkttemperatur Büro"
+  - name: "Taupunkttemperatur Buero"
     state_address: "0/2/70"
     sync_state: "init"
     type: "temperature"
@@ -204,7 +204,7 @@ sensor:
   # Diagnostic heating
   ###############################
 
-  - name: "Diagnosetext Heizkreis Küchen-/Ess-/Wohnbereich"
+  - name: "Diagnosetext Heizkreis Kuechen-/Ess-/Wohnbereich"
     state_address: "5/5/2"
     sync_state: "init"
     type: "string"
@@ -228,7 +228,7 @@ sensor:
     type: "string"
     entity_category: "diagnostic"
   
-  - name: "Diagnosetext Heizkreis Büro"
+  - name: "Diagnosetext Heizkreis Buero"
     state_address: "5/5/6"
     sync_state: "init"
     type: "string"
@@ -298,7 +298,7 @@ sensor:
     sync_state: "init"
     entity_category: "diagnostic"
 
-  - name: "Diagnosetext Küchenfenster"
+  - name: "Diagnosetext Kuechenfenster"
     state_address: "4/4/0"
     type: "string"
     sync_state: "init"
@@ -322,13 +322,13 @@ sensor:
     sync_state: "init"
     entity_category: "diagnostic"
 
-  - name: "Diagnosetext Büro Ostwand"
+  - name: "Diagnosetext Buero Ostwand"
     state_address: "4/4/40"
     type: "string"
     sync_state: "init"
     entity_category: "diagnostic"
 
-  - name: "Diagnosetext Büro Südwand"
+  - name: "Diagnosetext Buero Suedwand"
     state_address: "4/4/50"
     type: "string"
     sync_state: "init"
@@ -340,7 +340,7 @@ sensor:
     sync_state: "init"
     entity_category: "diagnostic"
 
-  - name: "Diagnosetext Kind 1 Südwand"
+  - name: "Diagnosetext Kind 1 Suedwand"
     state_address: "4/4/70"
     type: "string"
     sync_state: "init"
@@ -402,13 +402,13 @@ sensor:
 
 
 
-  - name: Heizung Zählerstand relativ
+  - name: Heizung Zaehlerstand relativ
     state_address: "0/7/2"
     type: active_energy_kwh
     sync_state: "init"
     state_class: total
     
-  - name: Heizung Zählerstand Total
+  - name: Heizung Zaehlerstand Total
     state_address: "0/7/3"
     type: active_energy_kwh
     sync_state: "init"
@@ -458,19 +458,19 @@ sensor:
     state_class: measurement
 
 
-  - name: Heizung Stromstärke L1
+  - name: Heizung Stromstaerke L1
     state_address: "0/7/11"
     type: electric_current
     sync_state: "init"
     state_class: measurement
     
-  - name: Heizung Stromstärke L2
+  - name: Heizung Stromstaerke L2
     state_address: "0/7/12"
     type: electric_current
     sync_state: "init"
     state_class: measurement
   
-  - name: Heizung Stromstärke L3
+  - name: Heizung Stromstaerke L3
     state_address: "0/7/13"
     type: electric_current
     sync_state: "init"
