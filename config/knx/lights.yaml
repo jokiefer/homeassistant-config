@@ -19,9 +19,29 @@ light:
     address: "1/0/21"
     state_address: "1/1/21"
 
+  - name: "Licht Bad EG sperren"
+    address: "1/2/30"
+    state_address: "1/1/30"
+
+  - name: "Licht HWR Sperren"
+    address: "1/2/40"
+    state_address: "1/1/40"
+
+  - name: "Licht Diele sperren"
+    address: "1/2/50"
+    state_address: "1/1/50"
+
   - name: "Licht Buero"
     address: "1/0/60"
     state_address: "1/1/60"
+
+  - name: "Licht Gardarobe sperren"
+    address: "1/2/70"
+    state_address: "1/1/70"
+
+  - name: "Licht Speisekammer"
+    address: "1/2/80"
+    state_address: "1/1/80"
 
   - name: "Licht Kind 1 Decke"
     address: "1/0/90"
@@ -36,6 +56,10 @@ light:
   - name: "Licht Kind 2 Wand"
     address: "1/0/101"
     state_address: "1/1/101"
+
+  - name: "Licht Bad OG sperren"
+    address: "1/2/110"
+    state_address: "1/1/110"
 
   - name: "Licht Schlafzimmer Decke"
     address: "1/0/120"
@@ -52,6 +76,10 @@ light:
 
   - name: "Licht Ankleide"
     address: "1/0/130"
+    state_address: "1/1/130"
+
+  - name: "Licht Flur OG sperren"
+    address: "1/2/130"
     state_address: "1/1/130"
 
   - name: "Licht Terasse"
