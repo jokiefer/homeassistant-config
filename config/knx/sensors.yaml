@@ -661,3 +661,19 @@ sensor:
     type: long_delta_timesec
     sync_state: "init"
     state_class: total_increasing
+
+
+  ### Lüftung
+
+  - name: Temperatur Abluft 
+    state_address: "6/2/2"
+    type: temperature
+    sync_state: "init"
+    state_class: measurement
+
+
+  - name: Temperatur Aussenluft 
+    state_address: "6/2/3"
+    type: temperature
+    sync_state: "init"
+    state_class: measurement
