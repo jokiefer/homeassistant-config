@@ -1,9 +1,9 @@
 fan:
   - name: "Lueftung"
     address: 
-      - "6/0/1"
-      - "6/0/2"
-      - "6/0/3"
-    state_address: 
-      - "6/0/1"
+      - "6/0/0"
+
+    oscillation_state_address:
+      - "6/1/0"
+      - "6/1/1"
     max_step: 3
