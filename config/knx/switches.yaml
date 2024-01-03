@@ -69,6 +69,8 @@ switch:
     state_address: "4/3/160"
     invert: true
 
+
+
   - name: "Licht Bad EG Handbetrieb"
     address: "2/0/30"
     state_address: "2/1/30"
@@ -96,3 +98,8 @@ switch:
   - name: "Licht Flur OG Handbetrieb"
     address: "2/0/140"
     state_address: "2/1/140"
+
+
+  - name: "Lueftung automatik"
+    address: "6/0/11"
+    invert: true

@@ -1,0 +1,8 @@
+number:
+    - name: "Lueftung uebersteuern"
+      address: "6/0/10"
+      type: pulse
+      min: 1
+      max: 3
+      step : 1
+      respond_to_read: true
