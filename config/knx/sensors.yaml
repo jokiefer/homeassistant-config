@@ -665,6 +665,12 @@ sensor:
 
   ### Lüftung
 
+  - name: Temperatur Fortluft 
+    state_address: "6/2/0"
+    type: temperature
+    sync_state: "init"
+    state_class: measurement
+
   - name: Temperatur Abluft 
     state_address: "6/2/2"
     type: temperature

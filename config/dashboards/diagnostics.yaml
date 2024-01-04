@@ -520,4 +520,27 @@ views:
           - sensor.co2_essbereich
           - sensor.co2_flur_og
 
-      
+  - title: KWL
+    path: overview
+    type: panel
+    cards:
+      - title: KWL
+        type: picture-elements
+        image: /local/kwl_bypass_closed.png
+        elements:
+          - entity: sensor.temperatur_abluft
+            type: state-badge
+            style: 
+              left: 71%
+              top: 12%
+          - entity: sensor.temperatur_aussenluft
+            type: state-badge
+            style: 
+              left: 28%
+              top: 12%
+          - entity: sensor.temperatur_fortluft
+            type: state-badge
+            style: 
+              left: 8%
+              top: 42%
+              
