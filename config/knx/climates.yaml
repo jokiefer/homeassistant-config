@@ -102,7 +102,7 @@ climate:
     command_value_state_address: "5/2/113"
     active_state_address: "5/2/114"
     min_temp: 18.0
-    max_temp: 23.0
+    max_temp: 22.0
 
   - name: "Kinderzimmer Nord"
     temperature_address: "0/1/110"
@@ -117,7 +117,7 @@ climate:
     command_value_state_address: "5/2/123"
     active_state_address: "5/2/124"
     min_temp: 18.0
-    max_temp: 23.0
+    max_temp: 22.0
 
   - name: "Bad OG"
     temperature_address: "0/1/120"
@@ -147,7 +147,7 @@ climate:
     command_value_state_address: "5/2/143"
     active_state_address: "5/2/144"
     min_temp: 18.0
-    max_temp: 23.0
+    max_temp: 22.0
 
   - name: "Ankleide"
     temperature_address: "0/1/140"
@@ -162,7 +162,7 @@ climate:
     command_value_state_address: "5/2/153"
     active_state_address: "5/2/154"
     min_temp: 18.0
-    max_temp: 23.0
+    max_temp: 22.0
   
   - name: "Flur OG"
     temperature_address: "0/1/150"
