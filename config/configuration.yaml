@@ -71,4 +71,4 @@ sensor:
         unique_id: "wirkungsgrad_lueftung"
         friendly_name: "Wirkungsgrad Lüftung (kalkuliert)"
         unit_of_measurement: "η"
-        value_template: "{{ states('sensor.temp_zufluft_2') | float / states('sensor.temperatur_abluft') | float}}"
+        value_template: "{{ states('sensor.temp_zufluft') | float / states('sensor.temperatur_abluft') | float}}"
