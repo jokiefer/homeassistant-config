@@ -549,7 +549,7 @@ views:
             style: 
               left: 8%
               top: 42%
-          - entity: sensor.temp_zufluft_2
+          - entity: sensor.temp_zufluft
             type: state-badge
             style: 
               left: 92%
@@ -565,7 +565,7 @@ views:
             style: 
               left: 34%
               top: 27%
-          - entity: binary_sensor.bypass_geoffnet
+          - entity: binary_sensor.bypass_geoeffnet
             type: state-icon
             style: 
               left: 28%
