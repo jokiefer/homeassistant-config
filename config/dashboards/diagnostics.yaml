@@ -576,3 +576,13 @@ views:
               left: 50%
               top: 50%
 
+          - entity: sensor.auslastung_ventilator_zuluft
+            type: state-badge
+            style:
+              left: 77%
+              top: 50%
+          - entity: sensor.auslastung_ventilator_abluft
+            type: state-badge
+            style:
+              left: 23%
+              top: 50%
