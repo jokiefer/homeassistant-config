@@ -533,6 +533,12 @@ views:
             style: 
               left: 71%
               top: 12%
+          - entity: sensor.drehzahl_abluft
+            type: state-badge
+            style: 
+              left: 15%
+              top: 42%
+            unit: u / min
           - entity: sensor.temperatur_aussenluft
             type: state-badge
             style: 
@@ -543,4 +549,30 @@ views:
             style: 
               left: 8%
               top: 42%
-              
+          - entity: sensor.temp_zufluft_2
+            type: state-badge
+            style: 
+              left: 92%
+              top: 43%
+          - entity: sensor.drehzahl_zuluft
+            type: state-badge
+            style: 
+              left: 85%
+              top: 42%
+            unit: u / min
+          - entity: number.lueftung_bypass_schwellwert
+            type: state-badge
+            style: 
+              left: 34%
+              top: 27%
+          - entity: binary_sensor.bypass_geoffnet
+            type: state-icon
+            style: 
+              left: 28%
+              top: 27%
+          - entity: sensor.wirkungsgrad_lueftung
+            type: state-badge
+            style:
+              left: 50%
+              top: 50%
+

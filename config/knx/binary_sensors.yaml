@@ -141,3 +141,11 @@ binary_sensor:
   - name: "Heizung Verdichter/Heizelement inaktiv"
     state_address: "0/7/101"
     sync_state: "init"
+
+
+  ### Lüftung
+
+  - name: "Bypass geoeffnet"
+    state_address: "6/1/3"
+    sync_state: "init"
+    device_class: "opening"

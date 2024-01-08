@@ -677,9 +677,30 @@ sensor:
     sync_state: "init"
     state_class: measurement
 
-
   - name: Temperatur Aussenluft 
     state_address: "6/2/3"
     type: temperature
     sync_state: "init"
     state_class: measurement
+
+
+
+  - name: Drehzahl Zuluft
+    state_address: "6/1/0"
+    type: pulse_2byte
+    sync_state: "init"
+    state_class: measurement
+
+  - name: Drehzahl Abluft
+    state_address: "6/1/1"
+    type: pulse_2byte
+    sync_state: "init"
+    state_class: measurement
+
+  - name: "Auslastung Ventilator Zuluft"
+    state_address: "6/1/61"
+    type: percent
+
+  - name: "Auslastung Ventilator Abluft"
+    state_address: "6/1/62"
+    type: percent

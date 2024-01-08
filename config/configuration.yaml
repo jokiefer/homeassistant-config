@@ -57,3 +57,18 @@ tts:
   - platform: google_translate
 
 knx: !include_dir_merge_named knx/
+
+
+sensor:
+  - platform: template
+    sensors:
+      temp_zufluft:
+        unique_id: "temp_zuluft"
+        friendly_name: "Temperatur Zuluft (kalkuliert)"
+        unit_of_measurement: "°C"
+        value_template: "{{ states('sensor.temperatur_abluft') | float - states('sensor.temperatur_fortluft') | float + states('sensor.temperatur_aussenluft') | float}}"
+      wirkungsgrad_lueftung:
+        unique_id: "wirkungsgrad_lueftung"
+        friendly_name: "Wirkungsgrad Lüftung (kalkuliert)"
+        unit_of_measurement: "η"
+        value_template: "{{ states('sensor.temp_zufluft_2') | float / states('sensor.temperatur_abluft') | float}}"

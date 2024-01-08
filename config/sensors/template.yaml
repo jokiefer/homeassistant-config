@@ -1,5 +1,0 @@
-- name: Temperatur Zuluft (kalkuliert)
-  platform: template
-  sensors:
-    my_sensor:
-      value_template: "{{ states('sensor.temperatur_abluft') | float - states('sensor.temperatur_fortluft') | float + states('sensor.temperatur_aussenluft') | float}}"
