@@ -521,68 +521,199 @@ views:
           - sensor.co2_flur_og
 
   - title: KWL
-    path: overview
+    path: kwl-diag
     type: panel
     cards:
       - title: KWL
         type: picture-elements
         image: /local/kwl_bypass_closed.png
         elements:
-          - entity: sensor.temperatur_abluft
-            type: state-badge
+          
+          # Stufe
+          - type: state-badge
+            entity: switch.lueftung_automatikbetrieb
+            hold_action:
+              action: toggle
             style: 
-              left: 71%
-              top: 12%
-          - entity: sensor.drehzahl_abluft
-            type: state-badge
-            style: 
-              left: 15%
-              top: 42%
-            unit: u / min
-          - entity: sensor.temperatur_aussenluft
-            type: state-badge
-            style: 
-              left: 28%
-              top: 12%
-          - entity: sensor.temperatur_fortluft
-            type: state-badge
-            style: 
-              left: 8%
-              top: 42%
-          - entity: sensor.temp_zufluft
-            type: state-badge
-            style: 
-              left: 92%
-              top: 43%
-          - entity: sensor.drehzahl_zuluft
-            type: state-badge
-            style: 
-              left: 85%
-              top: 42%
-            unit: u / min
+              left: 45%
+              top: 5%
+          - type: conditional 
+            conditions:
+              - entity:  switch.lueftung_automatikbetrieb
+                state: "off"
+            elements:
+              - type: state-badge
+                entity: number.lueftung_uebersteuern
+                style: 
+                  left: 55%
+                  top: 5%
+          
+          # Temperatur Fortluft
+          - type: conditional 
+            conditions:
+              - entity:  binary_sensor.alarm_temeratursensor_fortluft
+                state: "off"
+            elements:
+              - type: state-badge
+                entity: sensor.temperatur_fortluft
+                style: 
+                  left: 35%
+                  top: 71%
+          - type: conditional 
+            conditions:
+              - entity:  binary_sensor.alarm_temeratursensor_fortluft
+                state: "on"
+            elements:
+              - type: state-badge
+                entity: binary_sensor.alarm_temeratursensor_fortluft
+                style: 
+                  left: 35%
+                  top: 71%
+
+          # Temperatur Abluft
+          - type: conditional 
+            conditions:
+              - entity:  binary_sensor.alarm_temperatursensor_abluft
+                state: "off"
+            elements:
+              - type: state-badge
+                entity: sensor.temperatur_abluft
+                style: 
+                  left: 72%
+                  top: 42%
+          - type: conditional 
+            conditions:
+              - entity:  binary_sensor.alarm_temperatursensor_abluft
+                state: "on"
+            elements:
+              - type: state-badge
+                entity: binary_sensor.alarm_temperatursensor_abluft
+                style: 
+                  left: 72%
+                  top: 42%
+
+          # Temperatur Außenluft
+          - type: conditional 
+            conditions:
+              - entity:  binary_sensor.alarm_temperatursensor_aussenluft
+                state: "off"
+            elements:
+              - type: state-badge
+                entity: sensor.temperatur_aussenluft
+                style: 
+                  left: 28%
+                  top: 42%
+          - type: conditional 
+            conditions:
+              - entity:  binary_sensor.alarm_temperatursensor_aussenluft
+                state: "on"
+            elements:
+              - type: state-badge
+                entity: binary_sensor.alarm_temperatursensor_aussenluft
+                style: 
+                  left: 28%
+                  top: 42%
+
+
+          # Bypasssteuerung
           - entity: number.lueftung_bypass_schwellwert
             type: state-badge
             style: 
-              left: 34%
-              top: 27%
-          - entity: binary_sensor.bypass_geoeffnet
-            type: state-icon
+              left: 42%
+              top: 30%
+          - type: conditional
+            conditions:
+              - entity: switch.bypass_klappe
+                state: "on"
+            elements:
+              - type: icon
+                icon: mdi:valve-closed
+                entity: switch.bypass_klappe
+                tap_action:
+                  action: toggle
+                title: "Bypass geschlossen"
+                style:
+                  left: 31%
+                  top: 16%
+                  transform: rotate(90deg)
+          - type: conditional
+            conditions:
+              - entity: switch.bypass_klappe
+                state: "off"
+            elements:
+              - type: icon
+                icon: mdi:valve-open
+                entity: switch.bypass_klappe
+                tap_action:
+                  action: toggle
+                title: "Bypass geöffnet"
+                style:
+                  left: 31%
+                  top: 16%
+                  transform: rotate(90deg)
+       
+
+          # Ventilator Luluft
+          - entity: sensor.drehzahl_zuluft
+            type: state-badge
             style: 
-              left: 28%
-              top: 27%
+              left: 95%
+              top: 42%
+
+          - entity: sensor.auslastung_ventilator_zuluft
+            type: state-label
+            style:
+              left: 84%
+              top: 48%
+
+
+          # Ventilator Abluft
+          - entity: sensor.drehzahl_abluft
+            type: state-badge
+            style: 
+              left: 5%
+              top: 42%
+          
+          - entity: sensor.auslastung_ventilator_abluft
+            type: state-label
+            style:
+              left: 17%
+              top: 48%
+
+
+          # Wirkungsgrad
           - entity: sensor.wirkungsgrad_lueftung
             type: state-badge
             style:
               left: 50%
-              top: 50%
+              top: 60%
 
-          - entity: sensor.auslastung_ventilator_zuluft
-            type: state-badge
-            style:
-              left: 77%
-              top: 50%
-          - entity: sensor.auslastung_ventilator_abluft
-            type: state-badge
-            style:
-              left: 23%
-              top: 50%
+
+  - title: KWL
+    path: kwl
+    icon: mdi:air-filter
+    cards:
+      - type: entities
+        title: Lüftungsanlage
+        
+        entities:
+          - entity: cover.kuchenfenster
+            secondary_info: title-position
+          - type: divider
+          - entity: sensor.diagnosetext_kuchenfenster
+            type: attribute
+            attribute: state
+            icon: mdi:stethoscope
+
+          - type: conditional
+            conditions:
+              - entity: switch.lueftung_automatikbetrieb
+                state: "on"
+            row: number.lueftung_uebersteuern
+
+        footer:
+          type: buttons
+          entities:
+            - entity: switch.lueftung_automatikbetrieb
+              icon: mdi:fan-auto
+            

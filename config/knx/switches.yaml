@@ -100,6 +100,12 @@ switch:
     state_address: "2/1/140"
 
 
-  - name: "Lueftung automatik"
+
+  ### Lüftung
+  - name: "Lueftung Automatikbetrieb"
     address: "6/0/11"
     invert: true
+
+  - name: "Bypass Klappe"
+    address: "6/0/31"
+    state_address: "6/1/31"

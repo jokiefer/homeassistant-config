@@ -665,6 +665,8 @@ sensor:
 
   ### Lüftung
 
+
+  # Messwerte Temperaturen
   - name: Temperatur Fortluft 
     state_address: "6/2/0"
     type: temperature
@@ -683,16 +685,39 @@ sensor:
     sync_state: "init"
     state_class: measurement
 
-
-
-  - name: Drehzahl Zuluft
-    state_address: "6/1/0"
+  # Messwerte Drehzahl
+  - name: "Drehzahl Zuluft"
+    state_address: "6/1/65"
     type: pulse_2byte
     sync_state: "init"
     state_class: measurement
 
-  - name: Drehzahl Abluft
-    state_address: "6/1/1"
+  - name: "Drehzahl Abluft"
+    state_address: "6/1/66"
+    type: pulse_2byte
+    sync_state: "init"
+    state_class: measurement
+  
+  - name: "Drehzahl Sollwert Zuluft"
+    state_address: "6/1/63"
+    type: pulse_2byte
+    sync_state: "init"
+    state_class: measurement
+
+  - name: "Drehzahl Sollwert Abluft"
+    state_address: "6/1/64"
+    type: pulse_2byte
+    sync_state: "init"
+    state_class: measurement
+  
+  - name: "Drehzahl Istwert Zuluft"
+    state_address: "6/1/65"
+    type: pulse_2byte
+    sync_state: "init"
+    state_class: measurement
+
+  - name: "Drehzahl Istwert Abluft"
+    state_address: "6/1/66"
     type: pulse_2byte
     sync_state: "init"
     state_class: measurement
@@ -700,7 +725,43 @@ sensor:
   - name: "Auslastung Ventilator Zuluft"
     state_address: "6/1/61"
     type: percent
+    sync_state: "init"
+    state_class: measurement
 
   - name: "Auslastung Ventilator Abluft"
     state_address: "6/1/62"
     type: percent
+    sync_state: "init"
+    state_class: measurement
+
+  # Messwerte Betriebsstunden
+  - name: Betriebsstunden Stufe 1
+    state_address: "6/1/13"
+    type: time_period_hrs
+    sync_state: "init"
+    state_class: total_increasing
+
+  - name: Betriebsstunden Stufe 2
+    state_address: "6/1/14"
+    type: time_period_hrs
+    sync_state: "init"
+    state_class: total_increasing
+
+  - name: Betriebsstunden Stufe 3
+    state_address: "6/1/15"
+    type: time_period_hrs
+    sync_state: "init"
+    state_class: total_increasing
+
+  - name: Filter Standzeit aktuell
+    state_address: "6/1/11"
+    type: decimal_factor
+    sync_state: "init"
+    state_class: total_increasing
+
+  # Stufe
+  - name: Aktuelle Stufe
+    state_address: "6/1/0"
+    type: 1byte_unsigned
+    sync_state: "init"
+    state_class: measurement
