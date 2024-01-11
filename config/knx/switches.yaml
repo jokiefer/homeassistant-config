@@ -102,10 +102,9 @@ switch:
 
 
   ### Lüftung
-  - name: "Lueftung Automatikbetrieb"
+  - name: "Lueftung Partymodus"
     address: "6/0/11"
-    invert: true
 
-  - name: "Bypass Klappe"
+  - name: "Bypass Klappe öffnen"
     address: "6/0/31"
     state_address: "6/1/31"

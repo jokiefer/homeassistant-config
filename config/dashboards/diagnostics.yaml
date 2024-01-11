@@ -624,7 +624,7 @@ views:
           - type: conditional
             conditions:
               - entity: switch.bypass_klappe
-                state: "on"
+                state: "off"
             elements:
               - type: icon
                 icon: mdi:valve-closed
@@ -639,7 +639,7 @@ views:
           - type: conditional
             conditions:
               - entity: switch.bypass_klappe
-                state: "off"
+                state: "on"
             elements:
               - type: icon
                 icon: mdi:valve-open

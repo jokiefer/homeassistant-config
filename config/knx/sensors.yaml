@@ -686,39 +686,27 @@ sensor:
     state_class: measurement
 
   # Messwerte Drehzahl
-  - name: "Drehzahl Zuluft"
-    state_address: "6/1/65"
-    type: pulse_2byte
-    sync_state: "init"
-    state_class: measurement
-
-  - name: "Drehzahl Abluft"
-    state_address: "6/1/66"
-    type: pulse_2byte
-    sync_state: "init"
-    state_class: measurement
-  
   - name: "Drehzahl Sollwert Zuluft"
     state_address: "6/1/63"
-    type: pulse_2byte
+    type: 2byte_float
     sync_state: "init"
     state_class: measurement
 
   - name: "Drehzahl Sollwert Abluft"
     state_address: "6/1/64"
-    type: pulse_2byte
+    type: 2byte_float
     sync_state: "init"
     state_class: measurement
   
   - name: "Drehzahl Istwert Zuluft"
     state_address: "6/1/65"
-    type: pulse_2byte
+    type: 2byte_float
     sync_state: "init"
     state_class: measurement
 
   - name: "Drehzahl Istwert Abluft"
     state_address: "6/1/66"
-    type: pulse_2byte
+    type: 2byte_float
     sync_state: "init"
     state_class: measurement
 
