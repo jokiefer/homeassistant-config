@@ -497,16 +497,16 @@ views:
         type: history-graph
         icon: mdi:water-percent
         entities:
-          - sensor.realative_luftfeuchte_essbereich
-          - sensor.realative_luftfeuchte_bad_eg
-          - sensor.realative_luftfeuchte_hwr
-          - sensor.realative_luftfeuchte_buro
-          - sensor.realative_luftfeuchte_gardarobe
-          - sensor.realative_luftfeuchte_kind_1
-          - sensor.realative_luftfeuchte_kind_2
-          - sensor.realative_luftfeuchte_bad_og
-          - sensor.realative_luftfeuchte_flur_og
-          #- sensor.realative_luftfeuchte_garage
+          - sensor.relative_luftfeuchte_essbereich
+          - sensor.relative_luftfeuchte_bad_eg
+          - sensor.relative_luftfeuchte_hwr
+          - sensor.relative_luftfeuchte_buero
+          - sensor.relative_luftfeuchte_gardarobe
+          - sensor.relative_luftfeuchte_kind_1
+          - sensor.relative_luftfeuchte_kind_2
+          - sensor.relative_luftfeuchte_bad_og
+          - sensor.relative_luftfeuchte_flur_og
+          - sensor.relative_luftfeuchte_garage
 
       - title: VOC
         type: history-graph
@@ -531,23 +531,19 @@ views:
           
           # Stufe
           - type: state-badge
-            entity: switch.lueftung_automatikbetrieb
-            hold_action:
-              action: toggle
+            entity: sensor.aktuelle_stufe
             style: 
               left: 45%
               top: 5%
-          - type: conditional 
-            conditions:
-              - entity:  switch.lueftung_automatikbetrieb
-                state: "off"
-            elements:
-              - type: state-badge
-                entity: number.lueftung_uebersteuern
-                style: 
-                  left: 55%
-                  top: 5%
-          
+
+          - type: state-badge
+            entity: switch.lueftung_partymodus
+            hold_action:
+              action: toggle
+            style: 
+              left: 55%
+              top: 5%
+
           # Temperatur Fortluft
           - type: conditional 
             conditions:
@@ -707,13 +703,13 @@ views:
 
           - type: conditional
             conditions:
-              - entity: switch.lueftung_automatikbetrieb
+              - entity: switch.lueftung_partymodus
                 state: "on"
             row: number.lueftung_uebersteuern
 
         footer:
           type: buttons
           entities:
-            - entity: switch.lueftung_automatikbetrieb
+            - entity: switch.lueftung_partymodus
               icon: mdi:fan-auto
             
