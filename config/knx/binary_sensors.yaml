@@ -138,9 +138,6 @@ binary_sensor:
     state_address: "0/7/100"
     sync_state: "init"
 
-  - name: "Heizung Verdichter/Heizelement inaktiv"
-    state_address: "0/7/101"
-    sync_state: "init"
 
 
   ### Lüftung

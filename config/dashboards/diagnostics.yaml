@@ -453,45 +453,48 @@ views:
         type: history-graph
         entities:
           - type: entity
-            entity: climate.kuchen_ess_wohnbereich
-            attribute: temperature
+            entity: sensor.temperatur_essbereich_co2_sensor
           - type: entity
-            entity: climate.bad_eg
-            attribute: temperature
+            entity: sensor.temperatur_bad_eg_taster
           - type: entity
-            entity: climate.hwr
-            attribute: temperature
+            entity: sensor.temperatur_bad_eg_praesenzmelder
           - type: entity
-            entity: climate.diele
-            attribute: temperature
+            entity: sensor.temperatur_hwr_feuchtesensor
           - type: entity
-            entity: climate.buro
-            attribute: temperature
+            entity: sensor.temperatur_hwr_praesenzmelder
           - type: entity
-            entity: climate.speisekammer
-            attribute: temperature
+            entity: sensor.temperatur_diele_praesenzmelder_tuer
+          - type: entity
+            entity: sensor.temperatur_diele_praesenzmelder_treppe
+          - type: entity
+            entity: sensor.temperatur_diele_taster
+          - type: entity
+            entity: sensor.temperatur_buero_taster
+          - type: entity
+            entity: sensor.temperatur_garderobe_feuchtesensor
+          - type: entity
+            entity: sensor.temperatur_garderobe_praesenzmelder
+          - type: entity
+            entity: sensor.temperatur_speisekammer_praesenzmelder
+
 
       - title: Temperaturen OG
         type: history-graph
         entities:
           - type: entity
-            entity: climate.kinderzimmer_sud
-            attribute: temperature
+            entity: sensor.temperatur_kind_sued_taster
           - type: entity
-            entity: climate.kinderzimmer_nord
-            attribute: temperature
+            entity: sensor.temperatur_kind_nord_taster
           - type: entity
-            entity: climate.bad_og
-            attribute: temperature
+            entity: sensor.temperatur_bad_og_taster
           - type: entity
-            entity: climate.schlafzimmer
-            attribute: temperature
+            entity: sensor.temperatur_bad_og_praesenzmelder
           - type: entity
-            entity: climate.ankleide
-            attribute: temperature
+            entity: sensor.temperatur_schlafzimmer
           - type: entity
-            entity: climate.flur_og
-            attribute: temperature
+            entity: sensor.temperatur_ankleide
+          - type: entity
+            entity: sensor.temperatur_flur_og
 
       - title: Luftfeuchte
         type: history-graph
@@ -649,8 +652,8 @@ views:
                   transform: rotate(90deg)
        
 
-          # Ventilator Luluft
-          - entity: sensor.drehzahl_zuluft
+          # Ventilator Zuluft
+          - entity: sensor.drehzahl_istwert_zuluft
             type: state-badge
             style: 
               left: 95%
@@ -664,7 +667,7 @@ views:
 
 
           # Ventilator Abluft
-          - entity: sensor.drehzahl_abluft
+          - entity: sensor.drehzahl_istwert_abluft
             type: state-badge
             style: 
               left: 5%
