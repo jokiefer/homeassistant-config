@@ -512,15 +512,6 @@ views:
           - sensor.helligkeit_dach_west
           - sensor.windgeschwindigkeit_dach
 
-
-      - title: Helligkeit Sonne
-        type: history-graph
-        icon: mdi:white-balance-sunny
-        entities:
-          - sensor.helligkeit_dach_ost
-          - sensor.helligkeit_dach_sued
-          - sensor.helligkeit_dach_west
-
       - title: Luftqualität
         type: history-graph
         entities:
