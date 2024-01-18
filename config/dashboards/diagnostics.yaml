@@ -476,7 +476,9 @@ views:
             entity: sensor.temperatur_garderobe_praesenzmelder
           - type: entity
             entity: sensor.temperatur_speisekammer_praesenzmelder
-
+          - type: entity
+            entity: binary_sensor.heizung_verdichter_heizelement_aktiv
+            name: Heizung
 
       - title: Temperaturen OG
         type: history-graph
@@ -495,11 +497,37 @@ views:
             entity: sensor.temperatur_ankleide
           - type: entity
             entity: sensor.temperatur_flur_og
+          - type: entity
+            entity: binary_sensor.heizung_verdichter_heizelement_aktiv
+            name: Heizung
+          
 
-      - title: Luftfeuchte
+
+      - title: Messwerte Dach
         type: history-graph
-        icon: mdi:water-percent
         entities:
+          - sensor.temperatur_dach
+          - sensor.helligkeit_dach_ost
+          - sensor.helligkeit_dach_sued
+          - sensor.helligkeit_dach_west
+          - sensor.windgeschwindigkeit_dach
+
+
+      - title: Helligkeit Sonne
+        type: history-graph
+        icon: mdi:white-balance-sunny
+        entities:
+          - sensor.helligkeit_dach_ost
+          - sensor.helligkeit_dach_sued
+          - sensor.helligkeit_dach_west
+
+      - title: Luftqualität
+        type: history-graph
+        entities:
+          - sensor.voc_essbereich
+          - sensor.voc_flur_og
+          - sensor.co2_essbereich
+          - sensor.co2_flur_og
           - sensor.relative_luftfeuchte_essbereich
           - sensor.relative_luftfeuchte_bad_eg
           - sensor.relative_luftfeuchte_hwr
@@ -510,18 +538,6 @@ views:
           - sensor.relative_luftfeuchte_bad_og
           - sensor.relative_luftfeuchte_flur_og
           - sensor.relative_luftfeuchte_garage
-
-      - title: VOC
-        type: history-graph
-        entities:
-          - sensor.voc_essbereich
-          - sensor.voc_flur_og
-
-      - title: CO2
-        type: history-graph
-        entities:
-          - sensor.co2_essbereich
-          - sensor.co2_flur_og
 
   - title: KWL
     path: kwl-diag

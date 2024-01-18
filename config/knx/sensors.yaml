@@ -901,3 +901,34 @@ sensor:
     type: temperature
     sync_state: "init"
     state_class: measurement
+
+  - name: Temperatur Dach
+    state_address: "0/1/250"
+    type: temperature
+    sync_state: "init"
+    state_class: measurement
+
+
+  - name: Windgeschwindigkeit Dach
+    state_address: "0/3/0"
+    type: wind_speed_ms
+    sync_state: "init"
+    state_class: measurement
+
+  - name: Helligkeit Dach Ost
+    state_address: "0/4/250"
+    type: illuminance
+    sync_state: "init"
+    state_class: measurement
+
+  - name: Helligkeit Dach Sued
+    state_address: "0/4/251"
+    type: illuminance
+    sync_state: "init"
+    state_class: measurement
+
+  - name: Helligkeit Dach West
+    state_address: "0/4/252"
+    type: illuminance
+    sync_state: "init"
+    state_class: measurement
