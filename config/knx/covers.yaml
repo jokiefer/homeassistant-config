@@ -135,3 +135,4 @@ cover:
     stop_address: "3/3/4"
     position_state_address: "3/2/3"
     device_class: "garage"
+    invert_position: true
