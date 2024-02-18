@@ -169,6 +169,10 @@ sensor:
     sync_state: "init"
     type: "illuminance"
 
+  - name: "Einfahrt"
+    state_address: "0/4/170"
+    sync_state: "init"
+    type: "illuminance"
 
   ###############################
   # VOC    0/5/xxx

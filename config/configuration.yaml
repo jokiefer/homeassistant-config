@@ -72,3 +72,9 @@ sensor:
         friendly_name: "Wirkungsgrad Lüftung (kalkuliert)"
         unit_of_measurement: "η"
         value_template: "{{ states('sensor.temp_zufluft') | float / states('sensor.temperatur_abluft') | float}}"
+
+device_tracker:
+  - platform: aruba
+    host: 10.0.10.1
+    username: admin
+    password: !secret aruba_password

@@ -133,11 +133,34 @@ binary_sensor:
     sync_state: "init"
     device_class: "motion"
 
+  - name: "Praesenz Einfahrt"
+    state_address: "2/4/170"
+    sync_state: "init"
+    device_class: "motion"
+
+  - name: "Bewegung Einfahrt Sensor 1"
+    state_address: "2/4/171"
+    sync_state: "init"
+    device_class: "motion"
+
+  - name: "Bewegung Einfahrt Sensor 2"
+    state_address: "2/4/172"
+    sync_state: "init"
+    device_class: "motion"
+
+  - name: "Bewegung Einfahrt Sensor 3"
+    state_address: "2/4/173"
+    sync_state: "init"
+    device_class: "motion"
+
+  - name: "Bewegung Einfahrt Sensor 4"
+    state_address: "2/4/174"
+    sync_state: "init"
+    device_class: "motion"
 
   - name: "Heizung Verdichter/Heizelement aktiv"
     state_address: "0/7/100"
     sync_state: "init"
-
 
 
   ### Lüftung
