@@ -778,7 +778,7 @@ sensor:
 
   - name: Filter Standzeit aktuell
     state_address: "6/1/11"
-    type: decimal_factor
+    type: time_period_hrs
     sync_state: "init"
     state_class: total_increasing
 
