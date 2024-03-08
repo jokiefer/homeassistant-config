@@ -44,11 +44,6 @@ switch:
     state_address: "4/3/90"
     invert: true
 
-  - name: "Beschattung Automatik Kind Nord Nordfenster"
-    address: "4/3/101"
-    state_address: "4/3/100"
-    invert: true
-
   - name: "Beschattung Automatik Bad OG Ostfenster"
     address: "4/3/131"
     state_address: "4/3/130"
