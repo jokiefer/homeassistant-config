@@ -552,6 +552,13 @@ sensor:
     state_class: measurement
 
 
+  - name: Hauptzähler Zaehlerstand Total
+    state_address: "0/7/33"
+    type: active_energy_kwh
+    sync_state: "init"
+    state_class: total_increasing
+
+
   - name: Betriebsstunden Licht Kueche Arbeitsplatte
     state_address: "1/7/0"
     type: long_delta_timesec
