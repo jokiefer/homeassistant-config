@@ -30,7 +30,6 @@ lovelace:
       title: Diagnose
       icon: mdi:tools
       show_in_sidebar: true
-      require_admin: true
     ground-floor:
       mode: yaml
       filename: dashboards/ground_floor.yaml
@@ -72,6 +71,14 @@ sensor:
         friendly_name: "Wirkungsgrad Lüftung (kalkuliert)"
         unit_of_measurement: "η"
         value_template: "{{ states('sensor.temp_zufluft') | float / states('sensor.temperatur_abluft') | float}}"
+
+  - platform: statistics
+    name: "Heizung Taktung Verdichter"
+    entity_id: binary_sensor.heizung_verdichter_heizelement_aktiv
+    state_characteristic: count_on
+    max_age:
+      days: 1
+        
 
 device_tracker:
   - platform: aruba
