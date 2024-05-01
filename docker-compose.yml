@@ -1,11 +1,25 @@
 version: '3.8'
 services:
   home-assistant:
-    image: homeassistant/home-assistant:2024.1
+    image: homeassistant/home-assistant:2024.3
     volumes:
-      #- storage:/config/.storage
+#      - storage:/config/.storage
+#      - db-data:/config/db
       - ./config:/config
 #      - /etc/localtime:/etc/localtime:ro
     restart: unless-stopped
     ports:
       - 8123:8123
+    networks:
+      mgmt-vlan:
+        ipv4_address: 10.0.10.225
+
+networks:
+  mgmt-vlan:
+    driver: macvlan
+    driver_opts:
+      parent: br-mgmtdocker
+    ipam:
+      config:
+        - subnet: 10.0.10.224/28
+          gateway: 10.0.10.238

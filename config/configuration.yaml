@@ -11,6 +11,8 @@ homeassistant:
   unit_system: metric
   time_zone: Europe/Berlin
   temperature_unit: C
+  external_url: "https://home.huette2.de:8123"
+  internal_url: "https://home.huette2.de:8123"
   auth_providers:
    - type: homeassistant
    - type: legacy_api_password
@@ -29,8 +31,7 @@ lovelace:
       filename: dashboards/diagnostics.yaml
       title: Diagnose
       icon: mdi:tools
-      show_in_sidebar: true
-      require_admin: true
+      show_in_sidebar: true 
     ground-floor:
       mode: yaml
       filename: dashboards/ground_floor.yaml
@@ -73,8 +74,31 @@ sensor:
         unit_of_measurement: "η"
         value_template: "{{ states('sensor.temp_zufluft') | float / states('sensor.temperatur_abluft') | float}}"
 
+  - platform: statistics
+    name: "Heizung Taktung Verdichter"
+    entity_id: binary_sensor.heizung_verdichter_heizelement_aktiv
+    state_characteristic: count_on
+    max_age:
+      days: 1
+
+  - platform: history_stats
+    name: "Heizung Laufzeit pro Tag"
+    entity_id: binary_sensor.heizung_verdichter_heizelement_aktiv
+    state: 'on'
+    type: 'time'
+    end: '{{ now() }}'
+    duration:
+      hours: 24
+
 device_tracker:
   - platform: aruba
     host: 10.0.10.1
     username: admin
     password: !secret aruba_password
+
+
+http:
+  ssl_certificate: "fullchain.pem"
+  ssl_key: "privkey.pem"
+  ip_ban_enabled: true
+  login_attempts_threshold: 5

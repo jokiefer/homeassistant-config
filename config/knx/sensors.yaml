@@ -552,7 +552,7 @@ sensor:
     state_class: measurement
 
 
-  - name: Hauptzähler Zaehlerstand Total
+  - name: Hauptzaehler Zaehlerstand Total
     state_address: "0/7/33"
     type: active_energy_kwh
     sync_state: "init"
