@@ -6,9 +6,11 @@ views:
     - title: Beschattung Status Aktor 1
       type: "custom:mdt-jal-aktor-diag"
       entity: sensor.diagnosetext_ja1
+    
     - title: Beschattung Status Aktor 2
       type: "custom:mdt-jal-aktor-diag"
       entity: sensor.diagnosetext_ja2
+    
     - title: Beschattung Status Aktor 3
       type: "custom:mdt-jal-aktor-diag"
       entity: sensor.diagnosetext_ja3
@@ -122,7 +124,7 @@ views:
         entities:
           - entity: button.fahrzeitmessung_starten_buro_ostwand
             icon: mdi:history
-          - entity: switch.beschattung_buro_ostwand_freigeben
+          - entity: switch.beschattung_buro_ostfenster_freigeben
             icon: mdi:window-shutter-auto
             styles:
               icon:
@@ -147,7 +149,7 @@ views:
         entities:
           - entity: button.fahrzeitmessung_starten_buro_sudwand
             icon: mdi:history
-          - entity: switch.beschattung_buro_sudwand_freigeben
+          - entity: switch.beschattung_buro_sudfenster_freigeben
             icon: mdi:window-shutter-auto
             styles:
               icon:
@@ -320,7 +322,7 @@ views:
         entities:
           - entity: button.fahrzeitmessung_starten_bad_og_badewanne_ostwand
             icon: mdi:history
-          - entity: switch.beschattung_bad_og_badewanne_ostwand_freigeben
+          - entity: switch.beschattung_bad_og_badewanne_ostfenster_freigeben
             icon: mdi:window-shutter-auto
             styles:
               icon:
