@@ -30,13 +30,13 @@ views:
         entities:
           - entity: button.fahrzeitmessung_starten_kuchenfenster
             icon: mdi:history
-          - entity: switch.beschattung_kuchenfenster_freigeben
+          - entity: switch.beschattung_kuchenfenster_sperren
             icon: mdi:window-shutter-auto
             styles:
               icon:
                 - color: |
                     [[[
-                      if (entity.state == 'on') return 'green'; 
+                      if (entity.state == 'on') return 'red'; 
                       return 'red'
                     ]]]
             
@@ -57,14 +57,14 @@ views:
         entities:
           - entity: button.fahrzeitmessung_starten_hebe_schiebe_links
             icon: mdi:history
-          - entity: switch.beschattung_hebe_schiebe_links_freigeben
+          - entity: switch.beschattung_hebe_schiebe_links_sperren
             icon: mdi:window-shutter-auto
             styles:
               icon:
                 - color: |
                     [[[
-                      if (entity.state == 'on') return 'green'; 
-                      return 'red'
+                      if (entity.state == 'on') return 'red'; 
+                      return 'green'
                     ]]]
 
     - title: Hebe-/Schiebe rechts
@@ -82,14 +82,14 @@ views:
         entities:
           - entity: button.fahrzeitmessung_starten_hebe_schiebe_rechts
             icon: mdi:history
-          - entity: switch.beschattung_hebe_schiebe_rechts_freigeben
+          - entity: switch.beschattung_hebe_schiebe_rechts_sperren
             icon: mdi:window-shutter-auto
             styles:
               icon:
                 - color: |
                     [[[
-                      if (entity.state == 'on') return 'green'; 
-                      return 'red'
+                      if (entity.state == 'on') return 'red'; 
+                      return 'green'
                     ]]]
 
     - title: Bad EG
@@ -124,14 +124,14 @@ views:
         entities:
           - entity: button.fahrzeitmessung_starten_buro_ostwand
             icon: mdi:history
-          - entity: switch.beschattung_buro_ostfenster_freigeben
+          - entity: switch.beschattung_buro_ostfenster_sperren
             icon: mdi:window-shutter-auto
             styles:
               icon:
                 - color: |
                     [[[
-                      if (entity.state == 'on') return 'green'; 
-                      return 'red'
+                      if (entity.state == 'on') return 'red'; 
+                      return 'green'
                     ]]]
 
     - title: Büro Südwand
@@ -149,14 +149,14 @@ views:
         entities:
           - entity: button.fahrzeitmessung_starten_buro_sudwand
             icon: mdi:history
-          - entity: switch.beschattung_buro_sudfenster_freigeben
+          - entity: switch.beschattung_buro_sudfenster_sperren
             icon: mdi:window-shutter-auto
             styles:
               icon:
                 - color: |
                     [[[
-                      if (entity.state == 'on') return 'green'; 
-                      return 'red'
+                      if (entity.state == 'on') return 'red'; 
+                      return 'green'
                     ]]]
 
     - title: Speisekammer
@@ -174,14 +174,14 @@ views:
         entities:
           - entity: button.fahrzeitmessung_starten_speisekammer
             icon: mdi:history
-          - entity: switch.beschattung_speisekammer_freigeben
+          - entity: switch.beschattung_speisekammer_sperren
             icon: mdi:window-shutter-auto
             styles:
               icon:
                 - color: |
                     [[[
-                      if (entity.state == 'on') return 'green'; 
-                      return 'red'
+                      if (entity.state == 'on') return 'red'; 
+                      return 'green'
                     ]]]
     
     - title: Kinderzimmer Süd Südwand
@@ -199,14 +199,14 @@ views:
         entities:
           - entity: button.fahrzeitmessung_starten_kind_1_sudwand
             icon: mdi:history
-          - entity: switch.beschattung_kind_sud_sudfenster_freigeben
+          - entity: switch.beschattung_kind_sud_sudfenster_sperren
             icon: mdi:window-shutter-auto
             styles:
               icon:
                 - color: |
                     [[[
-                      if (entity.state == 'on') return 'green'; 
-                      return 'red'
+                      if (entity.state == 'on') return 'red'; 
+                      return 'green'
                     ]]]
 
     - title: Kinderzimmer Süd Westwand
@@ -224,14 +224,14 @@ views:
         entities:
           - entity: button.fahrzeitmessung_starten_kind_1_westwand
             icon: mdi:history
-          - entity: switch.beschattung_kind_sud_westfenster_freigeben
+          - entity: switch.beschattung_kind_sud_westfenster_sperren
             icon: mdi:window-shutter-auto
             styles:
               icon:
                 - color: |
                     [[[
-                      if (entity.state == 'on') return 'green'; 
-                      return 'red'
+                      if (entity.state == 'on') return 'red'; 
+                      return 'green'
                     ]]]
 
     - title: Kinderzimmer Nord Westwand
@@ -249,14 +249,14 @@ views:
         entities:
           - entity: button.fahrzeitmessung_starten_kind_2_westwand
             icon: mdi:history
-          - entity: switch.beschattung_kind_nord_westfenster_freigeben
+          - entity: switch.beschattung_kind_nord_westfenster_sperren
             icon: mdi:window-shutter-auto
             styles:
               icon:
                 - color: |
                     [[[
-                      if (entity.state == 'on') return 'green'; 
-                      return 'red'
+                      if (entity.state == 'on') return 'red'; 
+                      return 'green'
                     ]]]
 
     - title: Kinderzimmer Nord Nordwand
@@ -322,14 +322,14 @@ views:
         entities:
           - entity: button.fahrzeitmessung_starten_bad_og_badewanne_ostwand
             icon: mdi:history
-          - entity: switch.beschattung_bad_og_badewanne_ostfenster_freigeben
+          - entity: switch.beschattung_bad_og_badewanne_ostfenster_sperren
             icon: mdi:window-shutter-auto
             styles:
               icon:
                 - color: |
                     [[[
-                      if (entity.state == 'on') return 'green'; 
-                      return 'red'
+                      if (entity.state == 'on') return 'red'; 
+                      return 'green'
                     ]]]
 
     - title: Schlafzimmer
@@ -347,14 +347,14 @@ views:
         entities:
           - entity: button.fahrzeitmessung_starten_schlafzimmer
             icon: mdi:history
-          - entity: switch.beschattung_schlafzimmer_freigeben
+          - entity: switch.beschattung_schlafzimmer_sperren
             icon: mdi:window-shutter-auto
             styles:
               icon:
                 - color: |
                     [[[
-                      if (entity.state == 'on') return 'green'; 
-                      return 'red'
+                      if (entity.state == 'on') return 'red'; 
+                      return 'green'
                     ]]]
 
     - title: Ankleide
@@ -372,14 +372,14 @@ views:
         entities:
           - entity: button.fahrzeitmessung_starten_ankleide
             icon: mdi:history
-          - entity: switch.beschattung_ankleide_freigeben
+          - entity: switch.beschattung_ankleide_sperren
             icon: mdi:window-shutter-auto
             styles:
               icon:
                 - color: |
                     [[[
-                      if (entity.state == 'on') return 'green'; 
-                      return 'red'
+                      if (entity.state == 'on') return 'red'; 
+                      return 'green'
                     ]]]
 
     - title: Flur OG
@@ -397,14 +397,14 @@ views:
         entities:
           - entity: button.fahrzeitmessung_starte_flur_og
             icon: mdi:history
-          - entity: switch.beschattung_flur_og_freigeben
+          - entity: switch.beschattung_flur_og_sperren
             icon: mdi:window-shutter-auto
             styles:
               icon:
                 - color: |
                     [[[
-                      if (entity.state == 'on') return 'green'; 
-                      return 'red'
+                      if (entity.state == 'on') return 'red'; 
+                      return 'green'
                     ]]]
 
   - title: Heizung

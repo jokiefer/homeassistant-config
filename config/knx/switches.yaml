@@ -1,53 +1,53 @@
 switch:
-  - name: "Beschattung Kuechenfenster freigeben"
+  - name: "Beschattung Kuechenfenster sperren"
     address: "4/3/1"
     state_address: "4/3/0"
 
-  - name: "Beschattung Hebe/Schiebe links freigeben"
+  - name: "Beschattung Hebe/Schiebe links sperren"
     address: "4/3/11"
     state_address: "4/3/10"
 
-  - name: "Beschattung Hebe/Schiebe rechts freigeben"
+  - name: "Beschattung Hebe/Schiebe rechts sperren"
     address: "4/3/21"
     state_address: "4/3/20"
 
-  - name: "Beschattung Buero Ostfenster freigeben"
+  - name: "Beschattung Buero Ostfenster sperren"
     address: "4/3/41"
     state_address: "4/3/40"
 
-  - name: "Beschattung Buero Suedfenster freigeben"
+  - name: "Beschattung Buero Suedfenster sperren"
     address: "4/3/51"
     state_address: "4/3/50"
 
-  - name: "Beschattung Speisekammer freigeben"
+  - name: "Beschattung Speisekammer sperren"
     address: "4/3/61"
     state_address: "4/3/60"
 
-  - name: "Beschattung Kind Sued Suedfenster freigeben"
+  - name: "Beschattung Kind Sued Suedfenster sperren"
     address: "4/3/71"
     state_address: "4/3/70"
 
-  - name: "Beschattung Kind Sued Westfenster freigeben"
+  - name: "Beschattung Kind Sued Westfenster sperren"
     address: "4/3/81"
     state_address: "4/3/80"
 
-  - name: "Beschattung Kind Nord Westfenster freigeben"
+  - name: "Beschattung Kind Nord Westfenster sperren"
     address: "4/3/91"
     state_address: "4/3/90"
 
-  - name: "Beschattung Bad OG Ostfenster freigeben"
+  - name: "Beschattung Bad OG Ostfenster sperren"
     address: "4/3/131"
     state_address: "4/3/130"
 
-  - name: "Beschattung Schlafzimmer freigeben"
+  - name: "Beschattung Schlafzimmer sperren"
     address: "4/3/141"
     state_address: "4/3/140"
 
-  - name: "Beschattung Ankleide freigeben"
+  - name: "Beschattung Ankleide sperren"
     address: "4/3/151"
     state_address: "4/3/150"
 
-  - name: "Beschattung Flur OG freigeben"
+  - name: "Beschattung Flur OG sperren"
     address: "4/3/161"
     state_address: "4/3/160"
 
