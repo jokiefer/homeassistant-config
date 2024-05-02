@@ -28,8 +28,15 @@ views:
         entities:
           - entity: button.fahrzeitmessung_starten_kuchenfenster
             icon: mdi:history
-          - entity: switch.beschattung_automatik_kuchenfenster
+          - entity: switch.beschattung_kuchenfenster_freigeben
             icon: mdi:window-shutter-auto
+            styles:
+              icon:
+                - color: |
+                    [[[
+                      if (entity.state == 'on') return 'green'; 
+                      return 'red'
+                    ]]]
             
     - title: Hebe-/Schiebe links
       type: entities
@@ -48,8 +55,15 @@ views:
         entities:
           - entity: button.fahrzeitmessung_starten_hebe_schiebe_links
             icon: mdi:history
-          - entity: switch.beschattung_automatik_hebe_schiebe_links
+          - entity: switch.beschattung_hebe_schiebe_links_freigeben
             icon: mdi:window-shutter-auto
+            styles:
+              icon:
+                - color: |
+                    [[[
+                      if (entity.state == 'on') return 'green'; 
+                      return 'red'
+                    ]]]
 
     - title: Hebe-/Schiebe rechts
       type: entities
@@ -66,8 +80,15 @@ views:
         entities:
           - entity: button.fahrzeitmessung_starten_hebe_schiebe_rechts
             icon: mdi:history
-          - entity: switch.beschattung_automatik_hebe_schiebe_rechts
+          - entity: switch.beschattung_hebe_schiebe_rechts_freigeben
             icon: mdi:window-shutter-auto
+            styles:
+              icon:
+                - color: |
+                    [[[
+                      if (entity.state == 'on') return 'green'; 
+                      return 'red'
+                    ]]]
 
     - title: Bad EG
       type: entities
@@ -84,9 +105,8 @@ views:
         entities:
           - entity: button.fahrzeitmessung_starten_bad_eg
             icon: mdi:history
-          - entity: switch.beschattung_automatik_bad_eg
-            icon: mdi:window-shutter-auto
 
+         
     - title: Büro Ostwand
       type: entities
       entities:
@@ -102,8 +122,15 @@ views:
         entities:
           - entity: button.fahrzeitmessung_starten_buro_ostwand
             icon: mdi:history
-          - entity: switch.beschattung_automatik_buro_ostwand
+          - entity: switch.beschattung_buro_ostwand_freigeben
             icon: mdi:window-shutter-auto
+            styles:
+              icon:
+                - color: |
+                    [[[
+                      if (entity.state == 'on') return 'green'; 
+                      return 'red'
+                    ]]]
 
     - title: Büro Südwand
       type: entities
@@ -120,8 +147,15 @@ views:
         entities:
           - entity: button.fahrzeitmessung_starten_buro_sudwand
             icon: mdi:history
-          - entity: switch.beschattung_automatik_buro_sudwand
+          - entity: switch.beschattung_buro_sudwand_freigeben
             icon: mdi:window-shutter-auto
+            styles:
+              icon:
+                - color: |
+                    [[[
+                      if (entity.state == 'on') return 'green'; 
+                      return 'red'
+                    ]]]
 
     - title: Speisekammer
       type: entities
@@ -138,8 +172,15 @@ views:
         entities:
           - entity: button.fahrzeitmessung_starten_speisekammer
             icon: mdi:history
-          - entity: switch.beschattung_automatik_speisekammer
+          - entity: switch.beschattung_speisekammer_freigeben
             icon: mdi:window-shutter-auto
+            styles:
+              icon:
+                - color: |
+                    [[[
+                      if (entity.state == 'on') return 'green'; 
+                      return 'red'
+                    ]]]
     
     - title: Kinderzimmer Süd Südwand
       type: entities
@@ -156,8 +197,15 @@ views:
         entities:
           - entity: button.fahrzeitmessung_starten_kind_1_sudwand
             icon: mdi:history
-          - entity: switch.beschattung_automatik_kind_sud_sudfenster
+          - entity: switch.beschattung_kind_sud_sudfenster_freigeben
             icon: mdi:window-shutter-auto
+            styles:
+              icon:
+                - color: |
+                    [[[
+                      if (entity.state == 'on') return 'green'; 
+                      return 'red'
+                    ]]]
 
     - title: Kinderzimmer Süd Westwand
       type: entities
@@ -174,8 +222,15 @@ views:
         entities:
           - entity: button.fahrzeitmessung_starten_kind_1_westwand
             icon: mdi:history
-          - entity: switch.beschattung_automatik_kind_sud_westfenster
+          - entity: switch.beschattung_kind_sud_westfenster_freigeben
             icon: mdi:window-shutter-auto
+            styles:
+              icon:
+                - color: |
+                    [[[
+                      if (entity.state == 'on') return 'green'; 
+                      return 'red'
+                    ]]]
 
     - title: Kinderzimmer Nord Westwand
       type: entities
@@ -192,8 +247,15 @@ views:
         entities:
           - entity: button.fahrzeitmessung_starten_kind_2_westwand
             icon: mdi:history
-          - entity: switch.beschattung_automatik_kind_nord_westfenster
+          - entity: switch.beschattung_kind_nord_westfenster_freigeben
             icon: mdi:window-shutter-auto
+            styles:
+              icon:
+                - color: |
+                    [[[
+                      if (entity.state == 'on') return 'green'; 
+                      return 'red'
+                    ]]]
 
     - title: Kinderzimmer Nord Nordwand
       type: entities
@@ -210,8 +272,6 @@ views:
         entities:
           - entity: button.fahrzeitmessung_starten_kind_2_nordwand
             icon: mdi:history
-          - entity: switch.beschattung_automatik_kind_nord_nordfenster
-            icon: mdi:window-shutter-auto
     
     - title: Bad OG Dusche
       type: entities
@@ -228,8 +288,6 @@ views:
         entities:
           - entity: button.fahrzeitmessung_starten_bad_og_dusche
             icon: mdi:history
-          - entity: switch.beschattung_automatik_bad_og_dusche
-            icon: mdi:window-shutter-auto
     
     - title: Bad OG Badewanne Nord
       type: entities
@@ -246,8 +304,6 @@ views:
         entities:
           - entity: button.fahrzeitmessung_starten_bad_og_badewanne_nordwand
             icon: mdi:history
-          - entity: switch.beschattung_automatik_bad_og_badewanne_nordwand
-            icon: mdi:window-shutter-auto
 
     - title: Bad OG Badewanne Ost
       type: entities
@@ -264,8 +320,15 @@ views:
         entities:
           - entity: button.fahrzeitmessung_starten_bad_og_badewanne_ostwand
             icon: mdi:history
-          - entity: switch.beschattung_automatik_bad_og_badewanne_ostwand
+          - entity: switch.beschattung_bad_og_badewanne_ostwand_freigeben
             icon: mdi:window-shutter-auto
+            styles:
+              icon:
+                - color: |
+                    [[[
+                      if (entity.state == 'on') return 'green'; 
+                      return 'red'
+                    ]]]
 
     - title: Schlafzimmer
       type: entities
@@ -282,8 +345,15 @@ views:
         entities:
           - entity: button.fahrzeitmessung_starten_schlafzimmer
             icon: mdi:history
-          - entity: switch.beschattung_automatik_schlafzimmer
+          - entity: switch.beschattung_schlafzimmer_freigeben
             icon: mdi:window-shutter-auto
+            styles:
+              icon:
+                - color: |
+                    [[[
+                      if (entity.state == 'on') return 'green'; 
+                      return 'red'
+                    ]]]
 
     - title: Ankleide
       type: entities
@@ -300,8 +370,15 @@ views:
         entities:
           - entity: button.fahrzeitmessung_starten_ankleide
             icon: mdi:history
-          - entity: switch.beschattung_automatik_ankleide
+          - entity: switch.beschattung_ankleide_freigeben
             icon: mdi:window-shutter-auto
+            styles:
+              icon:
+                - color: |
+                    [[[
+                      if (entity.state == 'on') return 'green'; 
+                      return 'red'
+                    ]]]
 
     - title: Flur OG
       type: entities
@@ -318,8 +395,15 @@ views:
         entities:
           - entity: button.fahrzeitmessung_starte_flur_og
             icon: mdi:history
-          - entity: switch.beschattung_automatik_flur_og
+          - entity: switch.beschattung_flur_og_freigeben
             icon: mdi:window-shutter-auto
+            styles:
+              icon:
+                - color: |
+                    [[[
+                      if (entity.state == 'on') return 'green'; 
+                      return 'red'
+                    ]]]
 
   - title: Heizung
     path: heating
