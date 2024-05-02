@@ -34,6 +34,8 @@ button:
   - name: "Fahrzeitmessung starten Flur OG"
     address: "4/5/160"
 
+  - name: "Beschattung freigeben zentral"
+    address: "4/3/200"
 
   - name: "Heizung relativer Zaehler zuruecksetzen"
     address: "0/7/0"

@@ -31,7 +31,7 @@ lovelace:
       filename: dashboards/diagnostics.yaml
       title: Diagnose
       icon: mdi:tools
-      show_in_sidebar: true 
+      show_in_sidebar: true
     ground-floor:
       mode: yaml
       filename: dashboards/ground_floor.yaml
@@ -89,7 +89,7 @@ sensor:
     end: '{{ now() }}'
     duration:
       hours: 24
-
+        
 device_tracker:
   - platform: aruba
     host: 10.0.10.1

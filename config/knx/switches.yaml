@@ -1,70 +1,57 @@
 switch:
-  - name: "Beschattung Automatik Kuechenfenster"
+  - name: "Beschattung Kuechenfenster freigeben"
     address: "4/3/1"
     state_address: "4/3/0"
-    invert: true
 
-  - name: "Beschattung Automatik Hebe/Schiebe links"
+  - name: "Beschattung Hebe/Schiebe links freigeben"
     address: "4/3/11"
     state_address: "4/3/10"
-    invert: true
 
-  - name: "Beschattung Automatik Hebe/Schiebe rechts"
+  - name: "Beschattung Hebe/Schiebe rechts freigeben"
     address: "4/3/21"
     state_address: "4/3/20"
-    invert: true
 
-  - name: "Beschattung Automatik Buero Ostfenster"
+  - name: "Beschattung Buero Ostfenster freigeben"
     address: "4/3/41"
     state_address: "4/3/40"
-    invert: true
 
-  - name: "Beschattung Automatik Buero Suedfenster"
+  - name: "Beschattung Buero Suedfenster freigeben"
     address: "4/3/51"
     state_address: "4/3/50"
-    invert: true
 
-  - name: "Beschattung Automatik Speisekammer"
+  - name: "Beschattung Speisekammer freigeben"
     address: "4/3/61"
     state_address: "4/3/60"
-    invert: true
 
-  - name: "Beschattung Automatik Kind Sued Suedfenster"
+  - name: "Beschattung Kind Sued Suedfenster freigeben"
     address: "4/3/71"
     state_address: "4/3/70"
-    invert: true
 
-  - name: "Beschattung Automatik Kind Sued Westfenster"
+  - name: "Beschattung Kind Sued Westfenster freigeben"
     address: "4/3/81"
     state_address: "4/3/80"
-    invert: true
 
-  - name: "Beschattung Automatik Kind Nord Westfenster"
+  - name: "Beschattung Kind Nord Westfenster freigeben"
     address: "4/3/91"
     state_address: "4/3/90"
-    invert: true
 
-  - name: "Beschattung Automatik Bad OG Ostfenster"
+  - name: "Beschattung Bad OG Ostfenster freigeben"
     address: "4/3/131"
     state_address: "4/3/130"
-    invert: true
 
-  - name: "Beschattung Automatik Schlafzimmer"
+  - name: "Beschattung Schlafzimmer freigeben"
     address: "4/3/141"
     state_address: "4/3/140"
-    invert: true
 
-  - name: "Beschattung Automatik Ankleide"
+  - name: "Beschattung Ankleide freigeben"
     address: "4/3/151"
     state_address: "4/3/150"
-    invert: true
 
-  - name: "Beschattung Automatik Flur OG"
+  - name: "Beschattung Flur OG freigeben"
     address: "4/3/161"
     state_address: "4/3/160"
-    invert: true
 
-
+  
 
   - name: "Licht Bad EG Handbetrieb"
     address: "2/0/30"
