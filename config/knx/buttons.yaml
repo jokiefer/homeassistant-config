@@ -42,3 +42,6 @@ button:
 
   - name: "Heizung Zaehlerstaende abfragen"
     address: "0/7/1"
+
+  - name: "KWL Filterreset"
+    address: "6/0/12"

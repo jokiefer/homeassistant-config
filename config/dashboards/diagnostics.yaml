@@ -385,7 +385,7 @@ views:
     - title: Flur OG
       type: entities
       entities:
-        - entity: cover.ankleide
+        - entity: cover.flur_og
           secondary_info: title-position
         - type: divider
         - entity: sensor.diagnosetext_flur_og
