@@ -139,7 +139,7 @@ views:
             style: 
               left: 56.5%
               top: 46.5%
-          - entity: climate.buro
+          - entity: climate.buero
             type: state-label
             attribute: temperature
             style: 

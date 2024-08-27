@@ -656,5 +656,5 @@ views:
                         if (entity.state == 'on') return 'red'; 
                         return 'green';
                       ]]]
-            - entity: switch.bypass_klappe_oeffnen
-            - entity: buttons.kwl_filterreset
+            - entity: switch.bypass_klappe_offnen
+            - entity: button.kwl_filterreset
