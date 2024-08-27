@@ -7,3 +7,6 @@ config/home-assistant_v2.db-wal
 config/home-assistant.log*
 config/.storage/*
 config/secrets.yaml
+config/ip_bans.yaml
+config/backups/*
+config/.shopping_list.json

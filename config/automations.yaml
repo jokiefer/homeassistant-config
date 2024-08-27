@@ -1,0 +1,24 @@
+- id: '1721378758152'
+  alias: Backup Home Assistant every night at 3 AM
+  description: ''
+  trigger:
+  - platform: time
+    at: 03:00:00
+  condition: []
+  action:
+  - alias: Create backup now
+    service: backup.create
+    data: {}
+  mode: single
+- id: '1722244707879'
+  alias: Backup Home Assistant every night at 3 AM
+  description: ''
+  trigger:
+  - platform: time
+    at: 03:00:00
+  condition: []
+  action:
+  - alias: Create backup now
+    service: backup.create
+    data: {}
+  mode: single
