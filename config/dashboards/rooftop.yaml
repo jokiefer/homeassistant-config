@@ -1,5 +1,5 @@
 views:
-  - title: Dach
+  - title: Außen
     path: rooftop
     icon: mdi:home-roof
     cards:
@@ -8,25 +8,22 @@ views:
         icon: mdi:temperature-celsius
         entities:
           - type: entity
-            entity: weather.dach
-            attribute: temperature
+            entity: sensor.temperatur_dach
+          - type: entity
+            entity: sensor.warmepumpe_outside_temperature
       - title: Windgeschwindigkeit
         type: history-graph
         icon: mdi:weather-windy
         entities:
           - type: entity
-            entity: weather.dach
-            attribute: wind_speed
+            entity: sensor.windgeschwindikeit_dach
       - title: Helligkeit
         type: history-graph
         icon: mdi:theme-light-dark
         entities:
           - type: entity
-            entity: weather.dach
-            attribute: brightness_south
+            entity: sensor.helligkeit_dach_ost
           - type: entity
-            entity: weather.dach
-            attribute: brightness_west
+            entity: sensor.helligkeit_dach_sued
           - type: entity
-            entity: weather.dach
-            attribute: brightness_east
+            entity: sensor.helligkeit_dach_west

@@ -7,4 +7,4 @@ views:
         type: entities
         icon: mdi:lightbulb
         entities:
-          - switch.licht_spitzboden
+          - light.licht_spitzboden

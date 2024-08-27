@@ -15,12 +15,12 @@ views:
         dark_mode_image: /local/eg_inverted.png
            
         elements:
-          - entity: light.kuche_arbeitsplatte
+          - entity: light.kueche_arbeitsplatte
             type: state-icon
             style: 
               left: 15%
               top: 90%
-          - entity: light.kuche_kochinsel
+          - entity: light.kueche_kochinsel
             type: state-icon
             style: 
               left: 15%
@@ -166,7 +166,7 @@ views:
         type: entities
         icon: mdi:lightbulb
         entities:
-          - light.kuche_arbeitsplatte
+          - light.kueche_arbeitsplatte
           - light.kuche_kochinsel
           - light.essbereich
       - title: Beschattung

@@ -1,535 +1,4 @@
 views:
-  - title: Jalousien
-    path: jal
-    icon: mdi:window-shutter
-    cards:
-    - title: Beschattung Status Aktor 1
-      type: "custom:mdt-jal-aktor-diag"
-      entity: sensor.diagnosetext_ja1
-    
-    - title: Beschattung Status Aktor 2
-      type: "custom:mdt-jal-aktor-diag"
-      entity: sensor.diagnosetext_ja2
-    
-    - title: Beschattung Status Aktor 3
-      type: "custom:mdt-jal-aktor-diag"
-      entity: sensor.diagnosetext_ja3
-
-    - title: Küchenfenster
-      type: entities
-      entities:
-        - entity: cover.kuchenfenster
-          secondary_info: title-position
-        - type: divider
-        - entity: sensor.diagnosetext_kuchenfenster
-          type: attribute
-          attribute: state
-          icon: mdi:stethoscope
-      footer:
-        type: buttons
-        entities:
-          - entity: button.fahrzeitmessung_starten_kuchenfenster
-            icon: mdi:history
-          - entity: switch.beschattung_kuchenfenster_sperren
-            icon: mdi:window-shutter-auto
-            styles:
-              icon:
-                - color: |
-                    [[[
-                      if (entity.state == 'on') return 'red'; 
-                      return 'red'
-                    ]]]
-            
-    - title: Hebe-/Schiebe links
-      type: entities
-      entities:
-        - entity: cover.hebe_schiebe_links
-          secondary_info: title-position
-        - type: divider
-        - entity: sensor.diagnosetext_hebe_schiebe_links
-          type: attribute
-          attribute: state
-          icon: mdi:stethoscope
-        - entity: binary_sensor.hebe_schiebe_links
-          state_color: true
-      footer:
-        type: buttons
-        entities:
-          - entity: button.fahrzeitmessung_starten_hebe_schiebe_links
-            icon: mdi:history
-          - entity: switch.beschattung_hebe_schiebe_links_sperren
-            icon: mdi:window-shutter-auto
-            styles:
-              icon:
-                - color: |
-                    [[[
-                      if (entity.state == 'on') return 'red'; 
-                      return 'green'
-                    ]]]
-
-    - title: Hebe-/Schiebe rechts
-      type: entities
-      entities:
-        - entity: cover.hebe_schiebe_rechts
-          secondary_info: title-position
-        - type: divider
-        - entity: sensor.diagnosetext_hebe_schiebe_rechts
-          type: attribute
-          attribute: state
-          icon: mdi:stethoscope
-      footer:
-        type: buttons
-        entities:
-          - entity: button.fahrzeitmessung_starten_hebe_schiebe_rechts
-            icon: mdi:history
-          - entity: switch.beschattung_hebe_schiebe_rechts_sperren
-            icon: mdi:window-shutter-auto
-            styles:
-              icon:
-                - color: |
-                    [[[
-                      if (entity.state == 'on') return 'red'; 
-                      return 'green'
-                    ]]]
-
-    - title: Bad EG
-      type: entities
-      entities:
-        - entity: cover.bad_eg
-          secondary_info: title-position
-        - type: divider
-        - entity: sensor.diagnosetext_bad_eg
-          type: attribute
-          attribute: state
-          icon: mdi:stethoscope
-      footer:
-        type: buttons
-        entities:
-          - entity: button.fahrzeitmessung_starten_bad_eg
-            icon: mdi:history
-
-         
-    - title: Büro Ostwand
-      type: entities
-      entities:
-        - entity: cover.buro_ostwand
-          secondary_info: title-position
-        - type: divider
-        - entity: sensor.diagnosetext_buro_ostwand
-          type: attribute
-          attribute: state
-          icon: mdi:stethoscope
-      footer:
-        type: buttons
-        entities:
-          - entity: button.fahrzeitmessung_starten_buro_ostwand
-            icon: mdi:history
-          - entity: switch.beschattung_buro_ostfenster_sperren
-            icon: mdi:window-shutter-auto
-            styles:
-              icon:
-                - color: |
-                    [[[
-                      if (entity.state == 'on') return 'red'; 
-                      return 'green'
-                    ]]]
-
-    - title: Büro Südwand
-      type: entities
-      entities:
-        - entity: cover.buro_sudwand
-          secondary_info: title-position
-        - type: divider
-        - entity: sensor.diagnosetext_buro_sudwand
-          type: attribute
-          attribute: state
-          icon: mdi:stethoscope
-      footer:
-        type: buttons
-        entities:
-          - entity: button.fahrzeitmessung_starten_buro_sudwand
-            icon: mdi:history
-          - entity: switch.beschattung_buro_sudfenster_sperren
-            icon: mdi:window-shutter-auto
-            styles:
-              icon:
-                - color: |
-                    [[[
-                      if (entity.state == 'on') return 'red'; 
-                      return 'green'
-                    ]]]
-
-    - title: Speisekammer
-      type: entities
-      entities:
-        - entity: cover.speisekammer
-          secondary_info: title-position
-        - type: divider
-        - entity: sensor.diagnosetext_speisekammer
-          type: attribute
-          attribute: state
-          icon: mdi:stethoscope
-      footer:
-        type: buttons
-        entities:
-          - entity: button.fahrzeitmessung_starten_speisekammer
-            icon: mdi:history
-          - entity: switch.beschattung_speisekammer_sperren
-            icon: mdi:window-shutter-auto
-            styles:
-              icon:
-                - color: |
-                    [[[
-                      if (entity.state == 'on') return 'red'; 
-                      return 'green'
-                    ]]]
-    
-    - title: Kinderzimmer Süd Südwand
-      type: entities
-      entities:
-        - entity: cover.kind_sud_sudwand
-          secondary_info: title-position
-        - type: divider
-        - entity: sensor.diagnosetext_kind_1_sudwand
-          type: attribute
-          attribute: state
-          icon: mdi:stethoscope
-      footer:
-        type: buttons
-        entities:
-          - entity: button.fahrzeitmessung_starten_kind_1_sudwand
-            icon: mdi:history
-          - entity: switch.beschattung_kind_sud_sudfenster_sperren
-            icon: mdi:window-shutter-auto
-            styles:
-              icon:
-                - color: |
-                    [[[
-                      if (entity.state == 'on') return 'red'; 
-                      return 'green'
-                    ]]]
-
-    - title: Kinderzimmer Süd Westwand
-      type: entities
-      entities:
-        - entity: cover.kind_sud_westwand
-          secondary_info: title-position
-        - type: divider
-        - entity: sensor.diagnosetext_kind_1_westwand
-          type: attribute
-          attribute: state
-          icon: mdi:stethoscope
-      footer:
-        type: buttons
-        entities:
-          - entity: button.fahrzeitmessung_starten_kind_1_westwand
-            icon: mdi:history
-          - entity: switch.beschattung_kind_sud_westfenster_sperren
-            icon: mdi:window-shutter-auto
-            styles:
-              icon:
-                - color: |
-                    [[[
-                      if (entity.state == 'on') return 'red'; 
-                      return 'green'
-                    ]]]
-
-    - title: Kinderzimmer Nord Westwand
-      type: entities
-      entities:
-        - entity: cover.kind_nord_westwand
-          secondary_info: title-position
-        - type: divider
-        - entity: sensor.diagnosetext_kind_2_westwand
-          type: attribute
-          attribute: state
-          icon: mdi:stethoscope
-      footer:
-        type: buttons
-        entities:
-          - entity: button.fahrzeitmessung_starten_kind_2_westwand
-            icon: mdi:history
-          - entity: switch.beschattung_kind_nord_westfenster_sperren
-            icon: mdi:window-shutter-auto
-            styles:
-              icon:
-                - color: |
-                    [[[
-                      if (entity.state == 'on') return 'red'; 
-                      return 'green'
-                    ]]]
-
-    - title: Kinderzimmer Nord Nordwand
-      type: entities
-      entities:
-        - entity: cover.kind_nord_nordwand
-          secondary_info: title-position
-        - type: divider
-        - entity: sensor.diagnosetext_kind_2_nordwand
-          type: attribute
-          attribute: state
-          icon: mdi:stethoscope
-      footer:
-        type: buttons
-        entities:
-          - entity: button.fahrzeitmessung_starten_kind_2_nordwand
-            icon: mdi:history
-    
-    - title: Bad OG Dusche
-      type: entities
-      entities:
-        - entity: cover.bad_og_dusche
-          secondary_info: title-position
-        - type: divider
-        - entity: sensor.diagnosetext_bad_og_dusche
-          type: attribute
-          attribute: state
-          icon: mdi:stethoscope
-      footer:
-        type: buttons
-        entities:
-          - entity: button.fahrzeitmessung_starten_bad_og_dusche
-            icon: mdi:history
-    
-    - title: Bad OG Badewanne Nord
-      type: entities
-      entities:
-        - entity: cover.bad_og_badewanne_nordwand
-          secondary_info: title-position
-        - type: divider
-        - entity: sensor.diagnosetext_bad_og_badewanne_nordwand
-          type: attribute
-          attribute: state
-          icon: mdi:stethoscope
-      footer:
-        type: buttons
-        entities:
-          - entity: button.fahrzeitmessung_starten_bad_og_badewanne_nordwand
-            icon: mdi:history
-
-    - title: Bad OG Badewanne Ost
-      type: entities
-      entities:
-        - entity: cover.bad_og_badewanne_ostwand
-          secondary_info: title-position
-        - type: divider
-        - entity: sensor.diagnosetext_bad_og_badewanne_ostwand
-          type: attribute
-          attribute: state
-          icon: mdi:stethoscope
-      footer:
-        type: buttons
-        entities:
-          - entity: button.fahrzeitmessung_starten_bad_og_badewanne_ostwand
-            icon: mdi:history
-          - entity: switch.beschattung_bad_og_badewanne_ostfenster_sperren
-            icon: mdi:window-shutter-auto
-            styles:
-              icon:
-                - color: |
-                    [[[
-                      if (entity.state == 'on') return 'red'; 
-                      return 'green'
-                    ]]]
-
-    - title: Schlafzimmer
-      type: entities
-      entities:
-        - entity: cover.schlafzimmer
-          secondary_info: title-position
-        - type: divider
-        - entity: sensor.diagnosetext_schlafzimmer
-          type: attribute
-          attribute: state
-          icon: mdi:stethoscope
-      footer:
-        type: buttons
-        entities:
-          - entity: button.fahrzeitmessung_starten_schlafzimmer
-            icon: mdi:history
-          - entity: switch.beschattung_schlafzimmer_sperren
-            icon: mdi:window-shutter-auto
-            styles:
-              icon:
-                - color: |
-                    [[[
-                      if (entity.state == 'on') return 'red'; 
-                      return 'green'
-                    ]]]
-
-    - title: Ankleide
-      type: entities
-      entities:
-        - entity: cover.ankleide
-          secondary_info: title-position
-        - type: divider
-        - entity: sensor.diagnosetext_ankleide
-          type: attribute
-          attribute: state
-          icon: mdi:stethoscope
-      footer:
-        type: buttons
-        entities:
-          - entity: button.fahrzeitmessung_starten_ankleide
-            icon: mdi:history
-          - entity: switch.beschattung_ankleide_sperren
-            icon: mdi:window-shutter-auto
-            styles:
-              icon:
-                - color: |
-                    [[[
-                      if (entity.state == 'on') return 'red'; 
-                      return 'green'
-                    ]]]
-
-    - title: Flur OG
-      type: entities
-      entities:
-        - entity: cover.flur_og
-          secondary_info: title-position
-        - type: divider
-        - entity: sensor.diagnosetext_flur_og
-          type: attribute
-          attribute: state
-          icon: mdi:stethoscope
-      footer:
-        type: buttons
-        entities:
-          - entity: button.fahrzeitmessung_starte_flur_og
-            icon: mdi:history
-          - entity: switch.beschattung_flur_og_sperren
-            icon: mdi:window-shutter-auto
-            styles:
-              icon:
-                - color: |
-                    [[[
-                      if (entity.state == 'on') return 'red'; 
-                      return 'green'
-                    ]]]
-
-  - title: Heizung
-    path: heating
-    icon: mdi:heat-pump
-    cards:
-    - title: Störung Global
-      type: entities
-      entities:
-        - entity: binary_sensor.storung_heizungsaktor_eg
-          state_color: true
-          secondary_info: last-changed
-        - entity: binary_sensor.storung_heizungsaktor_og
-          state_color: true
-          secondary_info: last-changed
-
-    - title: Küchen-/Ess-/Wohnbereich
-      type: entities
-      entities:
-        - entity: climate.kuchen_ess_wohnbereich
-        - type: divider
-        - entity: sensor.diagnosetext_heizkreis_kuchen_ess_wohnbereich
-          type: attribute
-          attribute: state
-          icon: mdi:stethoscope
-
-    - title: Bad EG
-      type: entities
-      entities:
-        - entity: climate.bad_eg
-        - type: divider
-        - entity: sensor.diagnosetext_heizkreis_bad_eg
-          type: attribute
-          attribute: state
-          icon: mdi:stethoscope
-
-    - title: Büro
-      type: entities
-      entities:
-        - entity: climate.buro
-        - type: divider
-        - entity: sensor.diagnosetext_heizkreis_buro
-          type: attribute
-          attribute: state
-          icon: mdi:stethoscope
-    
-    - title: Diele
-      type: entities
-      entities:
-        - entity: climate.diele
-        - type: divider
-        - entity: sensor.diagnosetext_heizkreis_diele
-          type: attribute
-          attribute: state
-          icon: mdi:stethoscope
-
-    - title: Speisekammer
-      type: entities
-      entities:
-        - entity: climate.speisekammer
-        - type: divider
-        - entity: sensor.diagnosetext_heizkreis_speisekammer
-          type: attribute
-          attribute: state
-          icon: mdi:stethoscope
-
-    - title: Kinderzimmer Süd
-      type: entities
-      entities:
-        - entity: climate.kinderzimmer_sud
-        - type: divider
-        - entity: sensor.diagnosetext_heizkreis_kind_1
-          type: attribute
-          attribute: state
-          icon: mdi:stethoscope
-
-    - title: Kinderzimmer Nord
-      type: entities
-      entities:
-        - entity: climate.kinderzimmer_nord
-        - type: divider
-        - entity: sensor.diagnosetext_heizkreis_kind_2
-          type: attribute
-          attribute: state
-          icon: mdi:stethoscope
-
-    - title: Bad OG
-      type: entities
-      entities:
-        - entity: climate.bad_og
-        - type: divider
-        - entity: sensor.diagnosetext_heizkreis_bad_og
-          type: attribute
-          attribute: state
-          icon: mdi:stethoscope
-
-    - title: Schlafzimmer
-      type: entities
-      entities:
-        - entity: climate.schlafzimmer
-        - type: divider
-        - entity: sensor.diagnosetext_heizkreis_schlafzimmer
-          type: attribute
-          attribute: state
-          icon: mdi:stethoscope
-
-    - title: Ankleide
-      type: entities
-      entities:
-        - entity: climate.ankleide
-        - type: divider
-        - entity: sensor.diagnosetext_heizkreis_ankleide
-          type: attribute
-          attribute: state
-          icon: mdi:stethoscope
-
-    - title: Flur OG
-      type: entities
-      entities:
-        - entity: climate.flur_og
-        - type: divider
-        - entity: sensor.diagnosetext_heizkreis_flur_og
-          type: attribute
-          attribute: state
-          icon: mdi:stethoscope
 
   - title: Sensoren
     path: sensors
@@ -615,6 +84,366 @@ views:
           - sensor.relative_luftfeuchte_bad_og
           - sensor.relative_luftfeuchte_flur_og
           - sensor.relative_luftfeuchte_garage
+
+  - title: Jalousien
+    path: jal
+    icon: mdi:window-shutter
+    cards:
+    - title: Beschattung Status Aktor 1
+      type: "custom:mdt-jal-aktor-diag"
+      entity: sensor.diagnosetext_ja1
+    
+    - title: Beschattung Status Aktor 2
+      type: "custom:mdt-jal-aktor-diag"
+      entity: sensor.diagnosetext_ja2
+    
+    - title: Beschattung Status Aktor 3
+      type: "custom:mdt-jal-aktor-diag"
+      entity: sensor.diagnosetext_ja3
+
+    - title: Küchenfenster
+      type: entities
+      entities:
+        - entity: cover.kuechenfenster
+          secondary_info: title-position
+        - type: divider
+        - entity: sensor.diagnosetext_kuchenfenster
+          type: attribute
+          attribute: state
+          icon: mdi:stethoscope
+      footer:
+        type: buttons
+        entities:
+          - entity: button.fahrzeitmessung_starten_kuechenfenster
+            icon: mdi:history
+          - entity: switch.beschattung_kuechenfenster_sperren
+            icon: mdi:window-shutter-auto
+            styles:
+              icon:
+                - color: |
+                    [[[
+                      if (entity.state == 'on') return 'red'; 
+                      return 'red'
+                    ]]]
+            
+    - title: Hebe-/Schiebe
+      type: entities
+      entities:
+        - entity: cover.hebe_schiebe_links
+          secondary_info: title-position
+        - entity: cover.hebe_schiebe_rechts
+          secondary_info: title-position
+        - type: divider
+        - entity: sensor.diagnosetext_hebe_schiebe_links
+          type: attribute
+          attribute: state
+          icon: mdi:stethoscope
+        - entity: sensor.diagnosetext_hebe_schiebe_rechts
+          type: attribute
+          attribute: state
+          icon: mdi:stethoscope
+        - entity: binary_sensor.hebe_schiebe_links
+          state_color: true
+      footer:
+        type: buttons
+        entities:
+          - entity: button.fahrzeitmessung_starten_hebe_schiebe_links
+            icon: mdi:history
+          - entity: button.fahrzeitmessung_starten_hebe_schiebe_rechts
+            icon: mdi:history
+          - entity: switch.beschattung_hebe_schiebe_links_sperren
+            icon: mdi:window-shutter-auto
+            styles:
+              icon:
+                - color: |
+                    [[[
+                      if (entity.state == 'on') return 'red'; 
+                      return 'green';
+                    ]]]
+          - entity: switch.beschattung_hebe_schiebe_rechts_sperren
+            icon: mdi:window-shutter-auto
+            styles:
+              icon:
+                - color: |
+                    [[[
+                      if (entity.state == 'on') return 'red'; 
+                      return 'green';
+                    ]]]        
+
+    - title: Bad EG
+      type: entities
+      entities:
+        - entity: cover.bad_eg
+          secondary_info: title-position
+        - type: divider
+        - entity: sensor.diagnosetext_bad_eg
+          type: attribute
+          attribute: state
+          icon: mdi:stethoscope
+      footer:
+        type: buttons
+        entities:
+          - entity: button.fahrzeitmessung_starten_bad_eg
+            icon: mdi:history
+
+    - title: Büro
+      type: entities
+      entities:
+        - entity: cover.buero_ostwand
+          secondary_info: title-position
+        - entity: cover.buero_suedwand
+          secondary_info: title-position
+        - type: divider
+        - entity: sensor.diagnosetext_buero_ostwand
+          type: attribute
+          attribute: state
+          icon: mdi:stethoscope
+        - entity: sensor.diagnosetext_buero_suedwand
+          type: attribute
+          attribute: state
+          icon: mdi:stethoscope
+      footer:
+        type: buttons
+        entities:
+          - entity: button.fahrzeitmessung_starten_buro_ostwand
+            icon: mdi:history
+          - entity: button.fahrzeitmessung_starten_buro_suedwand
+            icon: mdi:history
+          - entity: switch.beschattung_buro_ostfenster_sperren
+            icon: mdi:window-shutter-auto
+            styles:
+              icon:
+                - color: |
+                    [[[
+                      if (entity.state == 'on') return 'red'; 
+                      return 'green';
+                    ]]]
+          - entity: switch.beschattung_buro_suedfenster_sperren
+            icon: mdi:window-shutter-auto
+            styles:
+              icon:
+                - color: |
+                    [[[
+                      if (entity.state == 'on') return 'red'; 
+                      return 'green';
+                    ]]]
+
+    - title: Speisekammer
+      type: entities
+      entities:
+        - entity: cover.speisekammer
+          secondary_info: title-position
+        - type: divider
+        - entity: sensor.diagnosetext_speisekammer
+          type: attribute
+          attribute: state
+          icon: mdi:stethoscope
+      footer:
+        type: buttons
+        entities:
+          - entity: button.fahrzeitmessung_starten_speisekammer
+            icon: mdi:history
+          - entity: switch.beschattung_speisekammer_sperren
+            icon: mdi:window-shutter-auto
+            styles:
+              icon:
+                - color: |
+                    [[[
+                      if (entity.state == 'on') return 'red'; 
+                      return 'green';
+                    ]]]
+    
+    - title: Kinderzimmer Süd
+      type: entities
+      entities:
+        - entity: cover.kind_sued_suedwand
+          secondary_info: title-position
+        - entity: cover.kind_sued_westwand
+          secondary_info: title-position
+        - type: divider
+        - entity: sensor.diagnosetext_kind_1_suedwand
+          type: attribute
+          attribute: state
+          icon: mdi:stethoscope
+        - entity: sensor.diagnosetext_kind_1_westwand
+          type: attribute
+          attribute: state
+          icon: mdi:stethoscope
+      footer:
+        type: buttons
+        entities:
+          - entity: button.fahrzeitmessung_starten_kind_1_suedwand
+            icon: mdi:history
+          - entity: button.fahrzeitmessung_starten_kind_1_westwand
+            icon: mdi:history
+          - entity: switch.beschattung_kind_sued_suedfenster_sperren
+            icon: mdi:window-shutter-auto
+            styles:
+              icon:
+                - color: |
+                    [[[
+                      if (entity.state == 'on') return 'red'; 
+                      return 'green';
+                    ]]]
+          - entity: switch.beschattung_kind_sued_westfenster_sperren
+            icon: mdi:window-shutter-auto
+            styles:
+              icon:
+                - color: |
+                    [[[
+                      if (entity.state == 'on') return 'red'; 
+                      return 'green';
+                    ]]]
+
+
+    - title: Kinderzimmer Nord
+      type: entities
+      entities:
+        - entity: cover.kind_nord_westwand
+          secondary_info: title-position
+        - entity: cover.kind_nord_nordwand
+          secondary_info: title-position
+        - type: divider
+        - entity: sensor.diagnosetext_kind_2_westwand
+          type: attribute
+          attribute: state
+          icon: mdi:stethoscope
+        - entity: sensor.diagnosetext_kind_2_nordwand
+          type: attribute
+          attribute: state
+          icon: mdi:stethoscope
+      footer:
+        type: buttons
+        entities:
+          - entity: button.fahrzeitmessung_starten_kind_2_westwand
+            icon: mdi:history
+          - entity: button.fahrzeitmessung_starten_kind_2_nordwand
+            icon: mdi:history
+          - entity: switch.beschattung_kind_nord_westfenster_sperren
+            icon: mdi:window-shutter-auto
+            styles:
+              icon:
+                - color: |
+                    [[[
+                      if (entity.state == 'on') return 'red'; 
+                      return 'green';
+                    ]]]
+         
+    - title: Bad OG
+      type: entities
+      entities:
+        - entity: cover.bad_og_dusche
+          secondary_info: title-position
+        - entity: cover.bad_og_badewanne_nordwand
+          secondary_info: title-position
+        - entity: cover.bad_og_badewanne_ostwand
+          secondary_info: title-position
+        - type: divider
+        - entity: sensor.diagnosetext_bad_og_dusche
+          type: attribute
+          attribute: state
+          icon: mdi:stethoscope
+        - entity: sensor.diagnosetext_bad_og_badewanne_nordwand
+          type: attribute
+          attribute: state
+          icon: mdi:stethoscope
+        - entity: sensor.diagnosetext_bad_og_badewanne_ostwand
+          type: attribute
+          attribute: state
+          icon: mdi:stethoscope
+      footer:
+        type: buttons
+        entities:
+          - entity: button.fahrzeitmessung_starten_bad_og_dusche
+            icon: mdi:history
+          - entity: button.fahrzeitmessung_starten_bad_og_badewanne_nordwand
+            icon: mdi:history
+          - entity: button.fahrzeitmessung_starten_bad_og_badewanne_ostwand
+            icon: mdi:history
+          - entity: switch.beschattung_bad_og_badewanne_ostfenster_sperren
+            icon: mdi:window-shutter-auto
+            styles:
+              icon:
+                - color: |
+                    [[[
+                      if (entity.state == 'on') return 'red'; 
+                      return 'green';
+                    ]]]
+
+    - title: Schlafzimmer
+      type: entities
+      entities:
+        - entity: cover.schlafzimmer
+          secondary_info: title-position
+        - type: divider
+        - entity: sensor.diagnosetext_schlafzimmer
+          type: attribute
+          attribute: state
+          icon: mdi:stethoscope
+      footer:
+        type: buttons
+        entities:
+          - entity: button.fahrzeitmessung_starten_schlafzimmer
+            icon: mdi:history
+          - entity: switch.beschattung_schlafzimmer_sperren
+            icon: mdi:window-shutter-auto
+            styles:
+              icon:
+                - color: |
+                    [[[
+                      if (entity.state == 'on') return 'red'; 
+                      return 'green';
+                    ]]]
+
+    - title: Ankleide
+      type: entities
+      entities:
+        - entity: cover.ankleide
+          secondary_info: title-position
+        - type: divider
+        - entity: sensor.diagnosetext_ankleide
+          type: attribute
+          attribute: state
+          icon: mdi:stethoscope
+      footer:
+        type: buttons
+        entities:
+          - entity: button.fahrzeitmessung_starten_ankleide
+            icon: mdi:history
+          - entity: switch.beschattung_ankleide_sperren
+            icon: mdi:window-shutter-auto
+            styles:
+              icon:
+                - color: |
+                    [[[
+                      if (entity.state == 'on') return 'red'; 
+                      return 'green';
+                    ]]]
+
+    - title: Flur OG
+      type: entities
+      entities:
+        - entity: cover.flur_og
+          secondary_info: title-position
+        - type: divider
+        - entity: sensor.diagnosetext_flur_og
+          type: attribute
+          attribute: state
+          icon: mdi:stethoscope
+      footer:
+        type: buttons
+        entities:
+          - entity: button.fahrzeitmessung_starte_flur_og
+            icon: mdi:history
+            - entity: switch.beschattung_flur_og_sperren
+            icon: mdi:window-shutter-auto
+            styles:
+              icon:
+                - color: |
+                    [[[
+                      if (entity.state == 'on') return 'red'; 
+                      return 'green';
+                    ]]]
 
   - title: KWL
     path: kwl-diag
@@ -780,7 +609,6 @@ views:
               left: 50%
               top: 60%
 
-
   - title: KWL
     path: kwl
     icon: mdi:air-filter
@@ -789,23 +617,44 @@ views:
         title: Lüftungsanlage
         
         entities:
-          - entity: cover.kuchenfenster
-            secondary_info: title-position
+          - entity: sensor.temperatur_fortluft
+            secondary_info: last-changed
+          - entity: sensor.temperatur_abluft
+            secondary_info: last-changed
+          - entity: sensor.temperatur_aussenluft
+            secondary_info: last-changed
+          - entity: number.lueftung_bypass_schwellwert
+            secondary_info: last-changed
           - type: divider
-          - entity: sensor.diagnosetext_kuchenfenster
-            type: attribute
-            attribute: state
-            icon: mdi:stethoscope
-
-          - type: conditional
-            conditions:
-              - entity: switch.lueftung_partymodus
-                state: "on"
-            row: number.lueftung_uebersteuern
-
+          - entity: sensor.drehzahl_istwert_zuluft
+          - entity: sensor.drehzahl_istwert_abluft
+          - entity: sensor.filter_standzeit_aktuell
+          - type: divider
+          - entity: sensor.aktuelle_stufe
+            secondary_info: last-changed
+          - type: divider
+          - entity: binary_sensor.alarm_ventilator_zuluft
+            secondary_info: last-changed
+          - entity: binary_sensor.alarm_ventilator_abluft
+            secondary_info: last-changed
+          - entity: binary_sensor.alarm_temperatursensor_fortluft
+            secondary_info: last-changed
+          - entity: binary_sensor.alarm_temperatursensor_abluft
+            secondary_info: last-changed
+          - entity: binary_sensor.alarm_temperatursensor_aussenluft
+            secondary_info: last-changed
+            
         footer:
           type: buttons
           entities:
             - entity: switch.lueftung_partymodus
               icon: mdi:fan-auto
-            
+              styles:
+                icon:
+                  - color: |
+                      [[[
+                        if (entity.state == 'on') return 'red'; 
+                        return 'green';
+                      ]]]
+            - entity: switch.bypass_klappe_oeffnen
+            - entity: buttons.kwl_filterreset

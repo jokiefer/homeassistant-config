@@ -45,24 +45,17 @@ views:
         entities:
           - entity: cover.kind_sud_sudwand
             secondary_info: title-position
-          - entity: switch.beschattung_automatik_kind_sud_sudfenster
+          - entity: switch.beschattung_kind_sued_suedfenster
           - type: divider
           - entity: cover.kind_sud_westwand
             secondary_info: title-position
-          - entity: switch.beschattung_automatik_kind_sud_westfenster
+          - entity: switch.beschattung_kind_sued_westfenster_sperren
 
-      - title: Heizung
-        type: entities
-        icon: mdi:heating-coil
-        entities:
-          - climate.kinderzimmer_sud
-          - binary_sensor.storung_heizkreis_kinderzimmer_sud
-          # TODO: bedingte anzeige bei Störung
-          - sensor.diagnosetext_heizkreis_kind_1
-      - title: Luftqualität
+      - title: Klimadaten
         type: entities
         icon: mdi:air-filter
         entities:
+          - sensor.temperatur_kind_sued_taster
           - sensor.relative_luftfeuchte_kind_1
           - sensor.taupunkttemperatur_kind_1
 
@@ -80,22 +73,15 @@ views:
         type: entities
         icon: mdi:window-shutter
         entities:
-          - cover.kind_sud_sudwand
-          - cover.kind_sud_westwand
-          - switch.beschattung_automatik_kind_nord_westfenster
-          - switch.beschattung_automatik_kind_nord_nordfenster
-      - title: Heizung
-        type: entities
-        icon: mdi:heating-coil
-        entities:
-          - climate.kinderzimmer_nord
-          - binary_sensor.storung_heizkreis_kinderzimmer_nord
-          # TODO: bedingte anzeige bei Störung
-          - sensor.diagnosetext_heizkreis_kind_2
-      - title: Luftqualität
+          - cover.kind_nord_westwand
+          - cover.kind_nord_nordwand
+          - switch.beschattung_kind_nord_westfenster_sperren
+
+      - title: Klimadaten
         type: entities
         icon: mdi:air-filter
         entities:
+          - sensor.temperatur_kind_nord_taster
           - sensor.relative_luftfeuchte_kind_2
           - sensor.taupunkttemperatur_kind_2
 
@@ -117,20 +103,16 @@ views:
           - cover.bad_og_dusche
           - cover.bad_og_badewanne_nordwand
           - cover.bad_og_badewanne_ostwand
-          - switch.beschattung_automatik_bad_og_ostfenster
-      - title: Heizung
+          - switch.beschattung_bad_og_ostfenster_sperren
+
+      - title: Klimadaten
         type: entities
-        icon: mdi:heating-coil
+        icon: mdi:home-thermometer-outline
         entities:
-          - climate.bad_og
-          - binary_sensor.storung_heizkreis_bad_og
-          # TODO: bedingte anzeige bei Störung
-          - sensor.diagnosetext_heizkreis_bad_og
-      - title: Luftqualität
-        type: entities
-        icon: mdi:air-filter
-        entities:
+          - sensor.taupunkttemperatur_bad_og
+          - sensor.temperatur_bad_og_taster
           - sensor.relative_luftfeuchte_bad_og
+
 
   - title: Schlafzimmer
     path: master-bedroom
@@ -149,15 +131,12 @@ views:
         icon: mdi:window-shutter
         entities:
           - cover.schlafzimmer
-          - switch.beschattung_automatik_schlafzimmer
-      - title: Heizung
+          - switch.beschattung_schlafzimmer_sperren
+      - title: Klimadaten
         type: entities
-        icon: mdi:heating-coil
+        icon: mdi:home-thermometer-outline
         entities:
-          - climate.schlafzimmer
-          - binary_sensor.storung_heizkreis_schlafzimmer
-          # TODO: bedingte anzeige bei Störung
-          - sensor.diagnosetext_schlafzimmer
+          - sensor.temperatur_schlafzimmer
 
   - title: Ankleide
     path: robe
@@ -173,15 +152,12 @@ views:
         icon: mdi:window-shutter
         entities:
           - cover.ankleide
-          - switch.beschattung_automatik_ankleide
-      - title: Heizung
+          - switch.beschattung_ankleide_sperren
+      - title: Klimadaten
         type: entities
-        icon: mdi:heating-coil
+        icon: mdi:home-thermometer-outline
         entities:
-          - climate.ankleide
-          - binary_sensor.storung_heizkreis_ankleide
-          # TODO: bedingte anzeige bei Störung
-          - sensor.diagnosetext_ankleide
+          - sensor.temperatur_ankleide
 
   - title: Flur
     path: corridor
@@ -191,18 +167,25 @@ views:
         type: entities
         icon: mdi:lightbulb
         entities:
-          - light.licht_flur_og_handbetrieb
+          - type: entity
+            entity: switch.licht_flur_og_handbetrieb
+            secondary_info: last-changed
+          - type: entity
+            entity: light.licht_flur_og_sperren
+            secondary_info: last-changed
+          - type: entity
+            entity: 
       - title: Beschattung
         type: entities
         icon: mdi:window-shutter
         entities:
           - cover.flur_og
-          - switch.beschattung_automatik_flur_og
-      - title: Heizung
+          - switch.beschattung_flur_og_sperren
+      - title: Klimadaten
         type: entities
-        icon: mdi:heating-coil
+        icon: mdi:home-thermometer-outline
         entities:
-          - climate.flur_og
-          - binary_sensor.storung_heizkreis_flur_og
-          # TODO: bedingte anzeige bei Störung
-          - sensor.diagnosetext_flur_og
+          - sensor.temperatur_flur_og
+          - sensor.co2_flur_og
+          - sensor.vo2_flur_og
+          - sensor.relative_luftfeuchte_flur_og
