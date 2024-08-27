@@ -59,7 +59,7 @@ views:
             style: 
               left: 43%
               top: 72%
-          - entity: light.licht_buro
+          - entity: light.licht_buero
             type: state-icon
             style: 
               left: 50%
@@ -90,12 +90,12 @@ views:
             style: 
               left: 40%
               top: 32%
-          - entity: cover.buro_ostwand
+          - entity: cover.buero_ostwand
             type: state-icon
             style: 
               left: 56%
               top: 85%
-          - entity: cover.buro_sudwand
+          - entity: cover.buero_suedwand
             type: state-icon
             style: 
               left: 48%
@@ -105,7 +105,7 @@ views:
             style: 
               left: 31%
               top: 94%
-          - entity: cover.kuchenfenster
+          - entity: cover.kuechenfenster
             type: state-icon
             style: 
               left: 17%
@@ -121,7 +121,7 @@ views:
             style: 
               left: 2%
               top: 87%
-          - entity: climate.kuchen_ess_wohnbereich
+          - entity: climate.kuechen_ess_wohnbereich
             type: state-label
             attribute: temperature
             style: 
@@ -158,7 +158,7 @@ views:
               top: 75%
           
           
-  - title: Küche / Essbereich
+  - title: Küche / Essbereich / Wohnbereich
     path: kitchen
     icon: mdi:countertop
     cards:
@@ -167,47 +167,29 @@ views:
         icon: mdi:lightbulb
         entities:
           - light.kueche_arbeitsplatte
-          - light.kuche_kochinsel
+          - light.kueche_kochinsel
           - light.essbereich
+          - light.wohnbereich_couch
+          - light.licht_wohnbereich_tv_wand
       - title: Beschattung
         type: entities
         icon: mdi:window-shutter
         entities:
-          - cover.kuchenfenster
+          - cover.kuechenfenster
           - cover.hebe_schiebe_links
           - cover.hebe_schiebe_rechts
           - binary_sensor.hebe_schiebe_links
-          - switch.beschattung_automatik_kuchenfenster
-          - switch.beschattung_automatik_hebe_schiebe_links
-          - switch.beschattung_automatik_hebe_schiebe_rechts
-      - title: Heizung
-        type: entities
-        icon: mdi:heating-coil
-        entities:
-          - climate.kuchen_ess_wohnbereich
-          - binary_sensor.storung_kuche_wohn_essbereich
-          # TODO: bedingte anzeige bei Störung
-          - sensor.diagnosetext_heizkreis_kuchen_ess_wohnbereich
-      - title: Luftqualität
+          - switch.beschattung_kuchenfenster_sperren
+          - switch.beschattung_hebe_schiebe_links_sperren
+          - switch.beschattung_hebe_schiebe_rechts_sperren
+      - title: Klimadaten
         type: entities
         icon: mdi:air-filter
         entities:
+          - sensor.temperatur_essbereich_co2_sensor
           - sensor.relative_luftfeuchte_essbereich
           - sensor.voc_essbereich
           - sensor.co2_essbereich
-
-
-  - title: Wohnzimmer
-    path: living-room
-    icon: mdi:sofa
-    cards:
-      - title: Lichter
-        type: entities
-        icon: mdi:lightbulb
-        entities:
-          - light.wohnbereich_couch
-          - light.licht_wohnbereich_tv_wand
-
 
   - title: Bad
     path: bath
@@ -218,6 +200,7 @@ views:
         icon: mdi:lightbulb
         entities:
           - switch.licht_bad_eg_handbetrieb
+          - light.licht_bad_eg_sperren
           # Bewegung/Präsenz
           - sensor.bad_eg
       - title: Beschattung
@@ -225,18 +208,12 @@ views:
         icon: mdi:window-shutter
         entities:
           - cover.bad_eg
-      - title: Heizung
-        type: entities
-        icon: mdi:heating-coil
-        entities:
-          - climate.bad_eg
-          - binary_sensor.storung_heizkreis_bad_eg
-          # TODO: bedingte anzeige bei Störung
-          - sensor.diagnosetext_heizkreis_bad_eg
-      - title: Luftqualität
+      - title: Klimadaten
         type: entities
         icon: mdi:air-filter
         entities:
+          - sensor.temperatur_bad_eg_praesenzmelder
+          - sensor.temperatur_bad_eg_taster
           - sensor.relative_luftfeuchte_bad_eg
 
 
@@ -249,24 +226,33 @@ views:
         icon: mdi:lightbulb
         entities:
           - switch.licht_hwr_handbetrieb
+          - light.licht_hwr_sperren
           # Bewegung/Präsenz
           - sensor.hwr
-      - title: Heizung
-        type: entities
-        icon: mdi:heating-coil
-        entities:
-          - climate.hwr
-          - binary_sensor.storung_heizkreis_hwr
-        # TODO: bedingte anzeige bei Störung
-          - sensor.diagnosetext_heizkreis_hwr
-      - title: Luftqualität
+      - title: Klimadaten
         type: entities
         icon: mdi:air-filter
         entities:
+          - sensor.temperatur_hwr_feuchtesensor
+          - sensor.temperatur_hwr_praesenzmelder
           - sensor.relative_luftfeuchte_hwr
           - sensor.absolute_luftfeuchte_hwr
           - sensor.taupunkttemperatur_hwr
-
+      - title: Heizungsanlage
+        type: entities
+        icon: mdi:heating-coil
+        entities:
+          - entity: binary_sensor.warmepumpe_circulation_pump 
+            secondary_info: last-changed
+          - entity: binary_sensor.warmepumpe_dhw_charging
+            secondary_info: last-changed
+          - entity: sensor.warmepumpe_primary_circuit_return_temperature
+          - entity: sensor.warmepumpe_primary_circuit_supply_temperature
+          - entity: sensor.warmepumpe_return_temperature
+          - entity: sensor.warmepumpe_secondary_circuit_supply_temperature
+          - entity: sensor.warmepumpe_supply_temperature
+          - entity: number.warmepumpe_normal_temperature
+            
   - title: Diele
     path: hallway
     icon: mdi:floor-plan
@@ -276,16 +262,16 @@ views:
         icon: mdi:lightbulb
         entities:
           - switch.licht_diele_handbetrieb
+          - light.licht_diele_sperren
           - sensor.diele_pm1
           - sensor.diele_pm2
-      - title: Heizung
+      - title: Klimadaten
         type: entities
-        icon: mdi:heating-coil
+        icon: mdi:air-filter
         entities:
-          - climate.diele
-          - binary_sensor.storung_heizkreis_diele
-        # TODO: bedingte anzeige bei Störung
-          - sensor.diagnosetext_heizkreis_diele
+          - sensor.temperatur_diele_praesenzmelder_treppe
+          - sensor.temperatur_diele_praesenzmelder_tuer
+          - sensor.temperatur_diele_taster
 
   - title: Garderobe
     path: wardrobe
@@ -296,14 +282,17 @@ views:
         icon: mdi:lightbulb
         entities:
           - switch.licht_gardarobe_handbetrieb
+          - light.licht_gardarobe_sperren
           - sensor.gardarobe
-      - title: Luftqualität
+      - title: Klimadaten
         type: entities
         icon: mdi:air-filter
         entities:
+          - sensor.temperatur_garderobe_feuchtesensor
+          - sensor.temperatur_garderobe_praesenzmelder
           - sensor.relative_luftfeuchte_gardarobe
           - sensor.absolute_luftfeuchte_gardarobe
-    
+          
   - title: Speisekammer
     path: larder
     icon: mdi:bookshelf
@@ -313,4 +302,36 @@ views:
         icon: mdi:lightbulb
         entities:
           - switch.licht_speisekammer_handbetrieb
+          - light.licht_speisekammer_sperren
           - sensor.speisekammer
+      - title: Klimadaten
+        type: entities
+        icon: mdi:air-filter
+        entities:
+          - sensor.temperatur_speisekammer_praesenzmelder
+
+  - title: Garage
+    path: larder
+    icon: mdi:garage-variant
+    cards:
+      - title: Lichter
+        type: entities
+        icon: mdi:lightbulb
+        entities:
+          - light.licht_garage_abstellraum
+          - light.licht_garage_antrieb
+          - light.licht_garage_stellplaetze
+
+      - title: Tor
+        type: entities
+        icon: mdi:window-shutter
+        entities:
+          - cover.garagentor
+
+      - title: Klimadaten
+        type: entities
+        icon: mdi:air-filter
+        entities:
+          - sensor.temperatur_garage
+          - sensor.relative_luftfeuchte_garage
+          - sensor.taupunkttemperatur_garage

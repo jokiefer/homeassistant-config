@@ -43,11 +43,11 @@ views:
         type: entities
         icon: mdi:window-shutter
         entities:
-          - entity: cover.kind_sud_sudwand
+          - entity: cover.kind_sued_suedwand
             secondary_info: title-position
-          - entity: switch.beschattung_kind_sued_suedfenster
+          - entity: switch.beschattung_kind_sued_suedfenster_sperren
           - type: divider
-          - entity: cover.kind_sud_westwand
+          - entity: cover.kind_sued_westwand
             secondary_info: title-position
           - entity: switch.beschattung_kind_sued_westfenster_sperren
 
@@ -109,9 +109,10 @@ views:
         type: entities
         icon: mdi:home-thermometer-outline
         entities:
-          - sensor.taupunkttemperatur_bad_og
           - sensor.temperatur_bad_og_taster
+          - sensor.temperatur_bad_og_praesenzmelder
           - sensor.relative_luftfeuchte_bad_og
+          - sensor.taupunkttemperatur_bad_og
 
 
   - title: Schlafzimmer
@@ -167,14 +168,10 @@ views:
         type: entities
         icon: mdi:lightbulb
         entities:
-          - type: entity
-            entity: switch.licht_flur_og_handbetrieb
+          - entity: switch.licht_flur_og_handbetrieb
             secondary_info: last-changed
-          - type: entity
-            entity: light.licht_flur_og_sperren
+          - entity: light.licht_flur_og_sperren
             secondary_info: last-changed
-          - type: entity
-            entity: 
       - title: Beschattung
         type: entities
         icon: mdi:window-shutter
@@ -187,5 +184,5 @@ views:
         entities:
           - sensor.temperatur_flur_og
           - sensor.co2_flur_og
-          - sensor.vo2_flur_og
+          - sensor.voc_flur_og
           - sensor.relative_luftfeuchte_flur_og

@@ -866,6 +866,12 @@ sensor:
     state_class: measurement
 
   - name: Temperatur Speisekammer Praesenzmelder
+    state_address: "0/1/90"
+    type: temperature
+    sync_state: "init"
+    state_class: measurement
+
+  - name: Temperatur Bad OG Praesenzmelder
     state_address: "0/1/121"
     type: temperature
     sync_state: "init"
@@ -919,6 +925,11 @@ sensor:
     sync_state: "init"
     state_class: measurement
 
+  - name: Temperatur Garage
+    state_address: "0/1/200"
+    type: temperature
+    sync_state: "init"
+    state_class: measurement
 
   - name: Windgeschwindigkeit Dach
     state_address: "0/3/0"
