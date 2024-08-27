@@ -179,7 +179,7 @@ views:
           - cover.hebe_schiebe_links
           - cover.hebe_schiebe_rechts
           - binary_sensor.hebe_schiebe_links
-          - switch.beschattung_kuchenfenster_sperren
+          - switch.beschattung_kuechenfenster_sperren
           - switch.beschattung_hebe_schiebe_links_sperren
           - switch.beschattung_hebe_schiebe_rechts_sperren
       - title: Klimadaten
@@ -311,7 +311,7 @@ views:
           - sensor.temperatur_speisekammer_praesenzmelder
 
   - title: Garage
-    path: larder
+    path: garage
     icon: mdi:garage-variant
     cards:
       - title: Lichter

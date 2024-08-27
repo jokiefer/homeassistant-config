@@ -107,7 +107,7 @@ views:
         - entity: cover.kuechenfenster
           secondary_info: title-position
         - type: divider
-        - entity: sensor.diagnosetext_kuchenfenster
+        - entity: sensor.diagnosetext_kuechenfenster
           type: attribute
           attribute: state
           icon: mdi:stethoscope
@@ -435,7 +435,7 @@ views:
         entities:
           - entity: button.fahrzeitmessung_starte_flur_og
             icon: mdi:history
-            - entity: switch.beschattung_flur_og_sperren
+          - entity: switch.beschattung_flur_og_sperren
             icon: mdi:window-shutter-auto
             styles:
               icon:
