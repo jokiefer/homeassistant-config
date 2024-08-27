@@ -261,14 +261,14 @@ views:
         type: entities
         icon: mdi:lightbulb
         entities:
-          - switch.licht_buero
+          - light.licht_buero
       - title: Klimadaten
         type: entities
         icon: mdi:air-filter
         entities:
           - sensor.temperatur_buero_taster
-          - sensor.relative_buero_taster
-          - sensor.taupunkttemperatur_buero_taster
+          - sensor.relative_luftfeuchte_buero
+          - sensor.taupunkttemperatur_buero
             
   - title: Diele
     path: hallway
