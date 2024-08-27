@@ -252,6 +252,23 @@ views:
           - entity: sensor.warmepumpe_secondary_circuit_supply_temperature
           - entity: sensor.warmepumpe_supply_temperature
           - entity: number.warmepumpe_normal_temperature
+
+  - title: Buero
+    path: office
+    icon: mdi:chair-rolling
+    cards:
+      - title: Lichter
+        type: entities
+        icon: mdi:lightbulb
+        entities:
+          - switch.licht_buero
+      - title: Klimadaten
+        type: entities
+        icon: mdi:air-filter
+        entities:
+          - sensor.temperatur_buero_taster
+          - sensor.relative_buero_taster
+          - sensor.taupunkttemperatur_buero_taster
             
   - title: Diele
     path: hallway
