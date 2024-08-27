@@ -98,7 +98,5 @@ device_tracker:
 
 
 http:
-  ssl_certificate: "fullchain.pem"
-  ssl_key: "privkey.pem"
   ip_ban_enabled: true
   login_attempts_threshold: 5
