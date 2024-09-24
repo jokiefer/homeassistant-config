@@ -90,3 +90,18 @@ switch:
   - name: "Bypass Klappe öffnen"
     address: "6/0/31"
     state_address: "6/1/31"
+
+
+### Steckdosen
+  - name: "Steckdose Nord"
+    address: "10/0/200"
+    state_address: "10/1/200"
+    device_class: "outlet"
+  - name: "Steckdose Süd"
+    address: "10/0/201"
+    state_address: "10/1/201"
+    device_class: "outlet"
+  - name: "Steckdose West"
+    address: "10/0/202"
+    state_address: "10/1/202"
+    device_class: "outlet"

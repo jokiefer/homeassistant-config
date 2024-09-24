@@ -57,6 +57,10 @@ light:
     address: "1/0/101"
     state_address: "1/1/101"
 
+  - name: "Licht Bad OG schalten"
+    address: "1/0/110"
+    state_address: "1/1/110"
+
   - name: "Licht Bad OG sperren"
     address: "1/2/110"
     state_address: "1/1/110"

@@ -89,7 +89,7 @@ sensor:
     end: '{{ now() }}'
     duration:
       hours: 24
-        
+    
 device_tracker:
   - platform: aruba
     host: 10.0.10.1
